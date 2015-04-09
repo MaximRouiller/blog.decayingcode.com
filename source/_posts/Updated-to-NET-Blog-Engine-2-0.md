@@ -1,7 +1,7 @@
 ---
 title: "Updated to .NET Blog Engine 2.0"
 date: 2011-02-11 10:43:02
-tags: [BlogEngine.NET]
+tags: []
 ---
 
 Well hello everyone,
