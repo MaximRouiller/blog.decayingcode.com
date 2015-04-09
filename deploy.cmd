@@ -48,6 +48,16 @@ IF NOT DEFINED KUDU_SYNC_CMD (
   SET KUDU_SYNC_CMD=%appdata%\npm\kuduSync.cmd
 )
 
+IF NOT DEFINED HEXO_CMD (
+  :: Install Hexo
+  echo Installing Hexo
+  call npm install hexo-cli -g --silent
+  IF !ERRORLEVEL! NEQ 0 goto error
+
+  :: Locally just running "kuduSync" would also work
+  SET HEXO_CMD=%appdata%\npm\hexo.cmd
+)
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Deployment
 :: ----------
@@ -58,7 +68,8 @@ echo Handling Basic Web Site deployment.
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
   
   echo Generating hexo blog  
-  hexo generate
+  call %HEXO_CMD% generate
+  npm install --silent
   
   echo Executing Kudu Sync
   echo - Source: %DEPLOYMENT_SOURCE%
