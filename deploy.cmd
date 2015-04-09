@@ -72,8 +72,6 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
   npm install --silent
   
   echo Executing Kudu Sync
-  echo - Source: %DEPLOYMENT_SOURCE%
-  echo - Target: %DEPLOYMENT_TARGET%
   call :ExecuteCmd "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_SOURCE%\public" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i "node_modules;.git;.hg;.deployment;deploy.cmd"
   IF !ERRORLEVEL! NEQ 0 goto error
 )
