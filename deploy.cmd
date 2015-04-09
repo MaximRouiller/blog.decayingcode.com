@@ -75,6 +75,7 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
   echo Executing Kudu Sync
   call "%KUDU_SYNC_CMD%" -v 50 -f "%DEPLOYMENT_SOURCE%\public" -t "%DEPLOYMENT_TARGET%" -n "%NEXT_MANIFEST_PATH%" -p "%PREVIOUS_MANIFEST_PATH%" -i "node_modules;.git;.hg;.deployment;deploy.cmd"
   IF !ERRORLEVEL! NEQ 0 goto error
+  exit /b 0
 )
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
