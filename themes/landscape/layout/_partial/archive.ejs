@@ -11,6 +11,7 @@
     </nav>
   <% } %>
 <% } else { %>
+
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
     <% var year = post.date.year(); %>
@@ -26,8 +27,20 @@
         <div class="archives">
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+
   <% }) %>
+
   <% if (page.posts.length){ %>
     </div></section>
   <% } %>
+
+  <% if (page.total > 1){ %>
+    <nav id="page-nav">
+      <%- paginator({
+        prev_text: '&laquo; Prev',
+        next_text: 'Next &raquo;'
+      }) %>
+    </nav>
+  <% } %>
+  
 <% } %>
