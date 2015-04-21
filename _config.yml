@@ -61,6 +61,10 @@ time_format: HH:mm:ss
 per_page: 20
 pagination_dir: page
 
+# Sitemap
+sitemap:
+  path: sitemap.xml
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
