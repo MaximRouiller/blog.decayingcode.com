@@ -1,5 +1,5 @@
 ---
-title: "Implementing a Chain-of-responsibility or "Pipeline" in C#"
+title: "Implementing a Chain-of-responsibility or \"Pipeline\" in C#"
 date: 2009-03-05 00:00:00
 tags: [architecture]
 ---
