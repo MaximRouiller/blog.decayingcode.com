@@ -3,6 +3,7 @@ title: "Implementing a Chain-of-responsibility or "Pipeline" in C#"
 date: 2009-03-05 00:00:00
 tags: [architecture]
 ---
+
 Anti-Patterns are interesting in showing you what you are doing wrong. However, patterns are also interesting in showing you **how to do it well**.
 
 This time, I want to show how to implement a simple [Chain-of-responsibility](http://en.wikipedia.org/wiki/Chain_of_responsibility_pattern) pattern. Our example is going to be based on a simple e-Commerce data model.
@@ -19,58 +20,57 @@ Let's start by writing our **Product** class and our **Discount** interface:
 
 ```csharp
 public class Product
-        {
-        private readonly List<IDiscount> _appliedDiscount = new List<IDiscount>();
+{
+    private readonly List<IDiscount> _appliedDiscount = new List<IDiscount>();
 
-        public string ProductName { get; private set; }
-        public decimal OriginalPrice { get; private set; }
+    public string ProductName { get; private set; }
+    public decimal OriginalPrice { get; private set; }
 
-        public decimal DiscountedPrice
-        {
+    public decimal DiscountedPrice
+    {
         get
         {
-        decimal discountedPrice = OriginalPrice;
-        return discountedPrice;
+            decimal discountedPrice = OriginalPrice;
+            return discountedPrice;
         }
+    }
 
-        }
-
-        public Product(string productName, decimal productPrice)
-        {
+    public Product(string productName, decimal productPrice)
+    {
         ProductName = productName;
         OriginalPrice = productPrice;
-        }
+    }
 
-        public List<IDiscount> AppliedDiscount
-        {
+    public List<IDiscount> AppliedDiscount
+    {
         get
         {
-        return _appliedDiscount;
+            return _appliedDiscount;
         }
-        }
-        }
+    }
+}
 
-        public interface IDiscount
-        {
-        decimal ApplyDiscount(decimal productPrice);
-        }
+public interface IDiscount
+{
+    decimal ApplyDiscount(decimal productPrice);
+}
 ```
 
 Right now, the "DiscountedPrice" is simply returning our "OriginalPrice". Let's implement the proper discount commands:
 
 ```csharp
 public decimal DiscountedPrice
-        {
-        get
-        {
+{
+    get
+    {
         decimal discountedPrice = OriginalPrice;
-
+        
         foreach (IDiscount discount in _appliedDiscount)
         discountedPrice = discount.ApplyDiscount(discountedPrice);
-
+        
         return discountedPrice;
-        }
-        }
+    }
+}
 ```
 
 Now that we have an algorithm that will apply all discounts, let's create a few **Discount** class:
