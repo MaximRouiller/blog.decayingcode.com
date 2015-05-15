@@ -18,9 +18,10 @@ widgets:
 - recent_posts
 
 # Miscellaneous
-google_analytics: UA-92383-2
+# UA-92383-2
+google_analytics: 
 favicon: /favicon.png
-twitter:
+twitter: MaximRouiller
 google_plus:
 fb_admins:
 fb_app_id:
