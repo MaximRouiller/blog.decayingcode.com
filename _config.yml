@@ -82,7 +82,6 @@ feed:
   path: atom.xml
   limit: 20
 
-twitter: MaximRouiller
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
