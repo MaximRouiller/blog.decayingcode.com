@@ -11,17 +11,17 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- recent_posts
 - category
 - tag
 - tagcloud
 - archive
-- recent_posts
 
 # Miscellaneous
 # UA-92383-2
 google_analytics: 
 favicon: /favicon.png
 twitter: MaximRouiller
-google_plus:
+google_plus: 110389932699639549240
 fb_admins:
 fb_app_id:
