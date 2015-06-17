@@ -4,7 +4,7 @@ date: 2015-06-17 00:00:00
 tags: [javascript, html]
 ---
 
-Have you read abou [WebComponents]? It sounds like something that we all tried to achieve on the web since... well... a long time.
+Have you read about [WebComponents]? It sounds like something that we all tried to achieve on the web since... well... a long time.
 
 If you take a look at the [specification][WebComponentsSpec], it's hosted on the W3C website. It smell like a real specification. It looks like a real specification.
 
@@ -78,3 +78,4 @@ Use other framework that abstract away the WebComponents part. Frameworks like [
 [Brick]: https://mozbrick.github.io/
 [X-Tag]: http://www.x-tags.org/
 [WebComponentsSpec]: http://www.w3.org/standards/techs/components#w3c_all
+[WebComponents]: http://webcomponents.org/
