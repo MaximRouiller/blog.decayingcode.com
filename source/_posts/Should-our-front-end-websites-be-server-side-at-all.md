@@ -4,11 +4,11 @@ date: 2015-08-20 15:00:00
 tags: [opinion,architecture]
 ---
 
-I've been toying around with projects like Jekyll, Hexo and even some handrolled software that will generate me HTML files based on data. The thought that crossed my mind was...
+I've been toying around with projects like Jekyll, Hexo and even some hand-rolled software that will generate me HTML files based on data. The thought that crossed my mind was...
 
 > Why do we need dynamically generated HTML again?
 
-Let me take examples and my my case.
+Let me take examples and build my case.
 
 ## Example 1: Blog
 
@@ -28,7 +28,7 @@ Search, Checkout and Reviews. Search because as your products scales up, so does
 
 In this scenario, only the Search is the actual "Read" component that is now server side. Everything else? Pre-generated. Even if the search is bringing you the list of product dynamically, it can still end up on a static page.
 
-All the other write compoents? Queued server side to be processed by the business itself with either Azure or an off-site component.
+All the other write components? Queued server side to be processed by the business itself with either Azure or an off-site component.
 
 All the backend side of the business (managing products, availability, sales, whatnot, etc.) will need a management UI that will be 100% dynamic (read/write).
 
