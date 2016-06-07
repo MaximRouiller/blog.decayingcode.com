@@ -18,8 +18,7 @@ widgets:
 - archive
 
 # Miscellaneous
-# UA-92383-2
-google_analytics: 
+google_analytics: UA-92383-2
 favicon: /favicon.png
 twitter: MaximRouiller
 google_plus: 110389932699639549240
