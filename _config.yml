@@ -75,6 +75,7 @@ archive_generator:
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: landscape
+google_analytics: UA-92383-2
 
 # Feed
 feed:
