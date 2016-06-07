@@ -76,6 +76,7 @@ archive_generator:
 ## Themes: http://hexo.io/themes/
 theme: landscape
 google_analytics: UA-92383-2
+twitter: MaximRouiller
 
 # Feed
 feed:
