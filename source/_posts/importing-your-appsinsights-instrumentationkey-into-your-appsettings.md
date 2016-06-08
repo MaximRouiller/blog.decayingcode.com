@@ -48,7 +48,7 @@ Here's a trimmed down version of an ARM template that does exactly this.
       ]
     },
     {
-      "name": "eclientinsight-int",
+      "name": "[variables('appInsightName')]",
       "type": "Microsoft.Insights/components",
       ...
     }
