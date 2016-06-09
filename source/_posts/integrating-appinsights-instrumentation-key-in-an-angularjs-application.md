@@ -1,3 +1,9 @@
+---
+title: "Integrating AppInsights Instrumentation Key in an AngularJS Application"
+date: 2016-06-09 08:00:00
+tags: [azure, appinsights]
+---
+
 So I recently had to integrate AppInsights in an AngularJS application. 
 
 The issue I faced was that I didn't want to pre-create my AppInsights instance and instead, rely on Azure Resource Manager to automatically instantiate them. In my [previous post][1], I showed you how to move the Instrumentation Key directly into AppSettings. How do you get it on the client?
