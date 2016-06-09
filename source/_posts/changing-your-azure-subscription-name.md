@@ -3,7 +3,6 @@ title: "Changing your Azure Subscription Name"
 date: 2016-06-09 09:00:00
 tags: [azure,subscription]
 ---
-# Changing your Azure Subscription Name
 
 0. Go to [Your Account][YourAccount]
 0. Click on [Usage and billing][UNB] (and login if necessary)
