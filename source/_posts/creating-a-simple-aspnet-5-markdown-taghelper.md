@@ -43,7 +43,7 @@ You could for example target element `<md></md>` by just adding `[HtmlTargetElem
 
 The `Content` property will allow you to write code like this:
 
-```razor
+```html
 @model MyClass
 
 <markdown content="@ViewData["markdown"]"></markdown>
@@ -54,7 +54,7 @@ This easily allows you to use your model or any server-side code without having 
 
 TagMode.SelfClosing will force the HTML to use self-closing tag rather than having content inside (which we're not going to use anyway). So now we have this:
 
-```razor
+```html
 <markdown content="Markdown" />
 ```
 
@@ -86,7 +86,8 @@ public class MyClass
     public string Markdown { get; set; }
 }
 ```
-```razor
+
+```html
 @model MyClass
 @{
     ViewData["Title"] = "About";
