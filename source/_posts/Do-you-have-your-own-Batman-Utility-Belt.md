@@ -1,7 +1,7 @@
 ---
 title: "Do you have your own Batman Utility Belt?"
 date: 2014-11-11 23:22:43
-tags: [tools,opinion]
+tags: [tool,opinion]
 ---
 
 Just like most of us on any project, you (yes you!) as a developer must have done the same thing over and over again. I'm not talking about coding a controller or accessing the database.
