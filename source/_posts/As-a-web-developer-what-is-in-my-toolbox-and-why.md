@@ -1,7 +1,7 @@
 ---
 title: "As a web developer, what is in my toolbox and why"
 date: 2014-03-06 13:00:00
-tags: [tools]
+tags: [tool]
 ---
 
 A few of my fellow developers in Montreal are not web developers and often asks me how to debug certain problem on the web and what tools I am using.
