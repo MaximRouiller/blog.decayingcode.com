@@ -146,6 +146,26 @@ Another step we could take is instead of outputting to disk, we would output to 
 
 Another middleware that should be added above `UseDefaultFiles` and `UseStaticFiles` is a middleware that would delete files after certain conditions. Otherwise, we will never regerate those files.
 
+### Creating files in a separate folder
+
+First, you'll need to update your `UseStaticFiles` to look like this:
+
+```csharp
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new CompositeFileProvider(
+        new PhysicalFileProvider(env.WebRootPath),
+        new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "staticgen"))
+    )
+});
+```
+
+Then, you will need to adapt the middleware to generate it in the proper directory.
+
+```csharp
+var destinationFile = Path.Combine(_hostingEnvironment.ContentRootPath, "staticgen", baseUrl, "index.html");
+```
+
 ### Conclusion
 
 With a simple middleware, we can generate static content directly from ASP.NET Core and allow it to be served locally without any other plugins.
