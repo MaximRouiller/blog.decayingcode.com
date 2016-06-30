@@ -1,7 +1,7 @@
 ---
 title: "Using Static Content Generation in ASP.NET Core"
 date: 2016-06-30 13:00
-tags: [asp.net core, middleware, static content]
+tags: [asp.net core, middleware, static content, azure]
 ---
 
 There are not a lot of tool in ASP.NET that allows you to generate static content on a site. The only good one out there is [Wyam][1] written by [Dave Glick][2].
