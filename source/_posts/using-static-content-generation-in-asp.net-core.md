@@ -75,18 +75,13 @@ public class StaticGeneratorMiddleware
         if (context.Request == null) throw new ArgumentNullException(nameof(context.Request));
 
         // we skip non-html content for now
-        if (context?.Request?.ContentType?.Contains("text/html") == true)
-        {
-            await _next(context);
-            return;
-        }
+
 
         // we skip the first slash and we reverse the slashes
         var baseUrl = context.Request.Path.Value.Substring(1).Replace("/", "\\");
         // default files will look for "index.html"
-        var destinationFile = Path.Combine(_hostingEnvironment.WebRootPath, baseUrl, "index.html");
+        var destinationFile = Path.Combine(_hostingEnvironment.ContentRootPath, "staticgen", baseUrl, "index.html");
 
-        EnsureDestinationFolderExist(destinationFile);
 
         // replace the output stream to collect the result
         var responseStream = context.Response.Body;
@@ -96,6 +91,14 @@ public class StaticGeneratorMiddleware
 
         // execute the rest of the pipeline
         await _next(context);
+
+        if (context.Response?.ContentType?.Contains("text/html") == false && context.Response.StatusCode != 200)
+        {
+            await _next(context);
+            return;
+        }
+
+        EnsureDestinationFolderExist(destinationFile);
 
         // reset the buffer and retrieve the content
         buffer.Seek(0, SeekOrigin.Begin);
