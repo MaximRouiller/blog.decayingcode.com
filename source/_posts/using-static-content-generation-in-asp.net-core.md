@@ -88,28 +88,35 @@ public class StaticGeneratorMiddleware
         var buffer = new MemoryStream();
         var reader = new StreamReader(buffer);
         context.Response.Body = buffer;
-
-        // execute the rest of the pipeline
-        await _next(context);
-
-        if (context.Response?.ContentType?.Contains("text/html") == false && context.Response.StatusCode != 200)
+        try 
         {
+            // execute the rest of the pipeline
             await _next(context);
-            return;
+        
+            if (context.Response?.ContentType?.Contains("text/html") == false && context.Response.StatusCode != 200)
+            {
+                await _next(context);
+                return;
+            }
+        
+            EnsureDestinationFolderExist(destinationFile);
+        
+            // reset the buffer and retrieve the content
+            buffer.Seek(0, SeekOrigin.Begin);
+            var responseBody = await reader.ReadToEndAsync();
+        
+            // output the content to disk
+            await WriteBodyToDisk(responseBody, destinationFile);
+        
+            // copy back our buffer to the response stream
+            buffer.Seek(0, SeekOrigin.Begin);
+            await buffer.CopyToAsync(responseStream);
         }
-
-        EnsureDestinationFolderExist(destinationFile);
-
-        // reset the buffer and retrieve the content
-        buffer.Seek(0, SeekOrigin.Begin);
-        var responseBody = await reader.ReadToEndAsync();
-
-        // output the content to disk
-        await WriteBodyToDisk(responseBody, destinationFile);
-
-        // copy back our buffer to the response stream
-        buffer.Seek(0, SeekOrigin.Begin);
-        await buffer.CopyToAsync(responseStream);
+        finally
+        {
+            // Workaround for https://github.com/aspnet/KestrelHttpServer/issues/940
+            context.Response.Body = responseStream;
+        }
     }
 
     private void EnsureDestinationFolderExist(string destinationFile)
