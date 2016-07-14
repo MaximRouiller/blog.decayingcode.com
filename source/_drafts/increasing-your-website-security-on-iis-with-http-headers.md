@@ -19,7 +19,11 @@ Let's say now that the certificate was replaced by a [man in the middle]() attac
 
 This consist in sending the header `Strict-Transport-Security` with a `max-age` value in seconds.
 
-This would enforce the policy for 1 year: `Strict-Transport-Security: max-age=31536000; includeSubdomains; preload`
+This would enforce the policy for 1 year, will force all subdomains to be HTTPS and enable you to be on the [preloaded list](https://hstspreload.appspot.com/):
+
+`Strict-Transport-Security: max-age=31536000; includeSubdomains; preload`
+
+**NOTE**: Be careful about the preload list. Once you are on it, you are going to be there for a long time. There would be no expiry. If that `preload` flag is present, anyone can submit your domain to be on the list. It will not be added automatically, but once it's done... you're in. It may take months to be taken off. [Read here for more details about removal](https://hstspreload.appspot.com/#removal).
 
 With IIS and its `web.config`, we force HTTPS urls and we automatically flag the request with the right header.
 
