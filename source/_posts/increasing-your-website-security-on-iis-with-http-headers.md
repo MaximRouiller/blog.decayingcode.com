@@ -49,7 +49,7 @@ With IIS and its `web.config`, we force HTTPS urls and we automatically flag the
                     <conditions>
                         <add input="{HTTPS}" pattern="on" ignoreCase="true" />
                     </conditions>
-                    <action type="Rewrite" value="max-age=31536000; includeSubdomains; preload" />
+                    <action type="Rewrite" value="max-age=31536000; includeSubdomains" />
                 </rule>
             </outboundRules>
         </rewrite>
