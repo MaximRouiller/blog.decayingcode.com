@@ -1,8 +1,18 @@
 ---
 title: "Increasing your website security on IIS with HTTP headers"
-date: 2016-07-14 13:20
+date: 2016-07-15 15:30
 tags: [security, iis]
 ---
+
+## UPDATE
+
+And within 5 minutes of this post being published, [Niall Merrigan](https://www.twitter.com/nmerrigan) just threw a wrench in my wheels.
+
+All of the following can easily be applied by simply installing [NWebSec](https://www.nwebsec.com/) written by [André N. Klingsheim](https://twitter.com/klingsen). Checkout the [Getting Started](https://docs.nwebsec.com/en/4.2/nwebsec/getting-started.html) page to install it right now.
+
+However, if you are not running the ASP.NET Pipeline (old or new), those recommendation still applies.
+
+If you guys are aware of any library that can replace applying those manually, please let me know and I'll update this post.
 
 ### HTTP Strict Transport Security (HSTS)
 
