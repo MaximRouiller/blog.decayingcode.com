@@ -10,7 +10,7 @@ When you have a some input with `type="search"`, typing some content will displa
 <input type="search" />
 ```
 
-That `X` is not part of Bootstrap or any other CSS framework. It's built-in the browser.
+That `X` is not part of Bootstrap or any other CSS framework. It's built-in the browser. To be more precise, Chrome and IE10+.
 
 The only way to remove it is to apply something like this:
 
@@ -27,4 +27,6 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 ```
 
-That's it. Copy/paste that in our main CSS file and all search box won't have that anoying X anymore.
+The width/height on the Internet Explorer code is to ensure that no space is kept for the component. Otherwise, if you type text long enough, the content may be hidden under the hidden `X`.
+
+That's it. Copy/paste that in our main CSS file and all search box won't have that annoying X anymore.
