@@ -108,7 +108,6 @@ So you just need to add this section under your WebApp definition to configure y
 
 ```json
 {
-    ....
     "resources": [
         {
           "apiVersion": "2015-08-01",
