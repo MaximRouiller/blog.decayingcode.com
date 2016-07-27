@@ -22,7 +22,7 @@ Here's what I did:
 var telemetryClient = new TelemetryClient();
 try
 {
-    ...
+    // do stuff ...
 }
 catch(DbEntityValidationException ex)
 {
