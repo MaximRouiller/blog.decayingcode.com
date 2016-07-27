@@ -13,34 +13,30 @@ You can't specify an instrumentation key. It is created automatically upon creat
 
 Retrieve the key directly from within the template.
 
-Here's a trimmed down version of an ARM template that does exactly this. 
+Here's a trimmed down version of an ARM template that does exactly this.
 
 ```json
 {
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {
-    ...
-  },
-  "variables": {
-    ...
-  },
+  "parameters": { },
+  "variables": { },
   "resources": [    
     {
       "name": "[variables('WebAppName')]",
       "type": "Microsoft.Web/sites",
       "location": "[resourceGroup().location]",
       "apiVersion": "2015-08-01",
-      "dependsOn": [...],
-      "tags": { ...},
-      "properties": { ... },
+      "dependsOn": [],
+      "tags": { },
+      "properties": {  },
       "resources": [
         {
           "name": "appsettings",
           "type": "config",
           "apiVersion": "2015-08-01",
-          "dependsOn": [...],
-          "tags": {...},
+          "dependsOn": [],
+          "tags": {},
           "properties": {
             "InstrumentationKey": "[reference(resourceId('Microsoft.Insights/components', variables('appInsightName')), '2014-04-01').InstrumentationKey]"
           }
@@ -50,7 +46,6 @@ Here's a trimmed down version of an ARM template that does exactly this.
     {
       "name": "[variables('appInsightName')]",
       "type": "Microsoft.Insights/components",
-      ...
     }
   ]
 }
@@ -61,4 +56,4 @@ Here's a trimmed down version of an ARM template that does exactly this.
 
 See that little AppSettings named `InstrumentationKey`? That's where the magic happens.
 
-Your instrumentation key is now bound to your WebApp AppSettings without carrying magic strings. 
+Your instrumentation key is now bound to your WebApp AppSettings without carrying magic strings.
