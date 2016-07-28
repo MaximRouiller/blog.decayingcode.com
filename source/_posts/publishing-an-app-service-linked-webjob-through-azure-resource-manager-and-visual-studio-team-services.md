@@ -35,7 +35,7 @@ Once you press `OK`, a new projet will be created and your Web App will have a n
 }
 ```
 
-That is the link between your WebApp and your WebJobs. This is what will tell VSTS that it also needs to deploy your WebJob.
+That is the link between your WebApp and your WebJobs. This is what will tell the build process on VSTS that it also needs to package the WebJob with this website so that Azure can recognize that it has WebJobs to execute.
 
 ### Configuring the WebJob
 
