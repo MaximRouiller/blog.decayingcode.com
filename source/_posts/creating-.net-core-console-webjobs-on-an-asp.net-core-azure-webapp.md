@@ -42,7 +42,7 @@ If you want to trigger a job every hour, just copy/paste the following in your `
 
 ```json
 {
-	"schedule": "0 0 */1 * * ? *"
+    "schedule": "0 0 * * * *"
 }
 ```
 
