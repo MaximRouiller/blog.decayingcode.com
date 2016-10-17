@@ -26,7 +26,13 @@ You will probably still need to manage your Virtual Machine and have them follow
 
 ### Gains
 
-It is however one way to reach scalability that wasn't previously available. With some change to the initial architecture, you will be able to Scale Out (multiple VMs) your application server based on metrics and performance counters. Or with no change to the architecture, you can increase (or lower) the power of the VM with just a few click from the Portal or a script.
+It is however one way to reach scalability that wasn't previously available. You are literally removing the risk with handling your own hardware and putting it on your cloud provider. Let's be honest here, they have way more money in the infrastructure game to ensure that whatever you want to run, it will. They have layers upon layers of redundancy from power to physical security of those servers. Data centers have certifications that would cost you millions to get. With Azure, you can get this. Now.
+
+So stop focusing on hardware and redundancy. Start focusing on your business and your company's goal. Unless you are competing in the same sphere as Microsoft and Amazon, your business isn't hosting. So let's focus on what matters. Focus on your customers and how to bring them value.
+
+With some change to the initial architecture, you will also be able to scale out (multiple VMs) your application server based on your VM's usage. Or with no change to the architecture, you can increase (or lower) the power of the VM with just a few click from the Portal or a script. This can definitely bring you and edge where a competitor would have to build a new server to allow for expanding their infrastructure.
+
+You? You get those on demand for how long or how short you need them.
 
 Those gains are the low hanging fruits and will be available to pretty much all other cloud migration strategy.
 
