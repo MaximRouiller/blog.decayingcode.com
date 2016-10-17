@@ -4,9 +4,11 @@ date: 2016-10-17 08:00
 tags: [azure]
 ---
 
-When migrating assets to the cloud, there is many way to do it.
+When migrating assets to the cloud, there is many way to do it. Nothing is a silver bullet. Each scenario need to be adapted to your particular situation.
 
-There is Lift and Shift, The Cloud Native and the Refactored way.
+Among the many ways to do things here are a few that are commonly known.
+
+We'll start with the Lift and Shift.
 
 ### Lift and shift
 
@@ -39,11 +41,18 @@ Those gains are the low hanging fruits and will be available to pretty much all 
 ### When to re-architecture
 
 #### Big Data
+
 The cloud offers many things that allows you to focus on the business rather than on the technical details. If you have a farm of servers internally doing Big Data, you might want to avoid converting those to the cloud. Those might just end up costing you more money than you would save.
 
 What could be done is leverage Azure Big Data offering. Azure offers [HDInsight](https://azure.microsoft.com/en-us/services/hdinsight/), [Machine Learning](https://azure.microsoft.com/en-us/services/machine-learning/) and [SQL Data Warehouses](https://azure.microsoft.com/en-us/services/sql-data-warehouse/).
 
 Most of those tools will allow you to sift through terabytes of data and allow you extract trends and valuable insights on your data. They will also be less costly than to run than a fleet of powerful virtual machines that are dedicated to this purpose.
+
+#### Big Compute
+
+If you have tons of computational job to do, you might think that having a local infrastructure is the only way to go. The problem you are facing is probably that you are capping your processing power or that you just can't transfer fast enough to those processing nodes. At that moment, you think about optimizing your servers, your network infrastructure, etc.
+
+This is a race which has already been ran by Microsoft and other companies. You already have the data and how to process it. Let Microsoft handle the infrastructure. You don't need to build the perfect HPC farm. Check Microsoft [Big Compute](https://azure.microsoft.com/en-us/solutions/big-compute/) solution and do focus on solving problems rather than infrastructure.
 
 #### Simpler applications
 
@@ -53,9 +62,12 @@ Multiple websites can share compute when they are barely used or just have a ded
 
 Those are a few of the many scenarios that would be a good candidate for a move toward a new architecture.
 
-
 ### What's next
 
-Going Cloud Native is definitely going to save you more money as you adapt your application to only use the resources it needs. But why go native? We'll see that in the next article.
+There's many way to evolve once your old legacy servers are in a VM on Azure.
+
+Going with container is one of the many solutions. Of course, if you already have containers internally, your lift and shift to Azure should be about as painless as can be. If you are not, it will make your life easier by identifying the dependencies your old applications were using. This would allow you to leverage the cloud reliability and scalability without changing too much.
+
+For certain application going Cloud Native is definitely going to save you more money as you adapt your application to only use the resources it needs. By using Blob Storage instead of the file system, NoSQL storage where it makes sense and activating auto scaling, you will be able to save your customer money and run a more lean business.
 
 Do you agree? Is there scenarios that I missed? Please comment bellow!
