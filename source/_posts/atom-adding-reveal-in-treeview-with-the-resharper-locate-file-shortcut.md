@@ -15,4 +15,6 @@ Until I added it myself. With 2 lines of ~~code~~ declaration.
     'alt-shift-l': 'tree-view:reveal-active-file'
 ```
 
+To add this to your shortcuts, just go in `File > Keymap...` and paste the above in the opened file.
+
 What other shortcuts are you guys using?
