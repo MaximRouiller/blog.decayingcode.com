@@ -4,9 +4,9 @@ date: 2014-10-08 17:05:15
 tags: [microsoft,open source]
 ---
 
-![](/posts/files/2b4c0b72-7dde-484d-8562-7ea3118990e2.jpeg) 
+![](/posts/files/2b4c0b72-7dde-484d-8562-7ea3118990e2.jpeg)
 
-    > I would like to note that this post takes only public information available and are not based on my status as Microsoft MVP. I did not interview anyone at Microsoft for those answers. I did not receive any privileged information for writing this post. All the information I am using and the insight therefor are based on publicly available information.
+> I would like to note that this post takes only public information available and are not based on my status as Microsoft MVP. I did not interview anyone at Microsoft for those answers. I did not receive any privileged information for writing this post. All the information I am using and the insight therefor are based on publicly available information.
 
 ### When it happened
 
@@ -14,7 +14,7 @@ I'm not sure exactly when this change toward open source happened. Microsoft is 
 
 Before this subtle change, we had things like Microsoft Ajax, the Ajax Control Toolkit and so many other reinvention from Microsoft. The same comment came back every time:
 
-    > Why aren't you using &lt;INSERT FRAMEWORK HERE&gt; instead of reinventing the wheel?
+> Why aren't you using &lt;INSERT FRAMEWORK HERE&gt; instead of reinventing the wheel?
 
 ### Open source in the Microsoft world
 
