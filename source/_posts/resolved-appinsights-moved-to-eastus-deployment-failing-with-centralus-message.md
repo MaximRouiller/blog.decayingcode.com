@@ -6,7 +6,7 @@ tags: [azure, appinsights]
 
 **TLDR** AppInsights were moved to EastUS. AutoScale Settings and Alerts were kept in CentralUS causing a chain-reaction of failure all around. Code to clean-up available at end of post.
 
-As [AppInsights hit General Availability][1] at Microsoft Connect 2016, we were so happy!
+As AppInsights hit General Availability at Microsoft Connect 2016, we were so happy!
 
 Then our VSTS builds started failing. Here's the message that we got:
 
