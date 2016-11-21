@@ -26,7 +26,7 @@ Of course, there's no easy way in the portal to delete those. However, with Powe
 
 It is important to note that it's perfectly safe to delete them on our end since we deploy with Azure Resource Manager templates. They will be recreated at the next CI/CD run.
 
-Here's the quick code to delete them if you encouter this issue.
+Here's the quick code to delete them if you encounter this issue.
 
 ```powershell
 $resource = Get-AzureRmResource
