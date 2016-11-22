@@ -30,6 +30,7 @@ Here's the quick code to delete them if you encounter this issue.
 
 ```powershell
 $resource = Get-AzureRmResource
-$resource | where { $_.ResourceType -eq 'Microsoft.insights/autoscalesettings' -and $_.Location -eq 'centralus' } | Remove-AzureRmResource
-$resource | where { $_.ResourceType -eq 'Microsoft.insights/alertrules' -and $_.Location -eq 'centralus' } | Remove-AzureRmResource
+$rgn = 'resourceGroup'
+$resource | where { $_.ResourceType -eq 'Microsoft.insights/autoscalesettings' -and $_.Location -eq 'centralus' -and $_.ResourceGroupName -eq $rgn } | Remove-AzureRmResource
+$resource | where { $_.ResourceType -eq 'Microsoft.insights/alertrules' -and $_.Location -eq 'centralus' -and $_.ResourceGroupName -eq $rgn } | Remove-AzureRmResource
 ```
