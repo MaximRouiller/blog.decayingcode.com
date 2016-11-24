@@ -6,9 +6,7 @@ tags: [azure, appinsights]
 
 **TLDR** AppInsights were moved to EastUS. AutoScale Settings and Alerts were kept in CentralUS causing a chain-reaction of failure all around. Code to clean-up available at end of post.
 
-As AppInsights hit General Availability at Microsoft Connect 2016, we were so happy!
-
-Then our VSTS builds started failing. Here's the message that we got:
+As AppInsights hit General Availability at Microsoft Connect 2016, a few issues were introduced that caused our VSTS builds to start failing. Here's the message that we got:
 
 ```none
 2016-11-18T19:25:33.9545678Z [Azure Resource Manager]Creating resource group deployment with name WebSiteSQLDatabase-20161118-1925
@@ -16,9 +14,7 @@ Then our VSTS builds started failing. Here's the message that we got:
 2016-11-18T19:25:37.9071426Z ##[section]Finishing: Azure Deployment:Create Or Update Resource Group action on eClientRcgt-int
 ```
 
-I started trying to contact Microsoft and was redirected to the forum. Also tried other inside channel with no success.
-
-So I started debugging. After 2 days trying to get this issue fixed, I decided to generate the template from the portal. Looked up the `myresource-int-myresource-int` inside of it and found out that it was an automatically generated name for `Microsoft.insights/autoscalesettings`. The worse was... its location was Central US. And it was not alone.
+So I started debugging. After a few days trying to get this issue fixed, I decided to generate the template from the portal. Looked up the `myresource-int-myresource-int` inside of it and found out that it was an automatically generated name for `Microsoft.insights/autoscalesettings`. The worse was... its location was Central US. And it was not alone.
 
 Other Alert rules were also located in Central US and just fixing the `autoscalesettings` would get me other error messages.
 
