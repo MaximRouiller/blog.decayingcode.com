@@ -8,7 +8,7 @@ If you are in Montreal around mid-January, Microsoft is hosting an awesome event
 
 ### What is Azure Day?
 
-Azure Day is a 12 hours hands-on workshop centered on different services offered in Azure like IoT, Machine Learning and DevOps.
+[Azure Day](https://blogs.technet.microsoft.com/cansql/2016/12/20/azure-day-january-17-montreal-event/) is a 12 hours hands-on workshop centered on different services offered in Azure like IoT, Machine Learning and DevOps.
 
 ### What subjects are going to be approached?
 
