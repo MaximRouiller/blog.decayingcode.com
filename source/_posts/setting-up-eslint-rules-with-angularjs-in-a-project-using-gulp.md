@@ -88,6 +88,8 @@ You can pick from [many formatters](http://eslint.org/docs/user-guide/formatters
 
 ```javascript
 var eslint = require("gulp-eslint");
+var src = './app/';
+
 gulp.task('eslint', function () {
     return gulp.src(src + '**/*.js')
         .pipe(eslint())
