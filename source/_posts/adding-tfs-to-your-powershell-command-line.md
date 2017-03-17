@@ -36,9 +36,16 @@ This is easily the easiest way to get Team Foundation Services added to your com
 | Visual Studio 2015  | 14.0    | VS140COMNTOOLS |
 | Visual Studio 2017  | 15.0    | VS150COMNTOOLS |
 
+*NOTE: I haven't tested this script on the latest version of VS2017*
 
 ### Testing it out
 
 If you run `tf get` on a source controlled folder, you should see changes be brought back to your folder.
 
 Is there any other tools that you are using that are not registered in the default PATH? Leave a comment and let everybody know!
+
+### Additional Link
+
+If you want to know more about how to use the `tf` command, you should definitely take a look at the list of commands.
+
+[TFVS Command Reference](https://www.visualstudio.com/en-us/docs/tfvc/use-team-foundation-version-control-commands)
