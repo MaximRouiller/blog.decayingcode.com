@@ -4,6 +4,8 @@ date: 2017-03-17 10:00
 tags: [tfs, powershell]
 ---
 
+** *UPDATE*: Added VS2017 support**
+
 If you are mostly working with other editors than Visual Studio but still want to be able to use TFS with your team mates, you will need a command line solution.
 
 The first thing you will probably do is to do a Google Search and find where the command line utility is located.
@@ -26,7 +28,7 @@ If you have a different version of Visual Studio installed, you may need to chan
 
 This is easily the easiest way to get Team Foundation Services added to your command line without messing with your `PATH` variable.
 
-### Tools Versions
+#### Tools Versions
 
 | Name                | Version | Tools Variable |
 | ---                 | ---     | ---            |
@@ -34,9 +36,20 @@ This is easily the easiest way to get Team Foundation Services added to your com
 | Visual Studio 2012  | 11.0    | VS110COMNTOOLS |
 | Visual Studio 2013  | 12.0    | VS120COMNTOOLS |
 | Visual Studio 2015  | 14.0    | VS140COMNTOOLS |
-| Visual Studio 2017  | 15.0    | VS150COMNTOOLS |
 
-*NOTE: I haven't tested this script on the latest version of VS2017*
+### Handling Visual Studio 2017
+
+The way Visual Studio 2017 has been re-organized, there is no more global environment variables laying around.
+
+The `tf.exe` location is now there. I haven't found an easy way to link to it but to use the full path. Please note that the path bellow will vary based on your edition of Visual Studio.
+
+> C:\Program Files (x86)\Microsoft Visual Studio\2017\<VERSION>\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe
+
+So for my scenario (with Enterprise installed), the alias would be set as:
+
+```powershell
+Set-Alias tf "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe"
+```
 
 ### Testing it out
 
