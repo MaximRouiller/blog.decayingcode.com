@@ -1,7 +1,7 @@
 ---
 title : "Creating my first .NET Core app running on Linux with Docker"
-date: 2017-03-20 16:30
-tags: [.net core, docker, linux]
+date: 2017-03-20 16:30:00
+tags: [.net core,docker,linux]
 ---
 
 I've always liked the idea of running .NET Core on multiple platforms. I've never had the guts however to jump cold feet into a Linux installation only on my machine.
