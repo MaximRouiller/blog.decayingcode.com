@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - Out Variables"
-date: 2017-03-29 09:00
+date: 2017-03-29 09:10
 tags: [c#, visual studio, .net]
 ---
 
@@ -45,4 +45,4 @@ It is important to note however that the variable is scoped on the method and no
 
 When new features are introduced in a language, I like to ask people whether it's a feature they would use.
 
-So please leave me a comment and let me know if you are going to use inline out variables. 
+So please leave me a comment and let me know if you are going to use inline out variables.

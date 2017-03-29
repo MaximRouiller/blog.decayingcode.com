@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - Pattern Matching"
-date: 2017-03-29 09:00
+date: 2017-03-29 09:20
 tags: [c#, visual studio, .net]
 ---
 
