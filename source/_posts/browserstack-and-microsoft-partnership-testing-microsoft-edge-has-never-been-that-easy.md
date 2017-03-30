@@ -1,6 +1,6 @@
 ---
 title : "BrowserStack and Microsoft Partnership - Testing Microsoft Edge has never been that easy!"
-date: 2017-03-30 12:00
+date: 2017-03-30 11:30
 tags: [web]
 ---
 
