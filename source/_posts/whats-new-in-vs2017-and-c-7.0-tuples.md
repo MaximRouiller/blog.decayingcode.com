@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - Tuples"
-date: 2017-03-29 09:00
+date: 2017-03-29 20:20
 tags: [c#, visual studio, .net]
 ---
 
@@ -57,8 +57,25 @@ The difference is simpler code, less `out` usage and less dummy classes that are
 
 ### Advanced scenarios
 
-#### C# 7.0 - Deconstructing tuples
+#### C# 7.0 - Deconstructing tuples (with and without type inference)
 
+When you invoke 3rd party library, tuples will already be with either their name or in a very specific format.
+
+You can deconstruct the tuple and convert it straight variables. How you ask? Easily.
+
+```csharp
+var myTuple = (1, "Maxime");
+
+// explicit type definition
+(int Age, string Name) = myTuple
+// with type inference
+var (Age, Name) = myTuple;
+Console.WriteLine($"Age: {Age}, Name: {Name}.");
+```
+
+If you take the previous example, normally, you would need to access the first property by using `myTuple.Item1`.
+
+Hardly readable. However, we created the `Age` variable easily by deconstructing it. Wherever the tuple come from, you can easily deconstruct it in one line of code with or without type inference.
 
 ### Are you going to use it?
 
