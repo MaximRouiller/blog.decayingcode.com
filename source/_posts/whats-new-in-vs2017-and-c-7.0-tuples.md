@@ -70,6 +70,7 @@ var myTuple = (1, "Maxime");
 (int Age, string Name) = myTuple
 // with type inference
 var (Age, Name) = myTuple;
+
 Console.WriteLine($"Age: {Age}, Name: {Name}.");
 ```
 
