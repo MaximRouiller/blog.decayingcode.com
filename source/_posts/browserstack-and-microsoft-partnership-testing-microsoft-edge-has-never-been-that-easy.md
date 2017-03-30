@@ -6,7 +6,7 @@ tags: [web]
 
 [Microsoft just announced a partnership with BrowserStack](https://blogs.windows.com/msedgedev/2017/03/30/free-edge-testing-browserstack/) to provide free testing of Microsoft Edge.
 
-You probably already BrowserStack has the place to go when you need to test multiple browsers without installing them all on your machine.
+You probably already know that BrowserStack is the place to go when you need to test multiple browsers without installing them all on your machine.
 
 Today, you can expand your manual and automated test to always include Microsoft Edge.
 
