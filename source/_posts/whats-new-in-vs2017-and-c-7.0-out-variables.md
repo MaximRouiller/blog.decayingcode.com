@@ -23,7 +23,7 @@ public void DoSomething(string parameter)
 }
 ```
 
-### C# 7.0
+### C# 7.0 (with type inference)
 
 ```csharp
 public void DoSomething(string parameter)
@@ -32,12 +32,18 @@ public void DoSomething(string parameter)
     {
         Console.WriteLine($"Parameter is an int and was parsed to {result}");
     }
+
+    // w/ type inference
+    if(Int32.TryParse(parameter, out var i))
+    {
+      // ....
+    }
 }
 ```
 
 ### The difference
 
-Now you don't need to define the variable on a separate row. You can inline it directly and, in fact, you could just use `var` instead of `int` in the previous example since it can infer the type directly inline.
+Now you don't need to define the variable on a separate row. You can inline it directly and, in fact, you could just use `var` instead of `int` in the previous example since it can infer the type directly inline. This is called type inference.
 
 It is important to note however that the variable is scoped on the method and not the `if` itself. So the `result` parameter is available in both the `if` and the `else` scope.
 
