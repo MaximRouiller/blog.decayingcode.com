@@ -64,7 +64,7 @@ You can now throw from:
 
 Where you still can't throw (that I verified):
 
-* `if` statement. Even if it's using a null-coalescing operator, it won't work and is not valid syntax.
+* `if(condition)` statement. Cannot be used in the condition of a `if` statement. Even if it's using a null-coalescing operator, it won't work and is not valid syntax.
 
 ### Are you going to use it?
 
