@@ -1,12 +1,12 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - More Expression Body"
-date: 2017-03-31 09:00
+date: 2017-03-31 09:01
 tags: [c#, visual studio, .net]
 ---
 
 Expression Bodied functions is a relatively new concept brought to use in C# 6.0 to facilitate the creation of properties that included too much ceremony.
 
-C# 7.0 remove even more ceremony from many more concepts. 
+C# 7.0 remove even more ceremony from many more concepts.
 
 #### C# 6.0
 
