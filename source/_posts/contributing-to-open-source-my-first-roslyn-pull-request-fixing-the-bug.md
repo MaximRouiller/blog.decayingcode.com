@@ -40,7 +40,7 @@ Do you see it? The order of the parameters are wrong. The `new` keyword **MUST**
 
 ### Help. Please?
 
-That's where Sam really helped me. It's how it should be in any open source project. Sam [pointed me in the right direction](https://github.com/dotnet/roslyn/issues/18391#issuecomment-291164250) and while I was trying to understand the code and find a fix.
+That's where Sam really helped me. It's how it should be in any open source project. Sam [pointed me in the right direction](https://github.com/dotnet/roslyn/issues/18391#issuecomment-291164250) while I was trying to understand the code and find a fix.
 
 ### The problematic code
 
