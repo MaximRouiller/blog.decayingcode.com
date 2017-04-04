@@ -6,7 +6,7 @@ tags: [open source, c#,  .net, visual studio]
 
 ### Getting your environment ready
 
-If you haven't done so yet, please check [part 1](/posts/contributing-to-open-source-my-first-roslyn-pull-request-getting-the-environment-ready/) to get your environment ready. Otherwise, you'll just run in circle.
+If you haven't done so yet, please check [part 1](/post/contributing-to-open-source-my-first-roslyn-pull-request-getting-the-environment-ready/) to get your environment ready. Otherwise, you'll just run in circle.
 
 ### Reading the bug
 
