@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017? - Lightweight Solution Load"
-date: 2017-03-31 14:00
+date: 2017-04-04 09:00
 tags: [visual studio]
 ---
 
@@ -20,11 +20,11 @@ This allows for you to open a solution, expand a project, edit a file, recompile
 
 ### How to turn it on?
 
-There's two ways you can turn it on. Individually for a single solution like so:
+There's two ways you can turn it on. Individually for a single solution by right clicking on a solution and selecting this option:
 
 ![Turning it on for an Individual Solution](/posts/files/lightweight-solution-load/one-solution.png)
 
-Or globally for all future solutions that are going to be loaded:
+Or globally for all future solutions that are going to be loaded by opening your `Tools > Options...` menu:
 
 ![Turning it on for All Solutions](/posts/files/lightweight-solution-load/all-solutions.png)
 
