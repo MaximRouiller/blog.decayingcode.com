@@ -81,4 +81,4 @@ Time to actually fix the bug now.
 
 ### Fixing the bug
 
-Stay with us for part 2 where we actually get to business.
+Stay with us for [part 2](/post/contributing-to-open-source-my-first-roslyn-pull-request-fixing-the-bug/) where we actually get to business.
