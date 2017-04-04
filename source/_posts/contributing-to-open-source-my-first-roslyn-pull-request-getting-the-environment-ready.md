@@ -39,7 +39,7 @@ I have a Surface Book i7 with 16Gb of RAM. I also have Visual Studio 2017 Enterp
 
 The machine is strong enough but if I wanted to test my code in Visual Studio, I would need to install the `Visual Studio extension development` workload.
 
-This can easily be installed by opening the new [Visual Studio Installer](/posts/whats-new-in-vs2017-visual-studio-installer/).
+This can easily be installed by opening the new [Visual Studio Installer](/post/whats-new-in-vs2017-visual-studio-installer/).
 
 #### Forking the repository
 
