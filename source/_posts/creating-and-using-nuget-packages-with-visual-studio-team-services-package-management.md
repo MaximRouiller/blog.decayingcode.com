@@ -1,6 +1,6 @@
 ---
 title : "Creating and using NuGet packages with Visual Studio Team Services Package Management"
-date: 2017-04-07 10:00
+date: 2017-04-07 10:00:00
 tags: [visual studio, vsts, build, nuget]
 ---
 
