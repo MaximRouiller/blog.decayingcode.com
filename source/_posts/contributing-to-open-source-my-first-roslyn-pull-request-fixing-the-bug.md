@@ -12,6 +12,8 @@ If you haven't done so yet, please check [part 1](/post/contributing-to-open-sou
 
 After getting the environment ready, I decided to actually read what the bug was all about. I did a quick glance at first but I'll be honest... I was hooked by  the "low hanging fruit" description and the "up for grabs" tag. I didn't even understand was I was throwing myself into...
 
+** Update:**  Some issues marked as "up for-grab" does not mean they are easy. If you grab an issue, leave a comment and do not hesitate to ask for help. They are there to help and guide you.
+
 Here's the bug: [dotnet/roslyn/issues/18391](https://github.com/dotnet/roslyn/issues/18391).
 
 So let's read what it is.
