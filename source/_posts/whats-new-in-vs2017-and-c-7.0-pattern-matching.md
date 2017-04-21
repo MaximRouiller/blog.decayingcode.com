@@ -39,7 +39,7 @@ public void Something(object t)
 ```csharp
 public void Something(object t)
 {
-    if(str is string str)
+    if(t is string str)
     {
         //do something
     }
