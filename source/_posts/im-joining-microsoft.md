@@ -36,6 +36,6 @@ Whether it's through blog posts, libraries, conferences and whatever is needed t
 
 I've been working with Azure for the last 3 years. Every chance I got, I ensured that my client would understand and enjoy what they were getting into.
 
-I want to do that will the whole planet now.
+I want to do that with the whole planet now.
 
 Dream big or go home, right?
