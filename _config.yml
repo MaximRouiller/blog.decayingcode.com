@@ -4,7 +4,7 @@
 
 # Site
 title: Decaying Code
-subtitle: Code decay the second it's written. I talk mainly about .NET web technology but whatever works.
+subtitle: Code decays the second it's written. I talk mainly about .NET but I'm cloud focused.
 description:
 author: Maxime Rouiller
 language: en
@@ -64,13 +64,13 @@ pagination_dir: page
 # Sitemap
 sitemap:
   path: sitemap.xml
-  
+
 # Archives
 archive_generator:
   per_page: 20
   yearly: true
   monthly: true
-  
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
@@ -89,4 +89,4 @@ feed:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type: 
+  type:
