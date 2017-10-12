@@ -4,9 +4,11 @@
 
 # Site
 title: Decaying Code
-subtitle: Code decays the second it's written. I talk mainly about .NET but I'm cloud focused.
+subtitle: Without coffee, my code quality is like zombies. It decays.
 description:
 author: Maxime Rouiller
+author_description: I'm a Microsoft Cloud Developer Advocate, full time dad, part time coffee zombie. Without coffee, my code quality is like zombies. It decays.
+author_image_url: /imgs/maxime.jpg
 language: en
 timezone: America/Montreal
 
@@ -77,6 +79,7 @@ archive_generator:
 theme: landscape
 google_analytics: UA-92383-2
 twitter: MaximRouiller
+github: MaximRouiller
 disqus_shortname: decayingcode
 
 # Feed
