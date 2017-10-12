@@ -11,6 +11,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- aboutme
 - recent_posts
 - category
 - tag
