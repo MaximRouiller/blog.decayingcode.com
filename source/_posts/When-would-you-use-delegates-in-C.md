@@ -18,7 +18,7 @@ Of course, it's limiting to think about delegates only as events. If we check th
 
 > In its original usage, delegation refers to one object relying upon another to provide a specified set of functionalities. [...] Delegation is the simple yet powerful concept of handing a task over to another part of the program.
 
-As I already demonstrated inside the [StreamProxy](http://blog.decayingcode.com/2009/01/creating-streamproxy-with.html) class, we can easily give another software the tools&nbsp; to answer it's solution. But sometimes, the call might not be necessary. Just like when you are sending a data repository to a service class to save a model, delegate is basically just sending any method that match the accepted signature&nbsp; instead of complete class.
+As I already demonstrated inside the [StreamProxy](/2009/01/creating-streamproxy-with.html) class, we can easily give another software the tools&nbsp; to answer it's solution. But sometimes, the call might not be necessary. Just like when you are sending a data repository to a service class to save a model, delegate is basically just sending any method that match the accepted signature&nbsp; instead of complete class.
 
 One of the most recent use of Lambda's inside C# is inside Mocking tools. Moq use those to easily describe expectations, returned values, and so on. This allow Moq to be type safe instead of relying on Reflection and string comparison. This has brought us compile time check rather than runtime check.
 

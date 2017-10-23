@@ -4,7 +4,7 @@ date: 2014-03-05 14:10:42
 tags: [community update]
 ---
 
-So since [Part 1](http://blog.decayingcode.com/post/Community-Update-2014-03-05-Part-1-ish-dotnet-aspnet-oauth-and-owin), here’s what’s new.
+So since [Part 1](/post/Community-Update-2014-03-05-Part-1-ish-dotnet-aspnet-oauth-and-owin), here’s what’s new.
 
 We have HTTP API versioning with Nancy and an overview of what is new in WebAPI 2.
 

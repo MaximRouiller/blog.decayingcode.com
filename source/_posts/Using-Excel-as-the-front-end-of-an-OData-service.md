@@ -8,7 +8,7 @@ tags: [tool,wcf,office]
 
 First we’ll start by creating a WCF Data Service
 
-[![image](http://blog.decayingcode.com/posts/files/6cec115e-0346-4876-9c69-4a401f1c1a3b.png "image")](http://blog.decayingcode.com/posts/files/99d4ac28-92a2-4bc0-bec3-ea119926879f.png)
+[![image](/posts/files/6cec115e-0346-4876-9c69-4a401f1c1a3b.png "image")](/posts/files/99d4ac28-92a2-4bc0-bec3-ea119926879f.png)
 
 Once the project is created, we’ll start by deleting Service1.svc and it’s related objects.
 
@@ -23,7 +23,7 @@ Ensure to create an EDMX for your database using EF6\. On my side, I’m using t
 
 Once this is created, we’ll start by creating a brand new service that we’ll call Northwind.svc:
 
-[![image](http://blog.decayingcode.com/posts/files/767f808c-ff0f-410a-a3a1-11f9fa6fdb69.png "image")](http://blog.decayingcode.com/posts/files/c44395fe-fc32-4344-9a0c-0a75524b629d.png)
+[![image](/posts/files/767f808c-ff0f-410a-a3a1-11f9fa6fdb69.png "image")](/posts/files/c44395fe-fc32-4344-9a0c-0a75524b629d.png)
 
 The class it will generate your will not be compilable right away without injecting our classes.
 
@@ -80,15 +80,15 @@ This means we are ready for hooking this up to Excel.
 
 This is surprisingly the easiest part. First, start Excel 2010 or higher and go to the Data tab and click on the following:
 
-[![image](http://blog.decayingcode.com/posts/files/ba9a8c0b-d86e-4667-abf6-0e6e6c2e1d89.png "image")](http://blog.decayingcode.com/posts/files/6db45a86-b3b5-4d6f-b5ac-a02103e127b4.png)
+[![image](/posts/files/ba9a8c0b-d86e-4667-abf6-0e6e6c2e1d89.png "image")](/posts/files/6db45a86-b3b5-4d6f-b5ac-a02103e127b4.png)
 
 This will bring up a popup in which we’ll paste our oData URL:
 
-[![image](http://blog.decayingcode.com/posts/files/f6852b52-25d2-42ba-a8ed-88a02a54c3b6.png "image")](http://blog.decayingcode.com/posts/files/10160f15-f925-4167-b977-8650618640c2.png)
+[![image](/posts/files/f6852b52-25d2-42ba-a8ed-88a02a54c3b6.png "image")](/posts/files/10160f15-f925-4167-b977-8650618640c2.png)
 
 Once you press next you will be prompted to select your table (select Products and click Finish).
 
-[![image](http://blog.decayingcode.com/posts/files/4759acf5-d31f-499d-939e-13f9e1371837.png "image")](http://blog.decayingcode.com/posts/files/243702ff-c21e-479c-a0b3-1348bb83e4bd.png)
+[![image](/posts/files/4759acf5-d31f-499d-939e-13f9e1371837.png "image")](/posts/files/243702ff-c21e-479c-a0b3-1348bb83e4bd.png)
 
 It will ask you where you want your data and how. 
 

@@ -4,7 +4,7 @@ date: 2014-08-19 12:36:55
 tags: [chart,javascript,tool]
 ---
 
-[![chart-line-148256_640](http://blog.decayingcode.com/posts/files/f458b268-45b9-4c28-8a91-3fa2be45d3a0.png "chart-line-148256_640")](http://blog.decayingcode.com/posts/files/e69868e7-ea07-42d4-aa67-b740e7cb6912.png)
+[![chart-line-148256_640](/posts/files/f458b268-45b9-4c28-8a91-3fa2be45d3a0.png "chart-line-148256_640")](/posts/files/e69868e7-ea07-42d4-aa67-b740e7cb6912.png)
 
 Storyboard are charts/graphs that tell a story. 
 
@@ -25,7 +25,7 @@ Sound simple but it took me over 1 hour to actually merge all that data. So cont
 
 Here’s what is the final result: 
 
-[![graphAnimation](http://blog.decayingcode.com/posts/files/4aed0cb2-db6f-46a6-b78f-04174866f069.gif "graphAnimation")](http://blog.decayingcode.com/posts/files/d4eaf6ef-9854-493d-ab57-795f49b7e371.gif)
+[![graphAnimation](/posts/files/4aed0cb2-db6f-46a6-b78f-04174866f069.gif "graphAnimation")](/posts/files/d4eaf6ef-9854-493d-ab57-795f49b7e371.gif)
 
 So this is the result I have. 
 

@@ -4,7 +4,7 @@ date: 2014-07-24 01:09:01
 tags: [misc]
 ---
 
-[![virtualbusiness](http://blog.decayingcode.com/posts/files/f12dd878-74b6-4c14-9cde-c59855bee209.jpg "virtualbusiness")](http://blog.decayingcode.com/posts/files/53de5600-878a-429b-a92c-5474585fa42e.jpg)Many of us a software developer work with computers to avoid contact with people. To be fair, we all had our fair share of clients that would not understand why [we couldn’t draw red lines with green ink](https://www.youtube.com/watch?v=BKorP55Aqvg). I understand the reason why would rather stay away from people who don’t understand what we do.
+[![virtualbusiness](/posts/files/f12dd878-74b6-4c14-9cde-c59855bee209.jpg "virtualbusiness")](/posts/files/53de5600-878a-429b-a92c-5474585fa42e.jpg)Many of us a software developer work with computers to avoid contact with people. To be fair, we all had our fair share of clients that would not understand why [we couldn’t draw red lines with green ink](https://www.youtube.com/watch?v=BKorP55Aqvg). I understand the reason why would rather stay away from people who don’t understand what we do.
 
 However… (there’s always an however) as I recently started my own business recently, I’ve really started to understand the meaning of building your network and staying in contact with people. While being an MVP has always lead me to meet great people all around Montreal, the real value I saw was when it was a very good contact of mine that introduced me to one of my first client. He knew they needed someone with my skills and directly introduced while skipping all the queues. 
 

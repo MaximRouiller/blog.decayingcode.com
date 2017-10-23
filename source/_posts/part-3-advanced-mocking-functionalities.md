@@ -4,7 +4,7 @@ date: 2009-02-22 20:29:00
 tags: []
 ---
 
-See also: [Part 1](http://blog.decayingcode.com/2009/02/part-1-introduction-to-moq.html) - [Part 2](http://blog.decayingcode.com/2009/02/part-2-basic-of-mocking-with-moq.html)
+See also: [Part 1](/2009/02/part-1-introduction-to-moq.html) - [Part 2](/2009/02/part-2-basic-of-mocking-with-moq.html)
 
 When you have some simple scenario like "when the method "GetTax" is called, return 5$" it's a simple scenario that a lot of mockers will see. However, there is some rarer scenario that people will wonder how to do it.
 

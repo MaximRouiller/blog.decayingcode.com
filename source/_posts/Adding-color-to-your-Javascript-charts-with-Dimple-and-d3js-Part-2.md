@@ -4,7 +4,7 @@ date: 2014-08-08 20:43:17
 tags: [chart,tool,javascript]
 ---
 
-![](http://blog.decayingcode.com/posts/files/b8f28463-d5c3-42b1-bf3e-fb4dbf6fbe68.png)
+![](/posts/files/b8f28463-d5c3-42b1-bf3e-fb4dbf6fbe68.png)
 
 So we started by doing some graphs from basic data. But having all the colors the same or maybe even showing bars is not enough.
 
@@ -34,7 +34,7 @@ post2();
 
 And the graph looks like this:
 
-[![image](http://blog.decayingcode.com/posts/files/749cd9e7-88d2-40d9-adbb-ce7dd4998ec8.png "image")](http://blog.decayingcode.com/posts/files/66e483b5-c81d-47e4-b25f-ded0228487fd.png)
+[![image](/posts/files/749cd9e7-88d2-40d9-adbb-ce7dd4998ec8.png "image")](/posts/files/66e483b5-c81d-47e4-b25f-ded0228487fd.png)
 
 Simple enough?
 
@@ -59,7 +59,7 @@ post1();
 
 And here is how it looks like now!
 
-[![image](http://blog.decayingcode.com/posts/files/f4cf6eb8-ddfe-4468-a45e-073e7a93d8a9.png "image")](http://blog.decayingcode.com/posts/files/9a62a216-d11d-489f-9102-2154fcc660df.png)
+[![image](/posts/files/f4cf6eb8-ddfe-4468-a45e-073e7a93d8a9.png "image")](/posts/files/9a62a216-d11d-489f-9102-2154fcc660df.png)
 
 Much prettier!!
 

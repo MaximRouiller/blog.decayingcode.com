@@ -4,7 +4,7 @@ date: 2009-02-11 22:22:00
 tags: []
 ---
 
-See also: &Acirc;&nbsp;[Part 1](http://blog.decayingcode.com/2009/02/part-1-introduction-to-moq.html)&Acirc;&nbsp;- [Part 3](http://blog.decayingcode.com/2009/02/part-3-advanced-mocking-functionalities.html)
+See also: &Acirc;&nbsp;[Part 1](/2009/02/part-1-introduction-to-moq.html)&Acirc;&nbsp;- [Part 3](/2009/02/part-3-advanced-mocking-functionalities.html)
 
 As every mocking framework, except TypeMock which can perform differently, every mocked class can't be sealed and methods that need to be mocked need to be public. If&Acirc;&nbsp; the class is not inheriting from an interface, the method that are being mocked need to be virtual.
 

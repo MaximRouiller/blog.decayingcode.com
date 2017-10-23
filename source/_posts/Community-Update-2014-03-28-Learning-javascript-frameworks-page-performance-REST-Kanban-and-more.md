@@ -6,7 +6,7 @@ tags: [community update]
 
 So the weekend is already there.
 
-If you missed it, don’t forget [my post on SideWaffle](http://blog.decayingcode.com/post/SideWaffle-Or-why-people-are-cheering-every-time-its-mentioned). It’s a Visual Studio Extension that ships with lots of Open Source templates including templates to building templates (INCEPTION!). 
+If you missed it, don’t forget [my post on SideWaffle](/post/SideWaffle-Or-why-people-are-cheering-every-time-its-mentioned). It’s a Visual Studio Extension that ships with lots of Open Source templates including templates to building templates (INCEPTION!). 
 
 Otherwise, have a good weekend and enjoy!
 

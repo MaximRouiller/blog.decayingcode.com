@@ -4,7 +4,7 @@ date: 2014-08-06 21:44:06
 tags: [web,javascript,chart]
 ---
 
-[![chart-line-148256_640](http://blog.decayingcode.com/posts/files/b8f28463-d5c3-42b1-bf3e-fb4dbf6fbe68.png "chart-line-148256_640")](http://blog.decayingcode.com/posts/files/3e4669c3-d71a-4f2e-bee8-47a5e71cbaff.png)
+[![chart-line-148256_640](/posts/files/b8f28463-d5c3-42b1-bf3e-fb4dbf6fbe68.png "chart-line-148256_640")](/posts/files/3e4669c3-d71a-4f2e-bee8-47a5e71cbaff.png)
  > Before I go further, let me give you a link to the source for this blog post [available on Github](https://github.com/MaximRouiller/charting-blog-posts) 
 
 ### 
@@ -65,7 +65,7 @@ $.ajax("/2010-winter-olympics.csv", {
 
 This code is super simple and will display something along those lines:
 
-[![image](http://blog.decayingcode.com/posts/files/7449430a-c54f-47fa-9795-4b1ce762f986.png "image")](http://blog.decayingcode.com/posts/files/310f01d2-d4fe-4bca-8b2e-9474e2b9668a.png)
+[![image](/posts/files/7449430a-c54f-47fa-9795-4b1ce762f986.png "image")](/posts/files/310f01d2-d4fe-4bca-8b2e-9474e2b9668a.png)
 
 Wow. So we are almost ready to go?
 
@@ -85,7 +85,7 @@ chart.draw();
 
 Once we refresh the page, it creates this:
 
-[![image](http://blog.decayingcode.com/posts/files/a826cff1-0300-4786-9ebd-aa2aeba3084b.png "image")](http://blog.decayingcode.com/posts/files/61642094-d59d-43a2-91f5-566ee3ff5fae.png)
+[![image](/posts/files/a826cff1-0300-4786-9ebd-aa2aeba3084b.png "image")](/posts/files/61642094-d59d-43a2-91f5-566ee3ff5fae.png)
 
 Okay… not super pretty, lots of crappy data but… wow. We already have a minimum viable data source. To help us see it better… let’s clean the CSV file. We’ll remove all countries that didn’t win medals.
 
@@ -93,7 +93,7 @@ For our data set, that means from row 28 (Albania).
 
 Let’s refresh.
 
-[![image](http://blog.decayingcode.com/posts/files/f5d92215-53df-4f5e-90a8-589ffba5274f.png "image")](http://blog.decayingcode.com/posts/files/aa164a01-2661-4243-99f2-f8d16980f809.png)
+[![image](/posts/files/f5d92215-53df-4f5e-90a8-589ffba5274f.png "image")](/posts/files/aa164a01-2661-4243-99f2-f8d16980f809.png)
 
 And that’s it. We now have a super basic bar graph. 
 

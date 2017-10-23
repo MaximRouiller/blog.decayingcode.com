@@ -4,7 +4,7 @@ date: 2009-02-04 17:21:00
 tags: []
 ---
 
-See also: &Acirc;&nbsp;[Part 2](http://blog.decayingcode.com/2009/02/part-2-basic-of-mocking-with-moq.html)&Acirc;&nbsp;-&Acirc;&nbsp;[Part 3](http://blog.decayingcode.com/2009/02/part-3-advanced-mocking-functionalities.html)
+See also: &Acirc;&nbsp;[Part 2](/2009/02/part-2-basic-of-mocking-with-moq.html)&Acirc;&nbsp;-&Acirc;&nbsp;[Part 3](/2009/02/part-3-advanced-mocking-functionalities.html)
 
 This is the first post of a serie on mocking with [Moq](http://code.google.com/p/moq/ "Moq"). I'll be giving a conference a [.NET Montreal Community](http://www.dotnetmontreal.com/ ".NET Montreal Community") on February 25th and I though there it would be good reference to anyone attending the [@Lunch event](http://www.dotnetmontreal.com/dnn/Accueil/tabid/36/ModuleID/398/ItemID/29/mctl/EventDetails/language/en-CA/Default.aspx?selecteddate=25/02/2009).
 

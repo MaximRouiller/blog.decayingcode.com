@@ -8,7 +8,7 @@ How often do you get on a project and just to assess where are things… you ope
 
 Then… you see this.
 
-[![image](http://blog.decayingcode.com/posts/files/010e108a-8c5d-446e-8236-d66baf5127fd.png "image")](http://blog.decayingcode.com/posts/files/b2c1e487-3473-478f-8171-4ceaa527de12.png)
+[![image](/posts/files/010e108a-8c5d-446e-8236-d66baf5127fd.png "image")](/posts/files/b2c1e487-3473-478f-8171-4ceaa527de12.png)
 
 I mean… there’s everything in there. From Javscript dependencies to ORM. You know that you are in for a world of trouble.
 
@@ -28,7 +28,7 @@ Usual case? Compile errors everywhere that you will need to fix ASAP before comm
 
 Worse case? Something breaks in production and it takes us to this:
 
-[![code_test_meme](http://blog.decayingcode.com/posts/files/cfd8e201-b3b0-48f0-8b82-affdf6e9ad54.jpg "code_test_meme")](http://blog.decayingcode.com/posts/files/e14f87dd-fcdc-4e56-bfd1-833918233790.jpg)
+[![code_test_meme](/posts/files/cfd8e201-b3b0-48f0-8b82-affdf6e9ad54.jpg "code_test_meme")](/posts/files/e14f87dd-fcdc-4e56-bfd1-833918233790.jpg)
 
 ### Solution B: Update safely a.k.a The Boss Approach 
 
@@ -40,7 +40,7 @@ First, you open up “View &gt; Other Windows &gt; Package Manager Console”. Y
 
 It will look like this: 
 
-[![image](http://blog.decayingcode.com/posts/files/3858e876-2a72-4b15-8a82-d20f8f5bc5fb.png "image")](http://blog.decayingcode.com/posts/files/b1525815-df40-4567-b016-b01b8588dc74.png)
+[![image](/posts/files/3858e876-2a72-4b15-8a82-d20f8f5bc5fb.png "image")](/posts/files/b1525815-df40-4567-b016-b01b8588dc74.png)
 
 What is this? This beauty is Powershell. Yes. It’s awesome. There’s even [a song about it](https://www.youtube.com/watch?v=Z42M8GT4lSc). 
 
@@ -62,6 +62,6 @@ This little “Safe” switch will only upgrade Revisions and will not touch Maj
 
 That’s it. Now you can recompile your app and most of your app should have all bug fixes for current Major+Minor versions applied.
 
-[![like-a-boss](http://blog.decayingcode.com/posts/files/4c5dc1e5-8454-4f8e-b328-4fe70c0ba56f.jpg "like-a-boss")](http://blog.decayingcode.com/posts/files/29bc51b6-92bb-4647-b51f-776d96fad2bd.jpg)
+[![like-a-boss](/posts/files/4c5dc1e5-8454-4f8e-b328-4fe70c0ba56f.jpg "like-a-boss")](/posts/files/29bc51b6-92bb-4647-b51f-776d96fad2bd.jpg)
 
 If you want to read more about Semantic Versioning (which is what NuGet uses), go read [Alexandre Brisebois’ post](http://alexandrebrisebois.wordpress.com/2014/08/11/how-do-you-version-packages/) on it. Very informative and straight to the point.

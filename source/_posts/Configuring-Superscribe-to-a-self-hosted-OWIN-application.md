@@ -4,7 +4,7 @@ date: 2014-05-29 17:17:50
 tags: [owin,superscribe]
 ---
 
-We’ll start from my [previous post](http://blog.decayingcode.com/post/creating-a-self-hosted-owin-application) with a single console application with a self-hosted OWIN instance.
+We’ll start from my [previous post](/post/creating-a-self-hosted-owin-application) with a single console application with a self-hosted OWIN instance.
 
 The goal here is to provide a routing system so that we can route our application in different section. I could use something like WebAPI but the routing and the application itself are tightly linked.
 
