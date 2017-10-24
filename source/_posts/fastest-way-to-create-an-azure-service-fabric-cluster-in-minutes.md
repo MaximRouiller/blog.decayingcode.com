@@ -12,6 +12,18 @@ So let's check it out.
 az sf cluster create --resource-group demo -l eastus --name myawesomecluster --vm-user-name maxime --vm-password P@ssw0rd1! --cluster-size 3 --certificate-subject-name mycluster --certificate-password P@ssw0rd1! --certificate-output-folder .\ --vault-name myawesomevault --vault-resource-group demo
 ```
 
+That's bit a long... let me explode it line by line
+
+```bash
+az sf cluster create --resource-group demo -l eastus --name myawesomecluster 
+--vm-user-name maxime --vm-password P@ssw0rd1! 
+--cluster-size 3 
+--certificate-subject-name mycluster 
+--certificate-password P@ssw0rd1! 
+--certificate-output-folder .\ 
+--vault-name myawesomevault --vault-resource-group demo
+```
+
 Woah... That's a mouthful... Let's see. First, we're specifying our resource group, location and name of our cluster. Do we need to create those? Oh no. It'll be handled for you. If the resource group exist, it will use it. If it's missing, it will create it for you. I recommend creating a new one.
 
 VM Size? The default at the time of writing the [Standard_D2_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general#dv2-series) which is a general purpose Virtual Machine with 2 cores and 7 GiB of memory. They are at about $240 USD per months so... if you don't need that much, please specify a different SKU one with the flag `--vm-sku`. If you're looking for something specific, check out my [Azure Virtual Machine Size Browser](https://vmsizebrowser.azurewebsites.net/) to help you make a choice. There are cheaper choices and I will come back to that later.
