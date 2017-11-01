@@ -1,6 +1,6 @@
 ---
 title : "Breaking the shackles of server frameworks with static content"
-date: 2017-11-01 11:00:34
+date: 2017-11-01 15:30:00
 tags: [static content, open source,wyam,hugo]
 ---
 
