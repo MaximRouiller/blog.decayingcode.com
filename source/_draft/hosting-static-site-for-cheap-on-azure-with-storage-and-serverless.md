@@ -1,7 +1,7 @@
 ---
-title : ""
-date: 
-tags: []
+title : "Hosting static site for cheap on Azure with Storage and Serverless"
+date: 2017-11-06 09:00:00
+tags: [azure,static content,serverless,storage]
 ---
 
 So, [I recently talked about going Static](/posts/breaking-the-shackles-of-server-frameworks-with-static-content), but I didn't talk about how to deploy it.
@@ -67,7 +67,7 @@ So we'll need to create a Function using the following code.
 az functionapp create -n hugoblogapp -g staticblog-test -s hugoblog2 -c eastus2
 ```
 
-Then, we create a `proxies.json` file to configure URL routing to our blob storage. **WARNING**: This is ugly. I mean it. Right now, it can only match by url segment (like ASP.NET MVC), and it's not pretty. If you want a feature request, check with the [Azure Functions team on Twitter](https://twitter.com/AzureFunctions).
+Then, we create a `proxies.json` file to configure URL routing to our blob storage. **WARNING**: This is ugly. I mean it. Right now, it can only match by url segment (like ASP.NET MVC), and it's not ideal. The good news is that the Azure Functions team is very receptive to feature request, and if you need something specific, ask them [on Twitter](https://twitter.com/AzureFunctions) or on [Github](https://github.com/Azure/Azure-Functions/issues).
 
 ```json
 {
@@ -121,7 +121,7 @@ git remote add azure $git
 git push azure master
 ```
 
-If your file wasn't in there before, I'd be using vscode to create the file, add it, commit it and push it.
+If your file wasn't in there before, I'd be using Visual Studio Code to create the file, add it, commit it and push it.
 
 ```powershell
 code proxies.json # copy/paste the content above and change your blob url
@@ -148,8 +148,10 @@ Even though it's the "minimum amount of building blocks", I still think that it'
 
 The [second highest uservoice](https://feedback.azure.com/forums/217298-storage/suggestions/6417741-static-website-hosting-in-azure-blob-storage) that they have is about supporting complete static site without any workarounds.
 
-I highly invite you to vote on it. It would add support for default files and other necessary features. Once implemented, this blog post will be unnecessary.
+Once implemented, this blog post will be unnecessary.
 
 ## What next?
 
 Thinking creatively with Azure allows you to perform some great cost saving. If you keep this mindset, Azure will become a set of building blocks on which you will build awesomeness. 
+
+Are you using static sites? Was this content useful? Let me know in the comments!
