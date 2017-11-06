@@ -1,6 +1,6 @@
 ---
 title : "Enable Transparent Data Encryption on SQL Azure Database"
-date: 2017-01-31 10:00
+date: 2017-01-31 10:00:00
 tags: [azure, sql]
 ---
 

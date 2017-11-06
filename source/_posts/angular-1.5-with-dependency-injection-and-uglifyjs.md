@@ -1,6 +1,6 @@
 ---
 title : "Angular 1.5+ with dependency injection and uglifyjs"
-date: 2017-02-01 09:30
+date: 2017-02-01 09:30:00
 tags: [angularjs, javascript]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title : "Azure Day is coming to Montreal January 17th 2017"
-date: 2016-12-22 09:00
+date: 2016-12-22 09:00:00
 tags: [azure]
 ---
 

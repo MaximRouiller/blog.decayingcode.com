@@ -1,6 +1,6 @@
 ---
 title : "Atom: Adding Reveal in TreeView with the ReSharper Locate File Shortcut"
-date: 2016-10-25 09:00
+date: 2016-10-25 09:00:00
 tags: [atom]
 ---
 

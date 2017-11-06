@@ -1,6 +1,6 @@
 ---
 title: "Cross Platform PDF generation with ASP.NET Core and PhantomJS"
-date: 2016-07-14 10:00
+date: 2016-07-14 10:00:00
 tags: [asp.net core, tools]
 ---
 

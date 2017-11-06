@@ -1,6 +1,6 @@
 ---
 title : "Contributing to Open-Source - My first roslyn pull request - Fixing the bug"
-date: 2017-04-04 13:30
+date: 2017-04-04 13:30:00
 tags: [open source, c#,  .net, visual studio]
 ---
 

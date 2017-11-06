@@ -1,6 +1,6 @@
 ---
 title : "What's new in .NET Core 1.0? - New Project System"
-date: 2017-04-05 13:00
+date: 2017-04-05 13:00:00
 tags: [c#, visual studio, .net core]
 ---
 

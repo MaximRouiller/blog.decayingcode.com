@@ -1,6 +1,6 @@
 ---
 title : "Remove the X from Internet Explorer and Chrome input type search"
-date: 2016-07-25 09:00
+date: 2016-07-25 09:00:00
 tags: [css, html]
 ---
 

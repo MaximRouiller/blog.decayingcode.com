@@ -1,6 +1,6 @@
 ---
 title : "Localizing Auth0 Single Sign-on text for Lock v9.2.2"
-date: 2016-07-28 10:00
+date: 2016-07-28 10:00:00
 tags: [angularjs, auth0, css]
 ---
 

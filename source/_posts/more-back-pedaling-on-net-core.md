@@ -1,6 +1,6 @@
 ---
 title: "More back pedaling on .NET Core"
-date: 2016-06-15 08:00
+date: 2016-06-15 08:00:00
 tags: [asp.net,opinion]
 ---
 

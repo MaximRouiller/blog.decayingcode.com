@@ -1,6 +1,6 @@
 ---
 title : "Ajax requests in a loop and other scoping problems with JavaScript"
-date: 2016-08-30 12:00
+date: 2016-08-30 12:00:00
 tags: [javascript]
 ---
 

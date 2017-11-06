@@ -1,6 +1,6 @@
 ---
 title: "TypeScript or good old JavaScript?"
-date: 2016-07-11 10:13
+date: 2016-07-11 10:13:00
 tags: [javascript, typescript]
 ---
 

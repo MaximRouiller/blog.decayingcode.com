@@ -1,6 +1,6 @@
 ---
 title : "Setting up ESLint rules with AngularJS in a project using gulp"
-date: 2017-02-08 10:00
+date: 2017-02-08 10:00:00
 tags: [angularjs, javascript, gulp]
 ---
 

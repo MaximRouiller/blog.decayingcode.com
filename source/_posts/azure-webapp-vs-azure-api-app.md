@@ -1,6 +1,6 @@
 ---
 title : "Azure WebApp vs Azure API App"
-date: 2016-10-11 12:00
+date: 2016-10-11 12:00:00
 tags: [azure]
 ---
 

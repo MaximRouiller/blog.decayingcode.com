@@ -1,6 +1,6 @@
 ---
 title : "Extracting your Toggl data to Azure Blob Storage"
-date: 2016-08-23 09:00
+date: 2016-08-23 09:00:00
 tags: [.net core, azure, .net, c#]
 ---
 

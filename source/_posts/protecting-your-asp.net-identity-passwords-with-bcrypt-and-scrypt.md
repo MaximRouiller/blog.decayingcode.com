@@ -1,6 +1,6 @@
 ---
 title: "Protecting your ASP.NET Identity passwords with bcrypt and scrypt"
-date: 2016-07-18 08:00
+date: 2016-07-18 08:00:00
 tags: [asp.net core, security]
 ---
 

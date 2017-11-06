@@ -1,6 +1,6 @@
 ---
 title : "Which is best? Azure AppService or Azure Cloud Service?"
-date: 2016-10-12 16:00
+date: 2016-10-12 16:00:00
 tags: [azure]
 ---
 

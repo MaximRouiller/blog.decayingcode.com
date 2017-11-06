@@ -1,6 +1,6 @@
 ---
 title: "How NOT to copy one BlockBlob to another in Azure"
-date: 2016-06-22 12:00
+date: 2016-06-22 12:00:00
 tags: [azure,storage]
 ---
 

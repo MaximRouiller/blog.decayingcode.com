@@ -1,6 +1,6 @@
 ---
 title : "Do not miss Microsoft Connect 2016"
-date: 2016-11-14 15:00
+date: 2016-11-14 15:00:00
 tags: [azure, .net core]
 ---
 

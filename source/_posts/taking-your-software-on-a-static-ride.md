@@ -1,6 +1,6 @@
 ---
 title: "Taking your software on a static ride"
-date: 2016-06-21 08:00
+date: 2016-06-21 08:00:00
 tags: [azure,static content,git]
 ---
 

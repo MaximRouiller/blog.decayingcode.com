@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - Literals"
-date: 2017-03-28 09:00
+date: 2017-03-28 09:00:00
 tags: [c#, visual studio, .net]
 ---
 

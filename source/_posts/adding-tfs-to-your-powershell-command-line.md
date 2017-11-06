@@ -1,6 +1,6 @@
 ---
 title : "Adding TFS to your Powershell Command Line"
-date: 2017-03-17 10:00
+date: 2017-03-17 10:00:00
 tags: [tfs, powershell]
 ---
 

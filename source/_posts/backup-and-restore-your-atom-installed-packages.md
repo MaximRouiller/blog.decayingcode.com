@@ -1,6 +1,6 @@
 ---
 title: 'Backup and restore your Atom installed packages'
-date: '2016-07-19 12:00'
+date: 2016-07-19 12:00:00
 tags: [atom,tool,web]
 ---
 

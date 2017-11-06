@@ -1,6 +1,6 @@
 ---
 title : "The Lift and Shift Cloud Migration Strategy"
-date: 2016-10-21 08:00
+date: 2016-10-21 08:00:00
 tags: [azure]
 ---
 

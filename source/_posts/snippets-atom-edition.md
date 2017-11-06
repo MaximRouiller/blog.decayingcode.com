@@ -1,6 +1,6 @@
 ---
 title: "Snippets: Atom Edition"
-date: 2016-07-12 10:30
+date: 2016-07-12 10:30:00
 tags: [snippet, atom]
 ---
 

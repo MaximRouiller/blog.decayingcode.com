@@ -1,6 +1,6 @@
 ---
 title : "Managed Disk is now in GA - Convert all your VMs now!"
-date: 2017-02-09 09:00
+date: 2017-02-09 09:00:00
 tags: [azure, vm]
 ---
 

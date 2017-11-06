@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017? - Lightweight Solution Load"
-date: 2017-04-04 09:00
+date: 2017-04-04 09:00:00
 tags: [visual studio]
 ---
 

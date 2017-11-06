@@ -1,6 +1,6 @@
 ---
 title : "Are your servers really less expensive than the cloud?"
-date: 2016-10-28 08:00
+date: 2016-10-28 08:00:00
 tags: [azure]
 ---
 

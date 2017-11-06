@@ -1,6 +1,6 @@
 ---
 title : "Yarn 0.17 is out. Time to ditch npm."
-date: 2016-11-15 09:00
+date: 2016-11-15 09:00:00
 tags: [javascript,tool]
 ---
 

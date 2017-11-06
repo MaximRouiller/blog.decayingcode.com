@@ -1,6 +1,6 @@
 ---
 title: "Using Static Content Generation in ASP.NET Core"
-date: 2016-06-30 13:00
+date: 2016-06-30 13:00:00
 tags: [asp.net core, middleware, static content, azure]
 ---
 

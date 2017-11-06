@@ -1,6 +1,6 @@
 ---
 title : "Contributing to Open-Source - My first roslyn pull request - Getting the environment ready"
-date: 2017-04-04 12:30
+date: 2017-04-04 12:30:00
 tags: [open source, c#,  .net, visual studio]
 ---
 

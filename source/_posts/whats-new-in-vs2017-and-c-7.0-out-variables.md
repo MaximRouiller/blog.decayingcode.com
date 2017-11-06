@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - Out Variables"
-date: 2017-03-29 09:10
+date: 2017-03-29 09:10:00
 tags: [c#, visual studio, .net]
 ---
 

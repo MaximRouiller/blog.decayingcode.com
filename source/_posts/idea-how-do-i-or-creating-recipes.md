@@ -1,6 +1,6 @@
 ---
 title: "Idea: How do I...? Or creating recipes."
-date: 2016-06-27 12:00
+date: 2016-06-27 12:00:00
 tags: [community, tool, azure]
 ---
 

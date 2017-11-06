@@ -1,6 +1,6 @@
 ---
 title: "Debugging the web with Chrome"
-date: 2016-07-07 10:44
+date: 2016-07-07 10:44:00
 tags: [javascript,tool,web]
 ---
 

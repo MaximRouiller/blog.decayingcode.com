@@ -1,6 +1,6 @@
 ---
 title : "Cleaning up Azure Resource Manager Deployments in Continuous Integration Scenario"
-date: 2016-11-16 13:00
+date: 2016-11-16 13:00:00
 tags: [azure, deployment]
 ---
 

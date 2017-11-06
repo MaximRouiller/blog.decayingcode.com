@@ -1,6 +1,6 @@
 ---
 title : "Shooting yourself in the foot with C# Tasks - ContinueWith"
-date: 2016-07-20 09:00
+date: 2016-07-20 09:00:00
 tags: [c#, async]
 ---
 

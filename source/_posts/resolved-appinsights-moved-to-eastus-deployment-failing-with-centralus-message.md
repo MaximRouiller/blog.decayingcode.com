@@ -1,6 +1,6 @@
 ---
 title : "Resolved: AppInsights moved to EastUS, deployment failing with CentralUS message"
-date: 2016-11-21 13:30
+date: 2016-11-21 13:30:00
 tags: [azure, appinsights]
 ---
 

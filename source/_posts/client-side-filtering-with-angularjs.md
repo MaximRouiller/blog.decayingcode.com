@@ -1,6 +1,6 @@
 ---
 title: "Client side filtering with angularjs"
-date: 2016-06-30 08:30
+date: 2016-06-30 08:30:00
 tags: [angularjs, javascript]
 ---
 
