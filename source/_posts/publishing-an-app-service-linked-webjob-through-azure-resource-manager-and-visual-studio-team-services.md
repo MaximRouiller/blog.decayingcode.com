@@ -1,6 +1,6 @@
 ---
 title : "Publishing an App Service linked WebJob through Azure Resource Manager and Visual Studio Team Services"
-date: 2016-07-27 12:00
+date: 2016-07-27 12:00:00
 tags: [azure, webjobs]
 ---
 

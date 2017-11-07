@@ -1,6 +1,6 @@
 ---
 title: "Importing your AppInsights Instrumentation Key directly into your AppSettings"
-date: 2016-06-07 15:00
+date: 2016-06-07 15:00:00
 tags: [azure, appinsights]
 ---
 So I had an application recently that needed to use AppInsights. The application was deployed using Visual Studio Release Management so everything needed to be deployed using the Azure Resource Management template.

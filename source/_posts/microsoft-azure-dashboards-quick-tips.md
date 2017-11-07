@@ -1,6 +1,6 @@
 ---
 title : "Microsoft Azure Dashboards quick tips"
-date: 2017-01-06 10:00
+date: 2017-01-06 10:00:00
 tags: [azure]
 ---
 

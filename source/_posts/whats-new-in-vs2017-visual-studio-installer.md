@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017? - Visual Studio Installer"
-date: 2017-04-04 12:00
+date: 2017-04-04 12:00:00
 tags: [visual studio]
 ---
 

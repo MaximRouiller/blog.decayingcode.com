@@ -1,6 +1,6 @@
 ---
 title : "What's new in VS2017 and C# 7.0? - More Expression Body"
-date: 2017-03-31 09:01
+date: 2017-03-31 09:01:00
 tags: [c#, visual studio, .net]
 ---
 

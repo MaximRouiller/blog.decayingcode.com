@@ -1,6 +1,6 @@
 ---
 title: "Snippets: Visual Studio Edition"
-date: 2016-07-12 10:00
+date: 2016-07-12 10:00:00
 tags: [snippet, visual studio]
 ---
 

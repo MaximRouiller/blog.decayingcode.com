@@ -1,6 +1,6 @@
 ---
 title : "Creating .NET Core Console WebJobs on an ASP.NET Core Azure WebApp"
-date: 2016-09-28 12:00
+date: 2016-09-28 12:00:00
 tags: [azure, webjobs,.net core, asp.net core]
 ---
 
