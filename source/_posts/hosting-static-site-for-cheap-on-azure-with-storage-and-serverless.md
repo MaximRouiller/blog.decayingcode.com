@@ -4,7 +4,7 @@ date: 2017-11-06 09:00:00
 tags: [azure,static content,serverless,storage]
 ---
 
-So, [I recently talked about going Static](/posts/breaking-the-shackles-of-server-frameworks-with-static-content), but I didn't talk about how to deploy it.
+So, [I recently talked about going Static](/post/breaking-the-shackles-of-server-frameworks-with-static-content), but I didn't talk about how to deploy it.
 
 My favorite host is Azure. Yes, I could probably go with different hosts, but Azure is just so easy to use that I don't see myself changing anytime soon.
 
