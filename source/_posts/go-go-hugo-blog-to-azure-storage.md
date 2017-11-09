@@ -1,6 +1,6 @@
 ---
 title : "GO GO Hugo Blog to Azure Storage"
-date: 2017-11-09 10:56:49
+date: 2017-11-09 11:11:11
 tags: [azure, storage, hugo, static content]
 ---
 [Previously](/post/hosting-static-site-for-cheap-on-azure-with-storage-and-serverless), we saw how to serve our static site out of blob storage.
