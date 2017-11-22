@@ -2,11 +2,11 @@
   <div id="banner"></div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
+      <h1 id="logo-wrap" itemprop="name">
         <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
       </h1>
       <% if (theme.subtitle){ %>
-        <h2 id="subtitle-wrap">
+        <h2 id="subtitle-wrap" itemprop="headline">
           <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
         </h2>
       <% } %>

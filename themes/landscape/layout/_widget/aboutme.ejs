@@ -1,7 +1,7 @@
-<div class="widget-wrap">
+<div class="widget-wrap" itemscope itemtype="http://schema.org/Person" itemprop="author" >
     <h3 class="widget-title">
         About
-        <%- config.author %>
+        <span itemprop="name"><%- config.author %></span>
     </h3>
     <style>
         /* Use for round responsive profile picture*/
@@ -43,11 +43,11 @@
             text-decoration: none;
         }
     </style>
-    <div class="widget">
-        <p>
+    <div class="widget" >
+        <p itemprop="image">
             <img src="<%-config.author_image_url %>" class="circle" alt="<%- config.author%>" />
         </p>
-        <p>
+        <p itemprop="description">
             <%-config.author_description %>
         </p>
 
