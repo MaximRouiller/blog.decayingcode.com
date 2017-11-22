@@ -34,13 +34,13 @@ HTML as well as it's "human readable" really is not. Once you start creating com
 Writing a link in Markdown is something like this:
 
 ```md
-[My Blog](http://blog.decayingcode.com)
+[My Blog](http://blog.maximerouiller.com)
 ```
 
 And in HTML it goes to this:
 
 ```html
-<a href="http://blog.decayingcode.com" alt="">My Blog</a>
+<a href="http://blog.maximerouiller.com" alt="">My Blog</a>
 ```
 
 That's why I think that a format like [Markdown][4] is the way to go. You write the semantic you want and let the markdown renderer generate the proper HTML. Markdown is the source. HTML is the compilation.
