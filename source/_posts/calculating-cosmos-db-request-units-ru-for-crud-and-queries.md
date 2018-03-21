@@ -4,6 +4,10 @@ date: 2018-03-19 11:30:00
 tags: [azure, cosmosdb, performance]
 ---
 
+Video version also available
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4lYx-aG3sFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 Cosmos DB is a globally distributed database that offers single-digit-millisecond latencies on multiple models. That's a lot of power under the hood. As you may be tempted to use as much of it as possible, you have to remember that you are billed for what you use.
 
 Cosmos DB they measure your actual usage of the service on [Request Units (RU)](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units?WT.mc_id=content-blog-marouill#introduction). 
