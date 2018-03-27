@@ -78,7 +78,7 @@ using Gremlin.Net.Structure.IO.GraphSON;
 
 Your `authKey` will be found in your Azure Portal right here:
 
-![Location in the portal where we get our Cosmos DB Key]()
+![Location in the portal where we get our Cosmos DB Key](/posts/files/graph101-cosmosdb/Cosmosdb-keys.png)
 
 Or alternatively, you could run the following Azure CLI 2.0 command to retrieve both of them:
 
