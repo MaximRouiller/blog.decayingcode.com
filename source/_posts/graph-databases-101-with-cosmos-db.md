@@ -78,7 +78,7 @@ using Gremlin.Net.Structure.IO.GraphSON;
 
 Your `authKey` will be found in your Azure Portal right here:
 
-![Location in the portal where we get our Cosmos DB Key](/posts/files/graph101-cosmosdb/Cosmosdb-keys.png)
+![Location in the portal where we get our Cosmos DB Key](/posts/files/graph101-cosmosdb/cosmosdb-keys.png)
 
 Or alternatively, you could run the following Azure CLI 2.0 command to retrieve both of them:
 
@@ -137,7 +137,7 @@ await gremlinClient.SubmitAsync<dynamic>("g.V('nordet-ipa').addE('madeBy').to(g.
 
 If we run that code as-is, we should have the following show up in our Azure Cosmos DB Data Explorer.
 
-![Image of the represented graph]
+![Image of the represented graph](/posts/files/graph101-cosmosdb/graph.png)
 
 ## Conclusion
 
