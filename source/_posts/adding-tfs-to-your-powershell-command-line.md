@@ -61,4 +61,4 @@ Is there any other tools that you are using that are not registered in the defau
 
 If you want to know more about how to use the `tf` command, you should definitely take a look at the list of commands.
 
-[TFVS Command Reference](https://www.visualstudio.com/en-us/docs/tfvc/use-team-foundation-version-control-commands)
+[TFVS Command Reference](https://www.visualstudio.com/en-us/docs/tfvc/use-team-foundation-version-control-commands?WT.mc_id=maximerouiller-blog-marouill)
