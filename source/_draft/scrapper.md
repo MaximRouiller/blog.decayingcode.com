@@ -1,5 +1,5 @@
 ---
-title : "Cloud Scale API scrapping with serverless orchestrators"
+title : "Cloud Scale API scraping with serverless orchestrators"
 date: 
 tags: [azure,serverless]
 ---
@@ -18,7 +18,7 @@ Now, we have that problem too in our Azure-Samples org and it's one of the many 
 
 # File -> New Project -> Console Application
 
-Our first instinct as programmers is to try to do it once through a console application. It's the minimum amount of complexity. So, I went ahead and started by consulting the [GitHub API documentation](), created a GitHub token and started hunting for the information I was looking for.
+Our first instinct as programmers is to try to do it once through a console application. It's the minimum amount of complexity. So, I went ahead and started by consulting the [GitHub API documentation](https://developer.github.com/v3/), created a GitHub token and started hunting for the information I was looking for.
 
 # First problem: Running locally
 
@@ -34,9 +34,9 @@ Alright. Now what is a *Durable* Function? With durable, it's all about orchestr
 
 One of the cloud design pattern used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=none-blog-marouill). This allows you to start X number of Functions, collect their results and, when they are all complete, execute an action. Without the Durable Functions extension, you would have to handle the events, the storage, as well as handling every component of a Function's execution. Durable Functions takes all of this and exposes an API does all the job for you.
 
-That is what we're going to use for my scrapping of information from GitHub.
+That is what we're going to use for my scraping of information from GitHub.
 
-# Fan-out in a web scrapping scenario
+# Fan-out in a web scraping scenario
 
 So what does the code for a fan-out orchestrator looks like?
 
@@ -122,4 +122,4 @@ Then, here's a list of resources to get you started on Azure Functions:
 * [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=none-blog-marouill)
 * [Creating your first function in the Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=none-blog-marouill)
 * [Running Azure Functions on a Timer Trigger](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function?WT.mc_id=none-blog-marouill)
-* [Installing the Durable Functions extensions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install)
+* [Installing the Durable Functions extensions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install?WT.mc_id=none-blog-marouill)
