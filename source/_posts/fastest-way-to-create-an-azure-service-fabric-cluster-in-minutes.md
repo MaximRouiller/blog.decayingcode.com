@@ -26,7 +26,7 @@ az sf cluster create --resource-group demo -l eastus --name myawesomecluster
 
 Woah... That's a mouthful... Let's see. First, we're specifying our resource group, location and name of our cluster. Do we need to create those? Oh no. It'll be handled for you. If the resource group exist, it will use it. If it's missing, it will create it for you. I recommend creating a new one.
 
-VM Size? The default at the time of writing the [Standard_D2_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general#dv2-series) which is a general purpose Virtual Machine with 2 cores and 7 GiB of memory. They are at about $240 USD per months so... if you don't need that much, please specify a different SKU one with the flag `--vm-sku`. If you're looking for something specific, check out my [Azure Virtual Machine Size Browser](https://vmsizebrowser.azurewebsites.net/) to help you make a choice. There are cheaper choices and I will come back to that later.
+VM Size? The default at the time of writing the [Standard_D2_v2](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-general?WT.mc_id=maximerouiller-blog-marouill#dv2-series) which is a general purpose Virtual Machine with 2 cores and 7 GiB of memory. They are at about $240 USD per months so... if you don't need that much, please specify a different SKU one with the flag `--vm-sku`. If you're looking for something specific, check out my [Azure Virtual Machine Size Browser](https://vmsizebrowser.azurewebsites.net/) to help you make a choice. There are cheaper choices and I will come back to that later.
 
 Cluster Size? One if you are testing your development scenarios. I'd start with three if you are just testing some actual code. Five at a minimum if you intend to run this in production. 
 
@@ -70,13 +70,13 @@ If you want to read more about Service Fabric, I'd start with some selected read
 
 I've structured the following list of links to give you a progressive knowledge of Service Fabric.
 
-* [Big picture overview of the different Service Fabric Concepts](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-content-roadmap?WT_mc.id=blog-marouill)
-* [Terminology](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-technical-overview?WT_mc.id=blog-marouill)
-* [Service Fabric Architecture](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-architecture?WT_mc.id=blog-marouill)
-* [Application Scenarios](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-scenarios?WT_mc.id=blog-marouill)
+* [Big picture overview of the different Service Fabric Concepts](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-content-roadmap?WT.mc_id=maximerouiller-blog-marouill)
+* [Terminology](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-technical-overview?WT.mc_id=maximerouiller-blog-marouill)
+* [Service Fabric Architecture](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-architecture?WT.mc_id=maximerouiller-blog-marouill)
+* [Application Scenarios](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-application-scenarios?WT.mc_id=maximerouiller-blog-marouill)
 
 ### Creating that first app and deploying it to our newly created service
 
-* [Creating and deploying a .NET Core Application on Service Fabric](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app?WT_mc.id=blog-marouill)
-* [Deploying the application to a Party Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster?WT_mc.id=blog-marouill)
+* [Creating and deploying a .NET Core Application on Service Fabric](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-create-dotnet-app?WT.mc_id=maximerouiller-blog-marouill)
+* [Deploying the application to a Party Cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-tutorial-deploy-app-to-party-cluster?WT.mc_id=maximerouiller-blog-marouill)
     * In this scenario, we would just replace the Party Cluster URL with the one we created earlier.

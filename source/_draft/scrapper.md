@@ -28,11 +28,11 @@ For starters, once you know all the repositories it's a distributed problem. How
 
 # Introducing Durable Functions
 
-So we all know what serverless is. If you need a refresher, you can review the [Azure Functions Overview](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=none-blog-marouill) on what is possible.
+So we all know what serverless is. If you need a refresher, you can review the [Azure Functions Overview](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill) on what is possible.
 
 Alright. Now what is a *Durable* Function? With durable, it's all about orchestration. Just like an orchestrator in music leads the musicians, each musicians is responsible for their own thing. In terms of Azure Functions, or orchestrator is in charge of telling when a Function start and when to wait for it. So what can be done?
 
-One of the cloud design pattern used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=none-blog-marouill). This allows you to start X number of Functions, collect their results and, when they are all complete, execute an action. Without the Durable Functions extension, you would have to handle the events, the storage, as well as handling every component of a Function's execution. Durable Functions takes all of this and exposes an API does all the job for you.
+One of the cloud design pattern used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=maximerouiller-blog-marouill). This allows you to start X number of Functions, collect their results and, when they are all complete, execute an action. Without the Durable Functions extension, you would have to handle the events, the storage, as well as handling every component of a Function's execution. Durable Functions takes all of this and exposes an API does all the job for you.
 
 That is what we're going to use for my scraping of information from GitHub.
 
@@ -64,7 +64,7 @@ Once all of them are done, we wait for all of them to finish and we optionally r
 
 And that's it. Every function will only be called once except the orchestrator. The Function with an `[OrchestrationTrigger]` is always considered an Orchestrator and can be run multiple time. 
 
-[`OrchestrationTrigger` behave widely differently than normal Azure Function.](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=none-blog-marouill#trigger-behavior) **THIS IS IMPORTANT.** Don't execute requests to resources (SQL, Storage, API, etc.) in there. This function will be orchestrating the other functions and for my result set, I've seen it ran 10+ times.
+[`OrchestrationTrigger` behave widely differently than normal Azure Function.](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=maximerouiller-blog-marouill#trigger-behavior) **THIS IS IMPORTANT.** Don't execute requests to resources (SQL, Storage, API, etc.) in there. This function will be orchestrating the other functions and for my result set, I've seen it ran 10+ times.
 
 # Taking things up a notch
 
@@ -115,11 +115,11 @@ However, if other teams were to query GitHub some more, I'd need to look into im
 
 # Try it out
 
-If you want to try it out, Azure Functions comes with a free quota. If you need an account, [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=none-blog-marouill).
+If you want to try it out, Azure Functions comes with a free quota. If you need an account, [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=maximerouiller-blog-marouill).
 
 Then, here's a list of resources to get you started on Azure Functions:
 
-* [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=none-blog-marouill)
-* [Creating your first function in the Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=none-blog-marouill)
-* [Running Azure Functions on a Timer Trigger](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function?WT.mc_id=none-blog-marouill)
-* [Installing the Durable Functions extensions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install?WT.mc_id=none-blog-marouill)
+* [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill)
+* [Creating your first function in the Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=maximerouiller-blog-marouill)
+* [Running Azure Functions on a Timer Trigger](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function?WT.mc_id=maximerouiller-blog-marouill)
+* [Installing the Durable Functions extensions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install?WT.mc_id=maximerouiller-blog-marouill)

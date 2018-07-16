@@ -30,7 +30,7 @@ Or globally for all future solutions that are going to be loaded by opening your
 
 ### What is the impact?
 
-Beside awesome performance? There might be Visual Studio features that will just not work unless a project is fully loaded. Please see the list of [known issues](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#KILSL) for the current release.
+Beside awesome performance? There might be Visual Studio features that will just not work unless a project is fully loaded. Please see the list of [known issues](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes?WT.mc_id=maximerouiller-blog-marouill#KILSL) for the current release.
 
 ### Alternative
 

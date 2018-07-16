@@ -109,7 +109,7 @@ Then, we create a `proxies.json` file to configure URL routing to our blob stora
 
 Now, this `proxies.json` file is not configurable via the command line so we'll need to create a git repository, add the file to it and deploy it using Git.
 
-> Note: You will need to set a [deployment user](https://docs.microsoft.com/en-us/cli/azure/webapp/deployment/user?view=azure-cli-latest&wt.mc_id=default-blog-marouill) before pushing to source control.
+> Note: You will need to set a [deployment user](https://docs.microsoft.com/en-us/cli/azure/webapp/deployment/user?view=azure-cli-latest&WT.mc_id=maximerouiller-blog-marouill) before pushing to source control.
 
 The script below will configure Git for our Functions app, add a remote upstream to the current git repository and push the whole repository. This will start a deployment. 
 
@@ -146,7 +146,7 @@ If you are building a SaaS application, it's an excellent option to have with th
 
 Even though it's the "minimum amount of building blocks", I still think that it's way too high.
 
-The [second highest uservoice](https://feedback.azure.com/forums/217298-storage/suggestions/6417741-static-website-hosting-in-azure-blob-storage) that they have is about supporting complete static site without any workarounds.
+The [second highest uservoice](https://feedback.azure.com/forums/217298-storage/suggestions/6417741-static-website-hosting-in-azure-blob-storage?WT.mc_id=maximerouiller-blog-marouill) that they have is about supporting complete static site without any workarounds.
 
 Once implemented, this blog post will be unnecessary.
 

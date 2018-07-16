@@ -30,7 +30,7 @@ We have our two building blocks in place. IoT Hub to ingest event, Azure Functio
 
 I have two choices that I prefer. 
 
-* Azure Table Storage ([can be done natively through endpoints](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage?WT_mc.id=blog-marouill&utm_source=marouill&utm_medium=blog))
+* Azure Table Storage ([can be done natively through endpoints](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage?WT.mc_id=maximerouiller-blog-marouill))
 * Azure Cosmos DB
 
 Now let's assume a format of messages that are sent to our IoT Hub. That will serve as a basis for storing our events.
@@ -51,7 +51,7 @@ Now let's assume a format of messages that are sent to our IoT Hub. That will se
 
 ## CosmosDB
 
-CosmosDB allows you to store a massive amount of data in a geo-distributed way without flinching under load. Besides its different [consistency model](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?WT_mc.id=blog-marouill&utm_source=marouill&utm_medium=blog) and multiple [APIs](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction?WT_mc.id=blog-marouill&utm_source=marouill&utm_medium=blog), it is a fantastic way to store IoT events and still be able to query them easily.
+CosmosDB allows you to store a massive amount of data in a geo-distributed way without flinching under load. Besides its different [consistency model](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?WT.mc_id=maximerouiller-blog-marouill) and multiple [APIs](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction?WT.mc_id=maximerouiller-blog-marouill), it is a fantastic way to store IoT events and still be able to query them easily.
 
 So let's assume we receive the previously defined message through an Azure Function.
 
@@ -88,7 +88,7 @@ In this section, I created a new connection to my Cosmos DB account where save o
 
 ### On Automating 
 
-As you can see, I'm being all fancy and creating everything through a Portal UI. Everything I've done can be replicated with an [ARM Template]() that will allow you to provision your different resources and bind your connection strings together. 
+As you can see, I'm being all fancy and creating everything through a Portal UI. Everything I've done can be replicated with an [ARM Template](https://docs.microsoft.com/azure/azure-resource-manager/?WT.mc_id=maximerouiller-blog-marouill) that will allow you to provision your different resources and bind your connection strings together. 
 
 If you are interested in seeing a way to deploy this through the command line, please let me know in the comments.
 

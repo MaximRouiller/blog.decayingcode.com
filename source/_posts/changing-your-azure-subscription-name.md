@@ -14,5 +14,5 @@ tags: [azure,subscription]
 That's it. Shortest blog post. 
 
 
-[YourAccount]:https://azure.microsoft.com/en-us/account/
-[UNB]:https://account.windowsazure.com/Subscriptions
+[YourAccount]:https://azure.microsoft.com/en-us/account/?WT.mc_id=maximerouiller-blog-marouill
+[UNB]:https://account.windowsazure.com/Subscriptions?WT.mc_id=maximerouiller-blog-marouill

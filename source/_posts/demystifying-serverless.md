@@ -46,13 +46,13 @@ Focus on what makes you amazing.
 
 Azure Functions is Microsoft's implementation of serverless. It allows you to run code in a multitude of languages, from any environment and deploy it in seconds.
 
-Creating an Azure Function from [the CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli), the [Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function) or even [Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio) is just as simple as it should be.
+Creating an Azure Function from [the CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli?WT.mc_id=maximerouiller-blog-marouill), the [Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=maximerouiller-blog-marouill) or even [Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio?WT.mc_id=maximerouiller-blog-marouill) is just as simple as it should be.
 
 Azure Functions will only charge you for what you use. If your API isn't used, it's free. As your business grows and your application starts getting customers, it's when you start paying. You're not spending money until you start making money.
 
 The best part? You get enough free executions per months to start your next startup, a micro-SaaS or the glue to integrate existing systems.
 
-Stop postponing it. [Try Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-serverless-api). Right now.
+Stop postponing it. [Try Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-serverless-api?WT.mc_id=maximerouiller-blog-marouill). Right now.
 
 We're here.
 

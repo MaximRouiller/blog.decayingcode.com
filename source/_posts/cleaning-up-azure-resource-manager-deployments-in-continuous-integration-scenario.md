@@ -95,5 +95,5 @@ If you create a Powershell that automate this task on a weekly basis, you won't 
 
 
 
-[1]: https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits
-[2]: https://azure.microsoft.com/en-us/services/automation/
+[1]: https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits?WT.mc_id=maximerouiller-blog-marouill
+[2]: https://azure.microsoft.com/en-us/services/automation/?WT.mc_id=maximerouiller-blog-marouill

@@ -53,16 +53,16 @@ DefaultEndpointsProtocol=https;AccountName=<ACCOUNT NAME>;AccountKey=<KEY>;Table
 
 ## Difference in your code
 
-And that's it. A single connection string change and you've gone from the good ol' Table Storage to [multiple consitency levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?WT.mc_id=content-blog-marouill), to [globally replicated](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction?WT.mc_id=content-blog-marouill) data in multiple regions.
+And that's it. A single connection string change and you've gone from the good ol' Table Storage to [multiple consitency levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?WT.mc_id=maximerouiller-blog-marouill), to [globally replicated](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-introduction?WT.mc_id=maximerouiller-blog-marouill) data in multiple regions.
 
 ## Difference in implementation
 
-Of course, we went from 2 different implementations from 1 single API. There's bound to be differences. The [complete list](https://docs.microsoft.com/en-us/azure/cosmos-db/faq?WT.mc_id=content-blog-marouill#develop-with-the-table-api) goes in details but it will end up being more expensive as Cosmos DB will preallocate your storage while your Storage Account will only allocate what you use. As much as it will end up being more expensive on Cosmos DB, you will also end up with better performance. 
+Of course, we went from 2 different implementations from 1 single API. There's bound to be differences. The [complete list](https://docs.microsoft.com/en-us/azure/cosmos-db/faq?WT.mc_id=maximerouiller-blog-marouill#develop-with-the-table-api) goes in details but it will end up being more expensive as Cosmos DB will preallocate your storage while your Storage Account will only allocate what you use. As much as it will end up being more expensive on Cosmos DB, you will also end up with better performance. 
 
 ## Try it now
 
 If you want to try Cosmos DB, there's multiple ways. 
 
-If you don't have an account or a credit-card, you can try it for free [right here](https://azure.microsoft.com/en-us/try/cosmosdb/?WT.mc_id=content-blog-marouill).
+If you don't have an account or a credit-card, you can try it for free [right here](https://azure.microsoft.com/en-us/try/cosmosdb/?WT.mc_id=maximerouiller-blog-marouill).
 
-If you want to not be limited by the subscribtion-less option, you can always get an [Azure Free Trial](https://azure.microsoft.com/en-us/free/?WT.mc_id=content-blog-marouill) which includes free credits for Cosmos DB.
+If you want to not be limited by the subscribtion-less option, you can always get an [Azure Free Trial](https://azure.microsoft.com/en-us/free/?WT.mc_id=maximerouiller-blog-marouill) which includes free credits for Cosmos DB.
