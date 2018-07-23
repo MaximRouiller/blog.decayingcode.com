@@ -1,20 +1,18 @@
 ---
 title : "Cloud Scale API scraping with serverless orchestrators"
-date: 
+date:
 tags: [azure,serverless]
 ---
 
-One of the thing I'm working on requires me to retrieve information from multiple sources like the NuGet API and GitHub API.
+One of the things I'm working on requires me to retrieve information from multiple sources like the NuGet API and GitHub API. Let's take a concrete example of one of the things I did recently. If you follow me [on Twitter](https://twitter.com/MaximRouiller), you probably already know about it.
 
-Let's take a concrete example of the things I did recently. If you follow me [on Twitter](https://twitter.com/MaximRouiller), you probably already know about it.
-
-There's tons of Samples on the [Azure-Samples](https://github.com/Azure-Samples/) organization and I want to be able to check them out to see which one are "too old". For examples, what about a sample that was last modified 1 month ago? Is it fresh? What about 3 months? 6 months? What if it's a year?
+There's tons of Samples on the [Azure-Samples](https://github.com/Azure-Samples/) organization on GitHub, and I want to be able to check them out to see which ones are "too old". For example, what about a sample that was last modified 1 month ago? What about 3 months or 6 months? What if the sample is over a year old? Is it relevant?
 
 # Our scenario
 
-Ever ended up on a sample that is solving exactly the problem you're having and it just doesn't work? Doesn't need to be an Azure Sample but any samples in any other project. Then you check the last commit date only to realize that it's been 2 years since the last commit. Then, you check the packages and realize that they are 3 major versions behind. Wow. That sample is dead.
+Ever ended up on a sample that should be covering the problem you're having but it just doesn't work? Then you check the last commit date only to realize that it's been 2 years since the last commit. Then, you check the packages and realize that they are 3 major versions behind. That sample is almost no good to you.
 
-Now, we have that problem too in our Azure-Samples org and it's one of the many problems that I'm trying to solve right now. But, we need to be able to retrieve all that information.
+Well, the sample repositories on the Azure-Samples organization have the exact issues, and it's one of the many problems that I'm trying to solve. However, we first need to be able to retrieve all that information.
 
 # File -> New Project -> Console Application
 
@@ -22,7 +20,7 @@ Our first instinct as programmers is to try to do it once through a console appl
 
 # First problem: Running locally
 
-So, everything was running fine but the problem for me at that point was it was just a single console application running locally. I could have easily taken it to containers and be done with it but I saw some way to solve this. I managed to migrate everything in a function but the problem now was that it was still just a console application but running inside an Azure Functions. Lame.
+So, everything was running fine but the problem for me at that point was it was just a single console application running locally. I could have easily taken it to containers and be done with it, but I saw another way to solve this. I managed to migrate everything into an Azure Function. The problem now was that it was still just a console application running inside an Azure Functions. Lame.
 
 For starters, once you know all the repositories it's a distributed problem. How many repositories can I hit at once without having any state to correlate? The answer is all of them. But first, I'd need to refactor.
 
@@ -30,9 +28,9 @@ For starters, once you know all the repositories it's a distributed problem. How
 
 So we all know what serverless is. If you need a refresher, you can review the [Azure Functions Overview](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill) on what is possible.
 
-Alright. Now what is a *Durable* Function? With durable, it's all about orchestration. Just like an orchestrator in music leads the musicians, each musicians is responsible for their own thing. In terms of Azure Functions, or orchestrator is in charge of telling when a Function start and when to wait for it. So what can be done?
+Now what is a *Durable* Function? With durable, it's all about orchestration. Just like an orchestrator in music leads the musicians, but each musicians is responsible for their own thing. In terms of Durable Functions, an orchestrator is in charge of telling when a function starts and when to wait for it. So what can be done?
 
-One of the cloud design pattern used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=maximerouiller-blog-marouill). This allows you to start X number of Functions, collect their results and, when they are all complete, execute an action. Without the Durable Functions extension, you would have to handle the events, the storage, as well as handling every component of a Function's execution. Durable Functions takes all of this and exposes an API does all the job for you.
+One of the cloud design patterns used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=maximerouiller-blog-marouill). This allows you to start X number of Functions, collect their results and, when they are all complete, execute an action. Without the Durable Functions extension, you would have to handle the events, the storage, as well as handling every component of a Function's execution. Durable Functions takes all of this and exposes an API does all the job for you.
 
 That is what we're going to use for my scraping of information from GitHub.
 
@@ -62,13 +60,13 @@ So let's decompose what we see here. First, I give a name to every execution of 
 
 Once all of them are done, we wait for all of them to finish and we optionally return the `InstanceId` of the orchestrator.
 
-And that's it. Every function will only be called once except the orchestrator. The Function with an `[OrchestrationTrigger]` is always considered an Orchestrator and can be run multiple time. 
+And that's it. Every function will only be called once except the orchestrator. The function with an `[OrchestrationTrigger]` is always considered an Orchestrator and can be run multiple time.
 
-[`OrchestrationTrigger` behave widely differently than normal Azure Function.](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=maximerouiller-blog-marouill#trigger-behavior) **THIS IS IMPORTANT.** Don't execute requests to resources (SQL, Storage, API, etc.) in there. This function will be orchestrating the other functions and for my result set, I've seen it ran 10+ times.
+[`OrchestrationTrigger` behaves widely differently than normal Azure Function.](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=maximerouiller-blog-marouill#trigger-behavior) **THIS IS IMPORTANT.** Don't execute requests to resources (SQL, Storage, API, etc.) in there. This function will be orchestrating the other functions and for my result set, I've seen it ran 10+ times.
 
 # Taking things up a notch
 
-Ain't it amazing? Now, I have an Orchestrator that will simultaneously make 900 requests to an API to retrieve as much information as possible. But what if I have multiple orchestrators? What if I have multiple pipelines of data ingestion that I want to make?
+Ain't it amazing? Now, I have an Orchestrator that will make make 900 calls to the `DownloadSamples_UpdateRepositoryData` activity that will retrieve as much information as possible from the GitHub API. But what if I have multiple orchestrators? What if I have multiple pipelines of data ingestion that I want to make?
 
 You just need one more orchestrator!
 
@@ -117,7 +115,7 @@ However, if other teams were to query GitHub some more, I'd need to look into im
 
 If you want to try it out, Azure Functions comes with a free quota. If you need an account, [create an account for free](https://azure.microsoft.com/free/?WT.mc_id=maximerouiller-blog-marouill).
 
-Then, here's a list of resources to get you started on Azure Functions:
+Also, here's a list of resources to get you started on Azure Functions:
 
 * [Introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill)
 * [Creating your first function in the Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=maximerouiller-blog-marouill)
