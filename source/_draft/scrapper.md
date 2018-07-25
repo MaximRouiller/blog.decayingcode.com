@@ -127,7 +127,7 @@ Its behaviors are incredibly different than other Functions. It is called multip
 
 It's also important to note that every call that you make using `CallActivityAsync` won't be executed more than once for the same orchestrator instance. Results are cached and handled by the Durable Functions.
 
-# Advanced Scenario: Orchestrating Orchestrators
+# Advanced Scenario: Orchestrating Orchestrators with Sub Orchestrators
 
 Isn't it amazing? Now, I have an Orchestrator that instantiate over 900 `DownloadSamples_UpdateRepositoryData` functions to download data from the GitHub API. What would happen if I had multiple orchestrators? What if I have multiple pipelines of data ingestion that I want to make?
 
@@ -163,13 +163,17 @@ What does it do? Create a single *run* that is going to be used to invoke every 
 
 All those orchestrators are all going to start at 7 am every day at the same time. They are all going to run as described before. Only this time, they also report back to another orchestrator.
 
-Once you start implementing simple workflows, it becomes effortless to build complex scenarios out of simple ones.
+Once you start implementing simple workflows, it becomes effortless to build complex scenarios out of simple ones. The same patterns we approached that were used to build a single orchestrator can be used to orchestrate multiple sub-orchestrators.
 
 # Why do I want this?
 
 Imagine working on a team with many different processes that need to run in parallel. Maybe one team is working on the shipping process, the other on the payment process. With a single orchestrator to manage multiple sub orchestrators, it makes team collaboration easier.
 
-In my case, what if someone else wants to add the parsing of another API? They can work on their orchestrator and plug it in my `MainDownloadOrchestrator` function, and we'd be done.
+In my case, what if someone else wants to add the parsing of another API? They can work on their orchestrator and plug it in my `MainDownloadOrchestrator` function, and that's it.
+
+Scraping data from an API is just a single scenario. Whether you are building an order processing system, a conference organization tool or the next revolution in IoT data processing, we know that you need a way to organize complexity within your solution. We know that you want to reuse more significant part of your system than a single function.
+
+Durable Functions is how you build complex systems with serverless.
 
 # What is missing
 
