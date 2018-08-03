@@ -4,19 +4,17 @@ date:
 tags: [azure,serverless]
 ---
 
-The project I'm working on requires me to retrieve information from multiple sources like the NuGet and GitHub API. Let's bring into focus how I'm downloading data from the GitHub API. If you follow me [on Twitter](https://twitter.com/MaximRouiller), you've probably already heard me talk about it.
-
 # Our scenario
 
-There are tons of samples on the [Azure-Samples](https://github.com/Azure-Samples/) organization on GitHub, and I want to be able to check them out to see which ones are "too old." What does a user consider a valid sample? For me, a valid sample is an up to date sample.
-
-For example, do we consider a repository last updated 1 month ago up to date? What about 3 months or 6 months ago? What if a sample's last update was a year ago? Is it still relevant?
-
-We need a way to retrieve those over 900 samples and validate their last commit date.
+The project I'm working on requires me to retrieve information from multiple sources like the NuGet and GitHub API. Let's bring into focus how I'm downloading data from the GitHub API. If you follow me [on Twitter](https://twitter.com/MaximRouiller/status/1019597611341402112), you've probably already heard me talk about it.
 
 Ever ended up on a sample that should be covering the problem you're having, but it just doesn't work? Then, you check the last commit date only to realize that it's been 2 years since the last commit. The way the cloud is evolving, that sample is almost no good to you.
 
 Well, some of the repositories on the `Azure-Samples` organization have those exact issues, and it's one of the many problems that I'm trying to solve.
+
+There are tons of samples on the [Azure-Samples](https://github.com/Azure-Samples/) organization on GitHub, and I want to be able to check them out to see which ones are "too old." What does a user consider a valid sample? For me, a valid sample is an up to date sample.
+
+We need a way to retrieve those over 900 samples and validate their last commit date.
 
 However, we first need to be able to retrieve all that information.
 
@@ -42,7 +40,7 @@ var lastCommitDate = commit.Committer.Date;
 
 Everything was running fine, but the problem for me at that point was it was just a single console application running locally. I could have just taken the application as-is to containers, but I saw another way to solve this. I saw another way to scale it up. Azure Functions would help me scale it up.
 
-By migrating the existing code into an Azure Function, the problem now was that it was still just a console application running inside an Azure Functions. Lame.
+By migrating the existing code into an Azure Function, the problem now was that it was still just a console application running inside an Azure Functions. This will just not cut it. We're just running the same workflow in sequence. We need to execute this workflow in parallel and be able to scale out.
 
 Once you know all the repositories that you want to query, it becomes a distributed problem. How many repositories can I hit at once without having any state to correlate between them? The answer is all of them.
 
@@ -50,29 +48,17 @@ I needed to refactor to make this process more sturdy. I needed it to be durable
 
 # Introducing Durable Functions
 
-So we all know [what serverless is](https://docs.microsoft.com/dotnet/standard/serverless-architecture/serverless-architecture?WT.mc_id=maximerouiller-blog-marouill). Azure Functions is Microsoft's implementation of the serverless architecture. If you need a refresher, you can review the [Azure Functions Overview](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill) on what is possible.
+If you are new to serverless, there's [an excellent book](https://docs.microsoft.com/dotnet/standard/serverless-architecture/serverless-architecture?WT.mc_id=maximerouiller-blog-marouill) by Jeremy Likness that can bring you up to speed. Azure Functions is Microsoft's implementation of the serverless architecture. If you need a refresher, you can review the [Azure Functions Overview](https://docs.microsoft.com/azure/azure-functions/functions-overview?WT.mc_id=maximerouiller-blog-marouill) on what is possible.
 
- What is a *Durable* Function? With durable, it's all about orchestration. Just like in music, he orchestrator ensures that everyone is following the melody, but it's the responsibility of each musician to play their instrument.
+ What is a *Durable* Function? With durable, it's all about orchestration. Just like in music, the orchestrator ensures that everyone is following the melody, but it's the responsibility of each musician to play their instrument.
 
-Regarding Durable Functions, an orchestrator is in charge of starting and tracking a series of functions, but it's the responsibility of each function to execute their part of the workflow.
+Regarding Durable Functions, an orchestrator is in charge of starting and tracking a series of functions, but it's the responsibility of each activities to execute their. Think of the orchestrator as a workflow written in code and activities as the steps of the workflow. An orchestrator and an activity are still Azure Functions.
 
-## Fan-In/Fan-Out
-
-One of the cloud design patterns I used with Durable Functions is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=maximerouiller-blog-marouill).
-
-![Fan-In/Fan-Out](/posts/files/durablefunctions/fan-out-fan-in.png)
-
-Fanning out means that your orchestrator function (F1) starts as many functions (F2) as necessary in parallel with some initial parameters like the repository I want. Once all those functions have finished executing, we need a way to return the requested data to our orchestrator (F3). Keep in mind that, all those functions may not be executing on the same server. It is not as simple as a multi-threaded application. It's a multi-threaded, multi-server, highly parallel execution workflow.
-
-How would you do that in a local data center? A console application would retrieve the list of items on which you want to fan-out. Then, it would queue that list into a messaging system. Once queued up, you would have to have dequeue those messages asynchronously by other console applications that are on different servers. Each console applications would then be responsible for storing the result of their execution on shared storage. Once completed, you'd have to find a way to get the first console application to finish the workflow. Finishing the workflow would involve fanning in all the results back, and saving it to a database.
-
-With Azure Functions, it's as easy as returning an object. All the necessary work of storing the results of individual functions and aggregating them together is done automatically for you.
-
-This scenario is a hard problem. Durable Functions just saved me easily one week of work and more days of testing, debugging, and refining the process.
+Let's introduce two patterns that I'm using in my code.
 
 ## Function Chaining
 
-Another pattern I want to cover quickly is [function chaining](https://docs.microsoft.com/azure/azure-functions/durable-functions-sequence?WT.mc_id=maximerouiller-blog-marouill). It's the most straightforward and most commonly used pattern.
+A pattern I want to cover quickly is [function chaining](https://docs.microsoft.com/azure/azure-functions/durable-functions-sequence?WT.mc_id=maximerouiller-blog-marouill). It's the most straightforward and most commonly used pattern.
 
 ![Function Chaining](/posts/files/durablefunctions/function-chaining.png)
 
@@ -89,7 +75,31 @@ public static async Task RunFunctionChaining([OrchestrationTrigger]) DurableOrch
 }
 ```
 
+## Fan-Out/Fan-In
+
+One of the Durable Functions design patterns I used is [Fan-Out/Fan-In](https://docs.microsoft.com/azure/azure-functions/durable-functions-cloud-backup?WT.mc_id=maximerouiller-blog-marouill).
+
+![Fan-Out/Fan-In](/posts/files/durablefunctions/fan-out-fan-in.png)
+
+Fanning out means that your orchestrator function (F1) starts as many functions (F2) as necessary in parallel with some initial parameters like the repository I want. Once all those functions have finished executing, we need a way to return the requested data to our orchestrator (F3). Keep in mind that, all those functions may not be executing on the same server. It is not as simple as a multi-threaded application. It's a multi-threaded, multi-server, highly parallel execution workflow.
+
+How would you do that in a local data center? A console application would retrieve the list of items on which you want to fan-out. Then, it would queue that list into a messaging system. Once queued up, you would have to have dequeue those messages asynchronously by other console applications that are on different servers. Each console applications would then be responsible for storing the result of their execution on shared storage. Once completed, you'd have to find a way to get the first console application to finish the workflow. Finishing the workflow would involve fanning in all the results back, and saving it to a database.
+
+With Azure Functions, it's as easy as returning an object. All the necessary work of storing the results of individual functions and aggregating them together is done automatically for you.
+
+This scenario is a hard problem. Durable Functions just saved me easily one week of work and more days of testing, debugging, and refining the process.
+
 Now that the introduction is complete let's jump back to our scenario.
+
+# Orchestrators are special functions
+
+Functions with the [`OrchestrationTrigger` behaves widely differently than normal Azure Function](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=maximerouiller-blog-marouill#trigger-behavior). This trigger is what makes a normal Azure Function an Orchestrator Function. Just 
+
+Its behaviors are incredibly different than other Functions. It is called multiple times at different moment to orchestrate the execution of those functions. It is of the utmost importance that you do not calculate time and access external resources (e.g., SQL, Storage, API) in that context. The orchestrator is tasked to execute and track the status of those functions we started by executing itself repeatedly when something changes. You want the orchestrator function to be deterministic, meaning the same code executed at a different time need to give the same result. So no `DateTime`, no `Math.Random` or `Guid.NewGuid()` should be in an orchestrator.
+
+It's also important to note that every call that you make using `CallActivityAsync` won't be executed more than once for the same orchestrator instance. Results are cached and handled by the Durable Functions.
+
+`CallActivityAsync` is part of the concept that we call [checkpoint and replay](https://docs.microsoft.com/azure/azure-functions/durable-functions-checkpointing-and-replay?WT.mc_id=maximerouiller-blog-marouill). In simpler terms, this allows resuming the execution of the orchestrator while remembering the state of the execution of previous activities we ran in a reliable way across servers.
 
 # Web Scraping scenario
 
@@ -119,17 +129,9 @@ Then task then need to be `await`ed till completion. Finally, we aggregate the `
 
 Just like that, we've made a complex parallel problem easy.
 
-## Orchestrator are special functions
-
-Functions with the [`OrchestrationTrigger` behaves widely differently than normal Azure Function](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings?WT.mc_id=maximerouiller-blog-marouill#trigger-behavior). This trigger is what makes a normal Azure Function an Orchestrator Function.
-
-Its behaviors are incredibly different than other Functions. It is called multiple times at different moment to orchestrate the execution of those functions. It is of the utmost importance that you do not calculate time and access external resources (e.g., SQL, Storage, API) in that context. The orchestrator is tasked to execute and track the status of those functions we started by executing itself repeatedly when something changes. You want the orchestrator function to be deterministic, meaning the same code executed at a different time need to give the same result. So no `DateTime`, no `Math.Random` or `Guid.NewGuid()` should be in an orchestrator.
-
-It's also important to note that every call that you make using `CallActivityAsync` won't be executed more than once for the same orchestrator instance. Results are cached and handled by the Durable Functions.
-
 # Advanced Scenario: Orchestrating Orchestrators with Sub Orchestrators
 
-Isn't it amazing? Now, I have an Orchestrator that instantiate over 900 `DownloadSamples_UpdateRepositoryData` functions to download data from the GitHub API. What would happen if I had multiple orchestrators? What if I have multiple pipelines of data ingestion that I want to make?
+Isn't it amazing? Now, I have an Orchestrator that instantiates over 900 `DownloadSamples_UpdateRepositoryData` functions to download data from the GitHub API. What would happen if I have multiple orchestrators of data ingestion that I want to make? 
 
 How do I orchestrate the orchestrators? We need another orchestrator of course! Here's a simplified version of my code.
 
@@ -185,6 +187,14 @@ However, if other teams were to query GitHub some more, I'd need to look into im
 
 If you want to try it out, Azure Functions comes with a free quota even with a trial account. If you need an account, [you can create one for free](https://azure.microsoft.com/free/?WT.mc_id=maximerouiller-blog-marouill).
 
+# Contribute
+
+Azure Functions is also open source. Look at these repositories if you want to contribute or just want to know what's going on with the project.
+
+* [Azure Function Runtime](https://github.com/Azure/azure-functions-host)
+* [Azure Function CLI for local development](https://github.com/Azure/azure-functions-core-tools)
+* [Azure Function Portal](https://github.com/Azure/azure-functions-ux)
+* [Azure Functions templates for the portal and Visual Studio](https://github.com/Azure/azure-functions-templates)
 
 # Resources to get you started
 
@@ -192,3 +202,4 @@ If you want to try it out, Azure Functions comes with a free quota even with a t
 * [Creating your first function in the Azure Portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function?WT.mc_id=maximerouiller-blog-marouill)
 * [Running Azure Functions on a Timer Trigger](https://docs.microsoft.com/azure/azure-functions/functions-create-scheduled-function?WT.mc_id=maximerouiller-blog-marouill)
 * [Installing the Durable Functions extensions](https://docs.microsoft.com/en-us/azure/azure-functions/durable-functions-install?WT.mc_id=maximerouiller-blog-marouill)
+* [What is Durable Azure Functions?](https://docs.microsoft.com/en-us/dotnet/standard/serverless-architecture/durable-azure-functions?WT.mc_id=maximerouiller-blog-marouill)
