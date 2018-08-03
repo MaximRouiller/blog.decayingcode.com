@@ -52,7 +52,7 @@ If you are new to serverless, there's [an excellent book](https://docs.microsoft
 
  What is a *Durable* Function? With durable, it's all about orchestration. Just like in music, the orchestrator ensures that everyone is following the melody, but it's the responsibility of each musician to play their instrument.
 
-Regarding Durable Functions, an orchestrator is in charge of starting and tracking a series of functions, but it's the responsibility of each activities to execute their. Think of the orchestrator as a workflow written in code and activities as the steps of the workflow. An orchestrator and an activity are still Azure Functions.
+Regarding Durable Functions, an orchestrator is in charge of starting and tracking a series of functions, but it's the responsibility of each activities to execute their part. Think of the orchestrator as a workflow written in code and activities as the steps of the workflow. An orchestrator and an activity are still Azure Functions.
 
 Let's introduce two patterns that I'm using in my code.
 
