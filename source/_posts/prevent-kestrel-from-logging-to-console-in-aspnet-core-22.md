@@ -34,4 +34,4 @@ WebHost.CreateDefaultBuilder()
   });
 ```
 
-So next time you need Kestrel to take five, you know what to do.
+So next time you need Kestrel to take five, you know what to do. Add that [`SuppressStatusMessages`](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.hostingabstractionswebhostbuilderextensions.suppressstatusmessages?view=aspnetcore-2.1&WT.mc_id=maximerouiller-blog-marouill)
