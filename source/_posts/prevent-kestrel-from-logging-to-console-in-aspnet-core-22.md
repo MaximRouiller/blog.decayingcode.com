@@ -8,7 +8,7 @@ I recently had the need to start a web server from the command line. Authenticat
 
 Active Directory, requires you to have a *Return Url* which isn't really possible from a command line. Or is it?
 
-With .NET Core, you can easily [setup a web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/weblistener?view=aspnetcore-1.1#configure-your-aspnet-core-application?WT.mc_id=maximerouiller-blog-marouill) that listens to `localhost`. Active Directory, can be configured to redirect to `localhost`. Problem solved, right?
+With .NET Core, you can easily [setup a web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/weblistener?view=aspnetcore-1.1&WT.mc_id=maximerouiller-blog-marouill#configure-your-aspnet-core-application) that listens to `localhost`. Active Directory, can be configured to redirect to `localhost`. Problem solved, right?
 
 Not exactly. I'm partial to not outputing anything to useful when creating a CLI tool. I want kestrel to not output anything in the console. We have other ways to make an EXE talk, you see.
 
