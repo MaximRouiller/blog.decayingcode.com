@@ -4,9 +4,9 @@ tags: [nginx, docker, static content, nodejs]
 date: 2019-02-20 15:44:56
 ---
 
-When I was a consultant, my goal was to think about the best way to save money for my client. They are not paying me because I can code. They are paying because I know I can remove a few dollars (or a few hundred) from their bills when I can.
+When I was a consultant, my goal was to think about the best way to save money for my client. They were not paying me because I can code. They were paying because I know I can remove a few dollars (or a few hundred) from their bills when I can.
 
-One of the situations I've found myself in often is building a static page application (SPA). It is a typical scenario with tools like AngularJS, VueJS, and ReactJS. Clients want dynamically driven applications that don't refresh the whole page.
+One of the situations I've found myself in often is building a static page application (SPA). Clients want dynamically driven applications that don't refresh the whole page, and a SPA is often the perfect choice for them. Among the many tools used to build a SPA, we find Angular, VueJS, and ReactJS.
 
 I've found that delivering websites with containers is a universal way of ensuring compatibility across environments, cloud or not. It also prevents a developer's environment from having to install 25 different tools/languages/SDKs.
 
@@ -14,10 +14,14 @@ It keeps thing concise and efficient.
 
 If you want to [know more about Docker containers](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/what-is-docker?WT.mc_id=maximerouiller-blog-marouill), take a few minutes, in particular, to read about [the terminology](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/docker-terminology?WT.mc_id=maximerouiller-blog-marouill).
 
-## Dockerfile template for NodeJS
+The only apparent problem is that we only need Node.js to build that application, not to run it. So, how would containers solve our problem? There's a concept in Docker called [Multistage builds](https://docs.docker.com/develop/develop-images/multistage-build/) where you can separate the build process from the execution.
+
+Here's the template I use to build my Node.js applications.
+
+## Dockerfile template for Node.js
 
 ```dockerfile
-#build stage for a NodeJS application
+#build stage for a Node.js application
 FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
@@ -34,23 +38,21 @@ CMD ["nginx", "-g", "daemon off;"]
 
 There's a lot to unpack here. Let's look at the two stages separately.
 
-> [Read more about Docker Multistage builds](https://docs.docker.com/develop/develop-images/multistage-build/).
-
-## Build Stage (NodeJS)
+## Build Stage (Node.js)
 
 Multistage docker builds allow us to split our container in two ways. Let's look at the build stage.
 
-The first line is a classic. We're starting from a ridiculously small (~5MB) Alpine image that has node pre-installed on it. We're configuring `/app` as the working directory. Then, we do something unusual. We copy our `package*.json` files before copying everything else.
+The first line is a classic. We're starting from a ridiculously small (~5MB) Alpine image that has Node.js pre-installed on it. We're configuring `/app` as the working directory. Then, we do something unusual. We copy our `package*.json` files before copying everything else.
 
 Why? Each line in a Dockerfile represents a layer. When building a layer, if a layer already exists locally, is retrieved from the cache instead of being rebuilt. By copying and installing our packages in a separate step, we avoid running `npm install` on dependencies that didn't change in the first place. Since `npm install` can take a while to install, we save some time there.
 
-Finally, we copy the rest of our app and run the `build` task. If your application doesn't have a `build` task, change the name to whatever tasks generate a `dist` folder.
+Finally, we copy the rest of our app and run the NPM `build` task. If your application doesn't have a `build` task, change the name to whatever tasks generate an output folder like `dist`.
 
-The result? We have a correctly built NodeJS application located in `/app/dist`.
+The result? We have a correctly built Node.js application located in `/app/dist`.
 
 ## Production Stage
 
-Now the fun begins. We've generated our SPA or Static Site with node but... our application isn't using node. It's using HTML/CSS/JS. We don't need a NodeJS image to take our application to production. Instead, let's use the [NGINX Docker Image](https://hub.docker.com/_/nginx).
+We've generated our SPA or Static Site with Node.js but... our application isn't using Node.js. It's using HTML/CSS/JS. We don't need a Node.js image to take our application to production. Instead, we only need an HTTP server. Let's use the [NGINX Docker Image](https://hub.docker.com/_/nginx) as a host.
 
 From then, we copy the output from our previously defined `build-stage` `/app/dist` folder into the NGINX defined folder `/usr/share/nginx/html` as [mentioned in their docs](https://github.com/docker-library/docs/tree/master/nginx#how-to-use-this-image).
 
@@ -71,6 +73,8 @@ Running the application on your machine is of course just a simple command away.
 ```bash
 docker run -it -p 8080:80 mydockerapp:latest
 ```
+
+This command is doing two things. First, it runs the container in interactive mode with the `-i` flag. That flag will allow us to see the output of NGINX as it runs. Second, it maps port 8080 of your local machine to port 80 of the container.
 
 Opening your browser to `http://localhost:8080` will show you your website.
 
