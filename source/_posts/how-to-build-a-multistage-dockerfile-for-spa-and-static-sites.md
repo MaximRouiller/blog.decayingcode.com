@@ -1,7 +1,7 @@
 ---
 title : "How to build a multistage Dockerfile for SPA and static sites"
 tags: [nginx, docker, static content, nodejs]
-date: 2019-02-20 15:44:56
+date: 2019-02-21 14:00:00
 ---
 
 When you are a consultant, your goal is to think about the best way to save money for your client. They are not paying us because we can code. They are paying because we can remove a few dollars (or a few hundred) from their bills.
