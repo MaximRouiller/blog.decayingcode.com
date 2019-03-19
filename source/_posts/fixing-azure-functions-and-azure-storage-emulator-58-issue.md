@@ -1,6 +1,6 @@
 ---
 title : "Fixing Azure Functions and Azure Storage Emulator 5.8 issue"
-date: 2019-03-18 14:11:59
+date: 2019-03-19 09:05:00
 tags: [serverless, azure, storage]
 ---
 
