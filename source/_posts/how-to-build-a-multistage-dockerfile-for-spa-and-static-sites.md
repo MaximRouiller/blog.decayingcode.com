@@ -59,7 +59,7 @@ The result? We have a correctly built Node.js application located in `/app/dist`
 
 We've generated our SPA or static site with Node.js but... our application isn't using Node.js. It's using HTML/CSS/JS. We don't need a Node.js image to take our application to production. Instead, we only need an HTTP server. Let's use the [NGINX Docker Image](https://hub.docker.com/_/nginx) as a host.
 
-We copy the output from our previously defined `build-stage` `/app/dist` folder into the NGINX defined folder `/usr/share/nginx/html` as [mentioned in their docs](https://github.com/docker-library/docs/tree/master/nginx#how-to-use-this-image).
+We copy the output from our previously defined `build-stage` `/app/dist` folder into the [NGINX][NGINX] defined folder `/usr/share/nginx/html` as [mentioned in their docs](https://github.com/docker-library/docs/tree/master/nginx#how-to-use-this-image).
 
 After exposing port 80, we need to run NGINX with the `daemon off;` option to have it run in the foreground and preventing the container from closing.
 
@@ -92,3 +92,5 @@ While technology may continue to evolve, I'm never afraid that my Docker contain
 That means I don't have to upgrade that AngularJS 1.X app to stay cool. If it works, it works.
 
 Are you using Docker in unusual ways? Share them with me [on Twitter](https://twitter.com/MaximRouiller)!
+
+[NGINX]: https://www.nginx.com
