@@ -38,6 +38,6 @@ The second way is to tell Azure Functions in which timezone they should interpre
 
 For me, a man of the best Coast, it involves setting the `WEBSITE_TIME_ZONE` environment variable to `Eastern Standard Time`. If you are on the lesser Coast, you may need to set yours to `Pacific Standard Time`.
 
-However, let's be honest. We're in a global world. You need [The List™](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749073(v=ws.10)#time-zones).
+However, let's be honest. We're in a global world. You need [The List™](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749073(v=ws.10)?WT.mc_id=maximerouiller-blog-marouill#time-zones).
 
 Find your region on that list, set it in the `WEBSITE_TIME_ZONE`, and Azure Function automatically set the correct Time Zone for your CRON expression.
