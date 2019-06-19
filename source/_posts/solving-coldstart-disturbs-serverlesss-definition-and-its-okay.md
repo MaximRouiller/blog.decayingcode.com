@@ -1,5 +1,5 @@
 ---
-title : "Solving Cold-Start disturbs serverless's definition and it's okay"
+title : "Solving Cold-Start disturbs serverless' definition and it's okay"
 date: 2019-06-19 10:50:00
 tags: [azure, serverless]
 ---
