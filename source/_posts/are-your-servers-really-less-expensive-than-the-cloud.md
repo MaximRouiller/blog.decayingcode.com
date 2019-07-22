@@ -10,7 +10,7 @@ Too expensive. Less control and too hard to use.
 
 Control [has already been addressed by Troy Hunt](https://www.troyhunt.com/with-great-azure-vm-comes-great/) before and I feel that it translate very well to this article.
 
-As for the difficulty to use the cloud, it's seriously just a [few clicks away in Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/?WT.mc_id=maximerouiller-blog-marouill) or a [GitHub synchronization](https://github.com/blog/2056-automating-code-deployment-with-github-and-azure).
+As for the difficulty to use the cloud, it's seriously just a [few clicks away in Visual Studio](https://azure.microsoft.com/en-us/documentation/articles/web-sites-deploy/?WT.mc_id=personal-blog-marouill) or a [GitHub synchronization](https://github.com/blog/2056-automating-code-deployment-with-github-and-azure).
 
 That leaves us with pricing which can be tricky. Please note that the prices were taken at the time of writing and will change in the future.
 

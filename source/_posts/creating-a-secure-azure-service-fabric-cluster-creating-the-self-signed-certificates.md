@@ -14,7 +14,7 @@ Let's get started.
 
 You'll need to install the following:
 
-* [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=maximerouiller-blog-marouill)
+* [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=personal-blog-marouill)
 
 ## Step 1 - Explaining Service Fabric Explorer Authentication
 

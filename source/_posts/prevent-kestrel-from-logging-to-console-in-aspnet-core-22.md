@@ -8,7 +8,7 @@ I recently had the need to start a web server from the command line. Authenticat
 
 Active Directory, requires you to have a *Return Url* which isn't really possible from a command line. Or is it?
 
-With .NET Core, you can easily [setup a web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/weblistener?view=aspnetcore-1.1&WT.mc_id=maximerouiller-blog-marouill#configure-your-aspnet-core-application) that listens to `localhost`. Active Directory, can be configured to redirect to `localhost`. Problem solved, right?
+With .NET Core, you can easily [setup a web server](https://docs.microsoft.com/aspnet/core/fundamentals/servers/weblistener?view=aspnetcore-1.1&WT.mc_id=personal-blog-marouill#configure-your-aspnet-core-application) that listens to `localhost`. Active Directory, can be configured to redirect to `localhost`. Problem solved, right?
 
 Not exactly. I'm partial to not outputing anything to useful when creating a CLI tool. I want kestrel to not output anything in the console. We have other ways to make an EXE talk, you see.
 
@@ -34,4 +34,4 @@ WebHost.CreateDefaultBuilder()
   });
 ```
 
-So next time you need Kestrel to take five, you know what to do. Add that [`SuppressStatusMessages`](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.hostingabstractionswebhostbuilderextensions.suppressstatusmessages?view=aspnetcore-2.1&WT.mc_id=maximerouiller-blog-marouill)
+So next time you need Kestrel to take five, you know what to do. Add that [`SuppressStatusMessages`](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.hostingabstractionswebhostbuilderextensions.suppressstatusmessages?view=aspnetcore-2.1&WT.mc_id=personal-blog-marouill)

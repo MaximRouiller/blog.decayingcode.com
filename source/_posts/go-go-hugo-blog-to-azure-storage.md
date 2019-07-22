@@ -13,7 +13,7 @@ Last time, we had a git repository with our proxies into it. Now's the time to a
 
 >**Make sure that you do not include files with passwords, keys or other valuable data.**
 
-I am using Hugo here, but any static site renderer that can run in a Windows Environment as a standalone executable or on a [list of supported language](https://docs.microsoft.com/en-us/azure/app-service/?WT.mc_id=maximerouiller-blog-marouill) will run fine.
+I am using Hugo here, but any static site renderer that can run in a Windows Environment as a standalone executable or on a [list of supported language](https://docs.microsoft.com/en-us/azure/app-service/?WT.mc_id=personal-blog-marouill) will run fine.
 
 ## Minimum requirements before going further
 
@@ -21,7 +21,7 @@ I am using Hugo here, but any static site renderer that can run in a Windows Env
 If you are going to follow this tutorial using Hugo, please make sure that you have the [stand-alone executable version](https://github.com/gohugoio/hugo/releases) for Windows downloaded. Also, **make sure to add it to our git repository in `/tools`**. We should now have `/tools/hugo.exe` present.
 
 ### AzCopy
-Then, install the [latest version of AzCopy](http://aka.ms/downloadazcopy?WT.mc_id=maximerouiller-blog-marouill). I didn't find a way to get the newest version other than by the installer.
+Then, install the [latest version of AzCopy](http://aka.ms/downloadazcopy?WT.mc_id=personal-blog-marouill). I didn't find a way to get the newest version other than by the installer.
 
 It installs by default under `C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy`. Copy all the DLLs and `AzCopy.exe` under our `/tools` folder. We'll need it very soon.
 

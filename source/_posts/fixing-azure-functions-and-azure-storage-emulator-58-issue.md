@@ -29,7 +29,7 @@ If you want to fix that issue, merge the following setting in your `local.settin
 
 This only applies when `"AzureWebJobsStorage": "UseDevelopmentStorage=true"`.
 
-So why should we set that? There was a change that was introduced back in September 2018 when Azure Functions V2 was released. Azure Functions store your secret on disk before 2.0. Azure Functions, when [slot swapping environments](https://docs.microsoft.com/azure/app-service/deploy-staging-slots?WT.mc_id=maximerouiller-blog-marouill#swap-two-slots), swap the content of the disk including the secrets.
+So why should we set that? There was a change that was introduced back in September 2018 when Azure Functions V2 was released. Azure Functions store your secret on disk before 2.0. Azure Functions, when [slot swapping environments](https://docs.microsoft.com/azure/app-service/deploy-staging-slots?WT.mc_id=personal-blog-marouill#swap-two-slots), swap the content of the disk including the secrets.
 
 What this setting does is ensure that Functions stores secrets on your file system by default. It's expected behavior when using a local development environment.
 
@@ -37,4 +37,4 @@ If you want to read more, there is [an entire article on that behavior](https://
 
 ## Conclusion
 
-To fix the issue, you can either use the workaround or [update the Azure Storage Emulator to 5.9](https://docs.microsoft.com/azure/storage/common/storage-use-emulator?WT.mc_id=maximerouiller-blog-marouill).
+To fix the issue, you can either use the workaround or [update the Azure Storage Emulator to 5.9](https://docs.microsoft.com/azure/storage/common/storage-use-emulator?WT.mc_id=personal-blog-marouill).

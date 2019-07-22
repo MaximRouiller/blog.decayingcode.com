@@ -42,4 +42,4 @@ However, let's be honest. We're in a global world. You need [The List™][TheLis
 
 Find your region on that list, set it in the `WEBSITE_TIME_ZONE`, and Azure Function automatically set the correct Time Zone for your CRON expression.
 
-[TheList]: https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749073(v=ws.10)?WT.mc_id=maximerouiller-blog-marouill#time-zones
+[TheList]: https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749073(v=ws.10)?WT.mc_id=personal-blog-marouill#time-zones

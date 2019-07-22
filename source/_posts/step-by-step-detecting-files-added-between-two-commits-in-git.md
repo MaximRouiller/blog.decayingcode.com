@@ -4,7 +4,7 @@ date: 2018-07-19 10:23:00
 tags: [git]
 ---
 
-I was looking into retrieving the last created files into a repository. For me, it was for our [Microsoft Azure Documentation](https://docs.microsoft.com/azure?WT.mc_id=maximerouiller-blog-marouill). 
+I was looking into retrieving the last created files into a repository. For me, it was for our [Microsoft Azure Documentation](https://docs.microsoft.com/azure?WT.mc_id=personal-blog-marouill). 
 
 This is, of course, completely open source and you can find [the repository on GitHub](https://github.com/MicrosoftDocs/azure-docs). The problem however is that a ton of persons work on this and you want to know what are the new pages of docs that are created. It matters to me because it allow me to see what people are creating and what I should take a look into.
 

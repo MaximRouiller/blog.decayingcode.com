@@ -12,7 +12,7 @@ I've found that delivering websites with containers is a universal way of ensuri
 
 It keeps thing concise and efficient.
 
-If you want to [know more about Docker containers](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/what-is-docker?WT.mc_id=maximerouiller-blog-marouill), take a few minutes, in particular, to read about [the terminology](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/docker-terminology?WT.mc_id=maximerouiller-blog-marouill).
+If you want to [know more about Docker containers](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/what-is-docker?WT.mc_id=personal-blog-marouill), take a few minutes, in particular, to read about [the terminology](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/docker-terminology?WT.mc_id=personal-blog-marouill).
 
 The problem is that we only need Node.js to build that application, not to run it. So, how would containers solve our problem? There's a concept in Docker called [Multistage builds](https://docs.docker.com/develop/develop-images/multistage-build/) where you can separate the build process from the execution.
 

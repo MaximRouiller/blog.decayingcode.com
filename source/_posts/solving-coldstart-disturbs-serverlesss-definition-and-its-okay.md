@@ -52,4 +52,4 @@ If you are among the clients that can't afford to have cold-start time in your a
 
 I've gone very quickly over the essential feature that I think fixes one of the more significant problems with serverless.  More features come with Premium Functions. I've left a link to the docs in case you want to read it all by yourself.
 
-* [Azure Premium Functions](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan?WT.mc_id=maximerouiller-blog-marouill#features)
+* [Azure Premium Functions](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan?WT.mc_id=personal-blog-marouill#features)

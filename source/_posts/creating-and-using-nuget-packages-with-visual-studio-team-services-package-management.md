@@ -10,7 +10,7 @@ More precisely, to extract some reusable components that could be used on other 
 
 ### Setting the stage
 
-All of those projects are hosted on [Microsoft Visual Studio Team Services](https://www.visualstudio.com/team-services/?WT.mc_id=maximerouiller-blog-marouill) and this service has just the [right extension](https://marketplace.visualstudio.com/items?itemName=ms.feed&WT.mc_id=maximerouiller-blog-marouill) for us. It may not be the best of all tools but for this very Microsoft focused client, it was the most cost efficient option for us.
+All of those projects are hosted on [Microsoft Visual Studio Team Services](https://www.visualstudio.com/team-services/?WT.mc_id=personal-blog-marouill) and this service has just the [right extension](https://marketplace.visualstudio.com/items?itemName=ms.feed&WT.mc_id=personal-blog-marouill) for us. It may not be the best of all tools but for this very Microsoft focused client, it was the most cost efficient option for us.
 
 ### Pricing
 

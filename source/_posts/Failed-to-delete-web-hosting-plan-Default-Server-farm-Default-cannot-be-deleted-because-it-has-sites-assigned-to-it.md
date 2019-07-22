@@ -6,9 +6,9 @@ tags: [azure,powershell]
 
 So I had this issue where I was moving web apps between hosting plans. As they were all transferred, I wondered why it refused to delete them with this error message.
 
-After a few click left and right and a lot of wasted time, I found [this blog post](http://blogs.msdn.com/b/waws/archive/2014/11/05/azure-powershell-script-to-list-sites-staging-deployment-slots-for-web-hosting-plans-whp.aspx?WT.mc_id=maximerouiller-blog-marouill) that provides a script to help you debug and the exact explanation as to why it doesn't work.
+After a few click left and right and a lot of wasted time, I found [this blog post](http://blogs.msdn.com/b/waws/archive/2014/11/05/azure-powershell-script-to-list-sites-staging-deployment-slots-for-web-hosting-plans-whp.aspx?WT.mc_id=personal-blog-marouill) that provides a script to help you debug and the exact explanation as to why it doesn't work.
 
-To make things quick, it's all about ["Deployment Slots"](http://azure.microsoft.com/en-us/documentation/articles/web-sites-staged-publishing/?WT.mc_id=maximerouiller-blog-marouill). Among other things, they have their own _serverFarm_ setting and they will not change when you change their parents in Powershell (haven't tried by the portal).
+To make things quick, it's all about ["Deployment Slots"](http://azure.microsoft.com/en-us/documentation/articles/web-sites-staged-publishing/?WT.mc_id=personal-blog-marouill). Among other things, they have their own _serverFarm_ setting and they will not change when you change their parents in Powershell (haven't tried by the portal).
 
 Here's a copy of the script from Harikharan Krishnaraju for future references:
 

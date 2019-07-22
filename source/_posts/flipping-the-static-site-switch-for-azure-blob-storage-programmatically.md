@@ -28,7 +28,7 @@ By going into the .NET Client Library's GitHub, and searching for `static websit
 
 The results may not look like much, but it mentions `Service Properties`. This is definitely not an ARM concept. Let's do a quick search for `azure storage service properties`.
 
-Where does it lead us? Just like every good Google search should lead. [To the docs](https://docs.microsoft.com/rest/api/storageservices/set-blob-service-properties?WT.mc_id=maximerouiller-blog-marouill).
+Where does it lead us? Just like every good Google search should lead. [To the docs](https://docs.microsoft.com/rest/api/storageservices/set-blob-service-properties?WT.mc_id=personal-blog-marouill).
 
 Wow. So I don't even need to do a REST API or sacrifice a few gummy bears to get it?
 
@@ -58,7 +58,7 @@ Next post? Custom domain? Yay or nay?
 
 If you want to read more about how it works, I would recommend the following resources:
 
-* [Host a static website](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=maximerouiller-blog-marouill)
-* [Configure a custom domain name for your Azure Storage Account](https://docs.microsoft.com/azure/storage/blobs/storage-custom-domain-name?WT.mc_id=maximerouiller-blog-marouill)
+* [Host a static website](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website?WT.mc_id=personal-blog-marouill)
+* [Configure a custom domain name for your Azure Storage Account](https://docs.microsoft.com/azure/storage/blobs/storage-custom-domain-name?WT.mc_id=personal-blog-marouill)
 
-[StaticWebsite]: https://azure.microsoft.com/blog/azure-storage-static-web-hosting-public-preview/?WT.mc_id=maximerouiller-blog-marouill
+[StaticWebsite]: https://azure.microsoft.com/blog/azure-storage-static-web-hosting-public-preview/?WT.mc_id=personal-blog-marouill

@@ -10,13 +10,13 @@ Video version also available
 
 Cosmos DB is a globally distributed database that offers single-digit-millisecond latencies on multiple models. That's a lot of power under the hood. As you may be tempted to use as much of it as possible, you have to remember that you are billed for what you use.
 
-Cosmos DB they measure your actual usage of the service on [Request Units (RU)](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units?WT.mc_id=maximerouiller-blog-marouill#introduction). 
+Cosmos DB they measure your actual usage of the service on [Request Units (RU)](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units?WT.mc_id=personal-blog-marouill#introduction). 
 
 ## What are Cosmos DB Request Units (RU)?
 
 Request units are a normalized number that represents the amount of computing power (read: CPU) required to serve the request. Inserting new documents? Inexpensive. Making a query that sums up a field based on an unindexed field? Ccostly.
 
-By going to the [Cosmos DB Capacity Planner tool](https://www.documentdb.com/capacityplanner?WT.mc_id=maximerouiller-blog-marouill), we can test from a JSON sample document how many RUs are required based on your estimated usage. By uploading a simple document and setting all input values to 1 (create, read, update, delete) we can see which operations are relatively more expensive than others.  
+By going to the [Cosmos DB Capacity Planner tool](https://www.documentdb.com/capacityplanner?WT.mc_id=personal-blog-marouill), we can test from a JSON sample document how many RUs are required based on your estimated usage. By uploading a simple document and setting all input values to 1 (create, read, update, delete) we can see which operations are relatively more expensive than others.  
 
 ```none
 Create RUs:  5.71
@@ -96,14 +96,14 @@ If all you wanted was the code, what's above will do the trick for you. If you w
 
 Cosmos DB will never return 1 million rows to you in one response. It will page it. It's why we see a pattern similar to an `Enumerator`.
 
-The first thing we do is move the query from an IQueryable to an [`IDocumentQuery`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.linq.idocumentquery-1?view=azure-dotnet&WT.mc_id=maximerouiller-blog-marouill). Using this method enables us to access the `ExecuteNextAsync` method and the `HasMoreResults` property. With just those two, we can now get a separate `FeedResponse<T>` for each *page* of our query. It's now obvious that if you try to extract all the data from a collection, you are using RUs for each page of result. 
+The first thing we do is move the query from an IQueryable to an [`IDocumentQuery`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.linq.idocumentquery-1?view=azure-dotnet&WT.mc_id=personal-blog-marouill). Using this method enables us to access the `ExecuteNextAsync` method and the `HasMoreResults` property. With just those two, we can now get a separate `FeedResponse<T>` for each *page* of our query. It's now obvious that if you try to extract all the data from a collection, you are using RUs for each page of result. 
 
 ## Next Steps
 
 Want to give it a try? Never tried Cosmos DB before? 
 
-You can [get 7 day of free, no credit card, no subscription access](https://azure.microsoft.com/en-us/try/cosmosdb/?WT.mc_id=maximerouiller-blog-marouill), and no questions asked.
+You can [get 7 day of free, no credit card, no subscription access](https://azure.microsoft.com/en-us/try/cosmosdb/?WT.mc_id=personal-blog-marouill), and no questions asked.
 
-Then, once you have a free database, try one of the [5 minutes quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/?WT.mc_id=maximerouiller-blog-marouill) in the language that you want.
+Then, once you have a free database, try one of the [5 minutes quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/?WT.mc_id=personal-blog-marouill) in the language that you want.
 
 Need more help? Ask me [on Twitter](https://twitter.com/MaximRouiller). I'll be happy to help!

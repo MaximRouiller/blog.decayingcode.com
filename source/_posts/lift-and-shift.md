@@ -81,7 +81,7 @@ There's many ways to evolve once your old legacy servers are in a VM on Azure.
 
 Going with containers is one of the many solutions. Of course, if you already have containers internally, your lift and shift to Azure should be about as painless as can be. If you are not, it will make your life easier by identifying the dependencies your old applications were using. This would allow you to leverage the cloud reliability and scalability without changing too much.
 
-Without containers, consider [Azure Site Recovery](https://azure.microsoft.com/en-us/services/site-recovery/?WT.mc_id=maximerouiller-blog-marouill) to automate replication of VMs on the cloud.
+Without containers, consider [Azure Site Recovery](https://azure.microsoft.com/en-us/services/site-recovery/?WT.mc_id=personal-blog-marouill) to automate replication of VMs on the cloud.
 
 For certain application going Cloud Native is definitely going to save you more money as you adapt your application to only use the resources it needs. By using Blob Storage instead of the file system, NoSQL storage where it makes sense and activating auto scaling, you will be able to save money and run a leaner business.
 

@@ -77,7 +77,7 @@ That's the beauty of it. On a consumption plan? Zero. You only pay for what you 
 
 Creating a decoupled architecture is easier with a serverless architecture. Cost is also way easier to manage when you don't need to pre-provision resources and are only paying for what you are executing.
 
-[QueueTrigger]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue?WT.mc_id=maximerouiller-blog-marouill
-[TableOutputBinding]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table?WT.mc_id=maximerouiller-blog-marouill
-[PoisonMessage]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue#handling-poison-queue-messages?WT.mc_id=maximerouiller-blog-marouill
-[FreeQuota]: https://azure.microsoft.com/en-ca/pricing/details/functions/?WT.mc_id=maximerouiller-blog-marouill
+[QueueTrigger]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue?WT.mc_id=personal-blog-marouill
+[TableOutputBinding]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-table?WT.mc_id=personal-blog-marouill
+[PoisonMessage]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-storage-queue#handling-poison-queue-messages?WT.mc_id=personal-blog-marouill
+[FreeQuota]: https://azure.microsoft.com/en-ca/pricing/details/functions/?WT.mc_id=personal-blog-marouill

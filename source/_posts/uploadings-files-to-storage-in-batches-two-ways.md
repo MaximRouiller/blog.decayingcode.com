@@ -10,7 +10,7 @@ What? You hacked my site? Let me delete everything, reupload my files, and... we
 
 Having the source of truth away from your deployment is a big relief. Your deployment having no possible actions on your source of truth is even better.
 
-Okay, where am I going with this? Maybe you saw the [announcement](https://azure.microsoft.com/blog/static-websites-on-azure-storage-now-generally-available/?WT.mc_id=maximerouiller-blog-marouill) a few days ago that Static Sites on Azure Storage went General Availability (internally, we call this **GA** because we love acronyms).
+Okay, where am I going with this? Maybe you saw the [announcement](https://azure.microsoft.com/blog/static-websites-on-azure-storage-now-generally-available/?WT.mc_id=personal-blog-marouill) a few days ago that Static Sites on Azure Storage went General Availability (internally, we call this **GA** because we love acronyms).
 
 Now let me tell you something else that you may not have picked up that I consider GA (Greatly Amazing).
 
@@ -26,11 +26,11 @@ So how do I get you, dear reader, to be able to upload it from anywhere in the w
 az storage blob upload-batch -d MyContainer --account-name MyStorageAccount -s ./generated/ --pattern *.html --if-unmodified-since 2018-08-27T20:51Z
 ```
 
-Want to customize it a little? [Check out the docs](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest&WT.mc_id=maximerouiller-blog-marouill#az-storage-blob-upload-batch). It's easy. It's amazing. It works in [Azure Cloud Shell](https://shell.azure.com?WT.mc_id=maximerouiller-blog-marouill).
+Want to customize it a little? [Check out the docs](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest&WT.mc_id=personal-blog-marouill#az-storage-blob-upload-batch). It's easy. It's amazing. It works in [Azure Cloud Shell](https://shell.azure.com?WT.mc_id=personal-blog-marouill).
 
 ### Graphical User Interface (GUI, see? we love them)
 
-You know what I think is even better in demos? A nice graphical interface. No, I'm not about to recommend you install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/?WT.mc_id=maximerouiller-blog-marouill) to edit some markdown files and publish to Azure Storage. May look fun but... it's still Windows only. I want you to be able to do that operation everywhere.
+You know what I think is even better in demos? A nice graphical interface. No, I'm not about to recommend you install [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/?WT.mc_id=personal-blog-marouill) to edit some markdown files and publish to Azure Storage. May look fun but... it's still Windows only. I want you to be able to do that operation everywhere.
 
 Let's take something cross platform. Let's take something that isn't as polarizing. Let's take an IDE that's built on Electron.
 
@@ -38,7 +38,7 @@ Let's use Azure Storage Explorer. *record scratch*
 
 #### Azure Storage Explorer
 
-[Download it](https://azure.microsoft.com/features/storage-explorer/?WT.mc_id=maximerouiller-blog-marouill). Install it. Open it. Login with your account.
+[Download it](https://azure.microsoft.com/features/storage-explorer/?WT.mc_id=personal-blog-marouill). Install it. Open it. Login with your account.
 
 Bam. We're here.
 
@@ -60,7 +60,7 @@ It is supported. You are in good hands. Do you have feedback on the Azure Static
 
 Here's a summary of all the links in this post.
 
-- [Azure Storage Static Site General Availability Announcement](https://azure.microsoft.com/blog/static-websites-on-azure-storage-now-generally-available/?WT.mc_id=maximerouiller-blog-marouill)
-- [Downloading Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/?WT.mc_id=maximerouiller-blog-marouill)
-- [Azure CLI Storage Batch Upload reference](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest&WT.mc_id=maximerouiller-blog-marouill#az-storage-blob-upload-batch))
-- [Azure Cloud Shell](https://shell.azure.com?WT.mc_id=maximerouiller-blog-marouill)
+- [Azure Storage Static Site General Availability Announcement](https://azure.microsoft.com/blog/static-websites-on-azure-storage-now-generally-available/?WT.mc_id=personal-blog-marouill)
+- [Downloading Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/?WT.mc_id=personal-blog-marouill)
+- [Azure CLI Storage Batch Upload reference](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest&WT.mc_id=personal-blog-marouill#az-storage-blob-upload-batch))
+- [Azure Cloud Shell](https://shell.azure.com?WT.mc_id=personal-blog-marouill)

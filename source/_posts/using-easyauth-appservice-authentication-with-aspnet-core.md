@@ -12,11 +12,11 @@ Of course, you can get a clear understanding of [how it works][HowEasyAuthWorks]
 
 EasyAuth works by intercepting the authentication requests (`/.auth/*`) or when authenticated, fills in the user context within your application. That's the 5-second pitch.
 
-Now, the [.NET Framework application lifecycle](https://support.microsoft.com/help/307985/info-asp-net-http-modules-and-http-handlers-overview?WT.mc_id=maximerouiller-blog-marouill) allowed tons of stuff to happen when you added an `HttpModule` in your application. You had access to everything and the kitchen sink.
+Now, the [.NET Framework application lifecycle](https://support.microsoft.com/help/307985/info-asp-net-http-modules-and-http-handlers-overview?WT.mc_id=personal-blog-marouill) allowed tons of stuff to happen when you added an `HttpModule` in your application. You had access to everything and the kitchen sink.
 
-.NET Core, on the other hand, removed the concept of all-powerful modules and instead introduced [Middlewares](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.0&WT.mc_id=maximerouiller-blog-marouill). Instead of relying on a fixed set of events happening in a pipeline, we could expand the pipeline as our application needed it.
+.NET Core, on the other hand, removed the concept of all-powerful modules and instead introduced [Middlewares](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.0&WT.mc_id=personal-blog-marouill). Instead of relying on a fixed set of events happening in a pipeline, we could expand the pipeline as our application needed it.
 
-I'm not going to go into details on [how to port HttpModules and Handlers](https://docs.microsoft.com/aspnet/core/migration/http-modules?view=aspnetcore-3.0&WT.mc_id=maximerouiller-blog-marouill) but let's assume that they are widely different.
+I'm not going to go into details on [how to port HttpModules and Handlers](https://docs.microsoft.com/aspnet/core/migration/http-modules?view=aspnetcore-3.0&WT.mc_id=personal-blog-marouill) but let's assume that they are widely different.
 
 One of the many differences is that `HttpModules` could be set within a `web.config` file and that config file could be defined at the machine level. That is not possible with Middlewares. At least, not yet.
 
@@ -54,4 +54,4 @@ That's it. If your controller has an `[Authorize]` attribute, the credentials ar
 
 Should I go farther? Would you like to see this integrated within a supported Microsoft package? Reach out to me directly on [Twitter](https://twitter.com/MaximRouiller) or the [many other ways available](https://developer.microsoft.com/en-us/advocates/maxime-rouiller).
 
-[HowEasyAuthWorks]: https://docs.microsoft.com/azure/app-service/overview-authentication-authorization?WT.mc_id=maximerouiller-blog-marouill#how-it-works
+[HowEasyAuthWorks]: https://docs.microsoft.com/azure/app-service/overview-authentication-authorization?WT.mc_id=personal-blog-marouill#how-it-works

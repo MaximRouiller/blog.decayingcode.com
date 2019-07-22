@@ -6,7 +6,7 @@ tags: [azure, vm]
 
 Alright so this is kind of a big deal. This has been covered in the past but since this just hit General Availability, you need to get on this now. Or better, yesterday if you have access to a time machine.
 
-Before Managed disks, you had to [create an Azure Storage Account for each VM to avoid IOPS limits](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-guidance-compute-single-vm?WT.mc_id=maximerouiller-blog-marouill#disk-and-storage-recommendations). But this wasn't enough to keep your VMs up and running. You had to also manage [availability sets](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-guidance-compute-single-vm?WT.mc_id=maximerouiller-blog-marouill#availability-considerations).
+Before Managed disks, you had to [create an Azure Storage Account for each VM to avoid IOPS limits](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-guidance-compute-single-vm?WT.mc_id=personal-blog-marouill#disk-and-storage-recommendations). But this wasn't enough to keep your VMs up and running. You had to also manage [availability sets](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-guidance-compute-single-vm?WT.mc_id=personal-blog-marouill#availability-considerations).
 
 This has led a some people as far away from VM as possible. But if you consider the insane advantages of VM Scale Sets (read: massive scale-out, massive machine specs, etc.), you don't want to avoid this card in your solution deck. You want to embrace it. But if you start embracing VMs, you have to start dealing with the Storage Accounts and the Availability Sets and, let's be honest, it was clunky.
 
@@ -44,18 +44,18 @@ foreach($vmInfo in $avSet.VirtualMachinesReferences)
 }
 ```
 
-[Source 1](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-migrate-to-managed-disks?WT.mc_id=maximerouiller-blog-marouill)
+[Source 1](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-migrate-to-managed-disks?WT.mc_id=personal-blog-marouill)
 |
-[Source 2](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-convert-unmanaged-to-managed-disks?WT.mc_id=maximerouiller-blog-marouill#convert-existing-azure-vms-to-managed-disks-of-the-same-storage-type)
+[Source 2](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-convert-unmanaged-to-managed-disks?WT.mc_id=personal-blog-marouill#convert-existing-azure-vms-to-managed-disks-of-the-same-storage-type)
 
 ### More links
 
 Here's some more resource that may help you convert your VMs.
 
-If you are using the Azure CLI, they [updated their tooling](https://azure.microsoft.com/en-us/blog/azure-cli-managed-disks/?WT.mc_id=maximerouiller-blog-marouill) to allow you to manage the "Managed Disks".
+If you are using the Azure CLI, they [updated their tooling](https://azure.microsoft.com/en-us/blog/azure-cli-managed-disks/?WT.mc_id=personal-blog-marouill) to allow you to manage the "Managed Disks".
 
-If you rather use C# to manage your application, the [.NET Azure SDK is also up to date](https://azure.microsoft.com/en-us/blog/net-manage-azure-managed-disks/?WT.mc_id=maximerouiller-blog-marouill).
+If you rather use C# to manage your application, the [.NET Azure SDK is also up to date](https://azure.microsoft.com/en-us/blog/net-manage-azure-managed-disks/?WT.mc_id=personal-blog-marouill).
 
-Finally, if you want to start playing with VM Scale Sets and Managed Disks, here's a [quick "how to"](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attached-disks?WT.mc_id=maximerouiller-blog-marouill).
+Finally, if you want to start playing with VM Scale Sets and Managed Disks, here's a [quick "how to"](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attached-disks?WT.mc_id=personal-blog-marouill).
 
 Are Managed Disks something that you waited for? Let me know in the comments!

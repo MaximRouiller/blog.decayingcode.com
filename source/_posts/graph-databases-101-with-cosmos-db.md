@@ -36,11 +36,11 @@ With the vocabulary out, Cosmos DB allows us to create graph database really eas
 
 ## Creating a Cosmos DB Graph API
 
-So to create my first Cosmos DB Graph database, I followed [this tutorial](https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console?WT.mc_id=maximerouiller-blog-marouill#create-a-database-account).
+So to create my first Cosmos DB Graph database, I followed [this tutorial](https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console?WT.mc_id=personal-blog-marouill#create-a-database-account).
 
 For the Cosmos DB name, we'll use `beerpub`, the resource group `beerapp`, and as for the API, we'll use Gremlin (graph).
 
-Then, using [this other section of the quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console?WT.mc_id=maximerouiller-blog-marouill#create-a-database-account), we'll create a graph. For the database, we'll use `beerpub` and for the graph ID we're going to use `beergraph`.
+Then, using [this other section of the quickstart](https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console?WT.mc_id=personal-blog-marouill#create-a-database-account), we'll create a graph. For the database, we'll use `beerpub` and for the graph ID we're going to use `beergraph`.
 
 We'll want to keep the storage to 10Gb and the RU as low as possible since we're just kicking the tires and wouldn't want to receive a big invoice.
 
