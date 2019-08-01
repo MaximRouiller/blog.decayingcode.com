@@ -10,7 +10,7 @@ tags: [documentation]
 
 Hi everyone!
 
-If you missed our first post for June, well today I'm posting a summary of all .NET related documentation that were updated significantly during the previous month (July).
+If you missed our first post for June, well today I'm posting a summary of all .NET related documentation that were updated significantly during the month of July.
 
 My name is Maxime Rouiller and I'm a Cloud Advocate with Microsoft. For the month of July, I'm covering 3 major products.
 
@@ -24,9 +24,15 @@ So here are all the documentation updates by product with commentary when availa
 
 ## .NET Core
 
-There were lots of consolidation in the documentation happening. Things that were in .NET Frameworks documentation that needed to also be in the .NET Core documentation. Things like Native Interops (say hi to COM), the C# Language Reference
+There were lots of consolidation in the documentation happening. Content that was specific to the .NET Framework documentation that also applies to the .NET Core documentation are being moved to the .NET Guide. Things like Native Interop (say hi to COM), the C# Language Reference
 
-### Native Interops
+## .NET Architecture
+
+The .NET Architecture e-books content was mixed in with the fundamentals content under the .NET Guide. The team wanted to give a better home for those, so a new landing page was created.
+
+[.NET Application Architecture Guidance](https://docs.microsoft.com/dotnet/architecture?wt.mc_id=docs-reddit-marouill)
+
+### Native Interop
 
 * [Exposing .NET Core Components to COM](https://docs.microsoft.com/dotnet/core/native-interop/expose-components-to-com?wt.mc_id=docs-reddit-marouill)
 * [COM Interop in .NET](https://docs.microsoft.com/dotnet/standard/native-interop/cominterop?wt.mc_id=docs-reddit-marouill)
@@ -51,7 +57,7 @@ There were lots of consolidation in the documentation happening. Things that wer
 
 ### VB.NET
 
-There were a tons of documentation that needed examples. Here are a few. To change to VB, make sure that you pick from it at the top of the page left of the "Feedback" button.
+There were tons of documentation that needed examples. Here are a few. To change the language to VB, make sure you pick your favorite language on the language selector at the top of the page left of the "Feedback" button.
 
 * [Handles clause requires a WithEvents variable defined in the containing type or one of its base types](https://docs.microsoft.com/dotnet/visual-basic/language-reference/error-messages/handles-clause-requires-a-withevents-variable-defined?wt.mc_id=docs-reddit-marouill)
 * [Best Practices for exceptions - .NET](https://docs.microsoft.com/dotnet/standard/exceptions/best-practices-for-exceptions?wt.mc_id=docs-reddit-marouill)
@@ -74,7 +80,10 @@ This .NET CLI tutorial was rewritten and went from one page to three.
 
 ## .NET Core API
 
-???
+.NET Core 3.0 Preview 7 was launched on July 23rd, so the API reference documentation for .NET Core and .NET Platform Extensions 3.0 was updated.
+The documentation team is also working closing with the .NET developer team to add more API documentation for .NET Core 3.0. We reduced the number of undocumented APIs by 1,374 in July and this effort will continue through the month of August.
+
+* [.NET Core 3.0 API docs](https://docs.microsoft.com/dotnet/api/?view=netcore-3.0&wt.mc_id=docs-reddit-marouill)
 
 ## ASP.NET Core
 
