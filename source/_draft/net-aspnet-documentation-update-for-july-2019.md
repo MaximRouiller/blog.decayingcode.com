@@ -24,7 +24,7 @@ So here are all the documentation updates by product with commentary when availa
 
 ## .NET Core
 
-There were lots of consolidation in the documentation happening. Content that was specific to the .NET Framework documentation that also applies to the .NET Core documentation are being moved to the .NET Guide. Things like Native Interops (say hi to COM), the C# Language Reference
+There were lots of consolidation in the documentation happening. Content that was specific to the .NET Framework documentation that also applies to the .NET Core documentation are being moved to the .NET Guide. Things like Native Interop (say hi to COM), the C# Language Reference
 
 ## .NET Architecture
 
