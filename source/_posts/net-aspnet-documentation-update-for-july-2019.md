@@ -35,7 +35,7 @@ The .NET Architecture e-books content was mixed in with the fundamentals content
 * [Exposing .NET Core Components to COM](https://docs.microsoft.com/dotnet/core/native-interop/expose-components-to-com?wt.mc_id=personal-blog-marouill)
 * [COM Interop in .NET](https://docs.microsoft.com/dotnet/standard/native-interop/cominterop?wt.mc_id=personal-blog-marouill)
 
-### C\#
+### C#
 
 !!!  WHAT ARE THOSE? HAVE THEY BEEN REWRITTEN? !!!
 
