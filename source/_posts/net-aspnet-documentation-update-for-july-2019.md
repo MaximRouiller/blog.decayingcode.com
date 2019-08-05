@@ -35,9 +35,7 @@ The .NET Architecture e-books content was mixed in with the fundamentals content
 * [Exposing .NET Core Components to COM](https://docs.microsoft.com/dotnet/core/native-interop/expose-components-to-com?wt.mc_id=personal-blog-marouill)
 * [COM Interop in .NET](https://docs.microsoft.com/dotnet/standard/native-interop/cominterop?wt.mc_id=personal-blog-marouill)
 
-### C#
-
-!!!  WHAT ARE THOSE? HAVE THEY BEEN REWRITTEN? !!!
+### Csharp
 
 * [sizeof operator - C# reference](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/sizeof?wt.mc_id=personal-blog-marouill)
 * [Unmanaged types - C# reference](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/unmanaged-types?wt.mc_id=personal-blog-marouill)
