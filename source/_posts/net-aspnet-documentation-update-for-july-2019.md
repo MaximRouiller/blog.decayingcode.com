@@ -4,8 +4,6 @@ date: 2019-08-05 12:00:00
 tags: [documentation]
 ---
 
-# .NET/ASP.NET Documentation Update for July 2019
-
 **tldr; This is a status update on the .NET documentation. If you want me to do more of those (once a month), please let me know in the comments! **
 
 Hi everyone!
