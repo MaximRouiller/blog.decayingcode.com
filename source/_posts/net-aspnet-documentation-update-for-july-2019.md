@@ -74,7 +74,7 @@ This .NET CLI tutorial was rewritten and went from one page to three.
 * [Containerize an app with Docker tutorial](https://docs.microsoft.com/dotnet/core/docker/build-container?wt.mc_id=personal-blog-marouill)
   * Added examples, updated dockerfile `FROM`, added steps on how to build the container
 
-## .NET Core API
+## .NET APIs
 
 .NET Core 3.0 Preview 7 was launched on July 23rd, so the API reference documentation for .NET Core and .NET Platform Extensions 3.0 was updated.
 The documentation team is also working closing with the .NET developer team to add more API documentation for .NET Core 3.0. We reduced the number of undocumented APIs by 1,374 in July and this effort will continue through the month of August.
