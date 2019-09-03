@@ -72,6 +72,14 @@ Brand new articles on the available diagnostic tools within .NET Core. From mana
 
 ## ML.NET
 
+New tutorial for developing an ONNX model to detect objects in images:
+
+* [Detect images in objects](https://docs.microsoft.com/dotnet/machine-learning/tutorials/object-detection-onnx)
+
+Articles on Model Builder and ML.NET CLI are now in the main table of contents under *Tools* sections:
+
+* [Tools table of contents](https://docs.microsoft.com/dotnet/machine-learning/automate-training-with-model-builder)
+
 There was a small but important bug fix to the ML.NET CLI telemetry article to fix the environment variable name to opt out of telemetry:
 
 * [Telemetry collection by the ML.NET CLI](https://docs.microsoft.com/dotnet/machine-learning/resources/ml-net-cli-telemetry?noop=docs3-reddit-marouill)
