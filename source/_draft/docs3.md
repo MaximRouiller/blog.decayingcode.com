@@ -6,15 +6,15 @@ tags: [documentation]
 
 **tldr; This is a status update on the .NET documentation. If you want me to do more of those (once a month), please let me know in the comments!**
 
-**NOTE: .NET Core 3 will hit GA during [.NET Conf](https://www.dotnetconf.net). That is on September 23rd 2019. The conference is online and you will be able to ask questions. Please consider attending!**
+**NOTE: .NET Core 3.0 will be released at [.NET Conf](https://www.dotnetconf.net). That starts on September 23rd 2019. The conference is online and you'll be able to ask questions. Please consider attending!**
 
 Hi everyone!
 
-This is the 3rd month where I post a summary of all .NET-related documentat that were significantly updated during last month! This month? August.
+This is the third month where I post a summary of all .NET-related documentation that were significantly updated during the month of August.
 
-My name is Maxime Rouiller and I'm a Cloud Advocate with Microsoft. For this month, I'm covering 3 major products.
+My name is Maxime Rouiller and I'm a Cloud Advocate with Microsoft. For this month, I'm covering three major products:
 
-* .NET, which had ~249 commits, and 4,247 changed files on their [docs repository](https://github.com/dotnet/docs)
+* .NET, which had ~249 commits, and 4,247 changed files on their [docs repository](https://github.com/dotnet/docs) and ~184 PRs on their [API docs repository](https://github.com/dotnet/dotnet-api-docs)
 * ASP.NET, which had ~269 commits, and 1,615 changed files on their [docs repository](https://github.com/aspnet/AspNetCore.Docs)
 * NuGet, which had ~136 commits, and 85 changed files on their [docs repository](https://github.com/NuGet/docs.microsoft.com-nuget)
 
@@ -35,7 +35,7 @@ So here are all the documentation updates by product with commentary when availa
 
 ## .NET Core
 
-There was this addition that was made this month.
+There was this addition that was made this month:
 
 * [DateTime and DateTimeOffset support in System.Text.Json](https://docs.microsoft.com/dotnet/standard/datetime/system-text-json-support?noop=docs3-reddit-marouill)
 
@@ -43,35 +43,51 @@ Another VERY interesting article that was updated this month is a guidance artic
 
 * [Cross-platform targeting for .NET libraries](https://docs.microsoft.com/dotnet/standard/library-guidance/cross-platform-targeting?noop=docs3-reddit-marouill)
 
+The telemetry article has been thoroughly revised and now includes a link for you to see the telemetry data for the past quarter (Q2):
+
+* [.NET Core SDK telemetry](https://docs.microsoft.com/dotnet/core/tools/telemetry?noop=docs3-reddit-marouill)
+
+The .NET Standard support table was updated to include the 2.1 Preview information:
+
+* [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard#net-implementation-support?noop=docs3-reddit-marouill)
+
 ### Dependency Loading
 
-All of the following are brand new articles.
+All of the following are brand new .NET Core articles:
 
-* [Default probing - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/default-probing?noop=docs3-reddit-marouill)
-* [Managed assembly loading algorithm - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-managed?noop=docs3-reddit-marouill)
-* [Satellite assembly loading algorithm - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-resources?noop=docs3-reddit-marouill)
-* [Unmanaged library loading algorithm - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-unmanaged?noop=docs3-reddit-marouill)
-* [Dependency loading - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/overview?noop=docs3-reddit-marouill)
-* [Understanding AssemblyLoadContext - .NET Core](https://docs.microsoft.com/dotnet/core/dependency-loading/understanding-assemblyloadcontext?noop=docs3-reddit-marouill)
+* [Default probing](https://docs.microsoft.com/dotnet/core/dependency-loading/default-probing?noop=docs3-reddit-marouill)
+* [Managed assembly loading algorithm](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-managed?noop=docs3-reddit-marouill)
+* [Satellite assembly loading algorithm](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-resources?noop=docs3-reddit-marouill)
+* [Unmanaged library loading algorithm](https://docs.microsoft.com/dotnet/core/dependency-loading/loading-unmanaged?noop=docs3-reddit-marouill)
+* [Dependency loading](https://docs.microsoft.com/dotnet/core/dependency-loading/overview?noop=docs3-reddit-marouill)
+* [Understanding AssemblyLoadContext](https://docs.microsoft.com/dotnet/core/dependency-loading/understanding-assemblyloadcontext?noop=docs3-reddit-marouill)
 
 ### Diagnostics
 
-Brand new articles on the available diagnostic tools within .NET Core. From managed debuggers, logging, tracing, and unit testing.
+Brand new articles on the available diagnostic tools within .NET Core. From managed debuggers, logging, tracing, and unit testing:
 
-* [Diagnostics tools overview - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/index?noop=docs3-reddit-marouill)
-* [Logging and tracing - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/logging-tracing?noop=docs3-reddit-marouill)
-* [Managed debuggers - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/managed-debuggers?noop=docs3-reddit-marouill)
+* [Diagnostics tools overview](https://docs.microsoft.com/dotnet/core/diagnostics/index?noop=docs3-reddit-marouill)
+* [Logging and tracing](https://docs.microsoft.com/dotnet/core/diagnostics/logging-tracing?noop=docs3-reddit-marouill)
+* [Managed debuggers](https://docs.microsoft.com/dotnet/core/diagnostics/managed-debuggers?noop=docs3-reddit-marouill)
 
-### Tutorials, HowTo, guides, and others
+## ML.NET
+
+There was a small but important bug fix to the ML.NET CLI telemetry article to fix the environment variable name to opt out of telemetry:
+
+* [Telemetry collection by the ML.NET CLI](https://docs.microsoft.com/dotnet/machine-learning/resources/ml-net-cli-telemetry?noop=docs3-reddit-marouill)
+
+## .NET for Apache Spark
+
+A new tutorial was added based on a customer suggestion:
 
 * [Debug a .NET for Apache Spark application on Windows](https://docs.microsoft.com/dotnet/spark/how-to-guides/debug?noop=docs3-reddit-marouill)
 
 ## .NET APIs
 
-.NET Core 3.0 Preview 8 was launched on August 14th, so the API reference documentation for .NET Core and .NET Platform Extensions 3.0 was updated.
-The documentation team is also working closely with the .NET developer team to add more API documentation for .NET Core 3.0. We reduced the number of undocumented APIs by 1,374 in August and this effort will continue through the month of September.
+.NET Core 3.0 Preview 8 was launched on August 14th, so the API reference documentation for .NET Core and .NET Platform Extensions 3.0 was updated. The API documentation was also updated to include a new version of .NET Standard 2.1 Preview.
+The documentation team is also working closely with the .NET developer team to add more API documentation for .NET Core 3.0. We reduced the number of undocumented APIs by 1,336 in August.
 
-Want to watch what's going on? Follow the [.NET APIs Docs repository](https://github.com/dotnet/dotnet-api-docs/)!
+Do you want to watch what's going on? Follow the [.NET APIs Docs repository](https://github.com/dotnet/dotnet-api-docs/)!
 
 ## ASP.NET Core
 
@@ -157,7 +173,6 @@ This whole tutorial was updated to 3.0 and got good changes to review. Worth goi
 * [Razor Pages with EF Core in ASP.NET Core - Read Related Data - 6 of 8](https://docs.microsoft.com/aspnet/core/data/ef-rp/read-related-data?view=aspnetcore-3.0&noop=docs3-reddit-marouill)
 * [Razor Pages with EF Core in ASP.NET Core - Update Related Data - 7 of 8](https://docs.microsoft.com/aspnet/core/data/ef-rp/update-related-data?view=aspnetcore-3.0&noop=docs3-reddit-marouill)
 * [Razor Pages with EF Core in ASP.NET Core - Concurrency - 8 of 8](https://docs.microsoft.com/aspnet/core/data/ef-rp/concurrency?view=aspnetcore-3.0&noop=docs3-reddit-marouill)
-
 
 ### Tutorials, HowTo, guides, and others
 
