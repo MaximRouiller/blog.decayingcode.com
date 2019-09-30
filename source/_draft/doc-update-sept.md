@@ -56,20 +56,6 @@ Everything is linked below (expect more updates in later months) but you may wan
 > ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
 * [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/index?wt.mc_id=)
-  - [App startup](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/app-startup?wt.mc_id=)
-  - [Architecture comparison of ASP.NET Web Forms and Blazor](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/architecture-comparison?wt.mc_id=)
-  - [Build reusable UI components with Blazor](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/components?wt.mc_id=)
-  - [App configuration](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/config?wt.mc_id=)
-  - [Data access and management](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/data?wt.mc_id=)
-  - [Forms and validation](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/forms-validation?wt.mc_id=)
-  - [Blazor app hosting models](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/hosting-models?wt.mc_id=)
-  - [An introduction to Blazor for ASP.NET Web Forms developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/introduction?wt.mc_id=)
-  - [Modules, handlers, and middleware](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/middleware?wt.mc_id=)
-  - [Migrate from ASP.NET Web Forms to Blazor](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/migration?wt.mc_id=)
-  - [Pages, routing, and layouts](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/pages-routing-layouts?wt.mc_id=)
-  - [Project structure for Blazor apps](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/project-structure?wt.mc_id=)
-  - ['Security: authentication and authorization in ASP.NET Web Forms and Blazor'](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization?wt.mc_id=)
-  - [State management](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/state-management?wt.mc_id=)
 
 ### eBook Update - Architecting Cloud Native .NET Applications for Azure
 
@@ -80,13 +66,6 @@ This is the book for you. Lots of new articles and updated chapters after the 3.
 > ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
 * [Architecting Cloud Native .NET Applications for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/?wt.mc_id=)
-  - [Logging with Elastic Stack](https://docs.microsoft.com/dotnet/architecture/cloud-native/logging-with-elastic-stack?wt.mc_id=)
-  - [Scaling containers and serverless applications](https://docs.microsoft.com/dotnet/architecture/cloud-native/scale-containers-serverless?wt.mc_id=)
-  - [Service Mesh communication infrastructure](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-mesh-communication-infrastructure?wt.mc_id=)
-  - [Service-to-service communication](https://docs.microsoft.com/dotnet/architecture/cloud-native/service-to-service-communication?wt.mc_id=)
-  - [Front-end client communication](https://docs.microsoft.com/dotnet/architecture/cloud-native/front-end-communication?wt.mc_id=)
-  - [Leveraging containers and orchestrators](https://docs.microsoft.com/dotnet/architecture/cloud-native/leverage-containers-orchestrators?wt.mc_id=)
-  - [Leveraging serverless functions](https://docs.microsoft.com/dotnet/architecture/cloud-native/leverage-serverless-functions?wt.mc_id=)
 
 ### eBook - ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers 💥✨
 
@@ -97,46 +76,6 @@ This books take you from migration, load balancing, kubernetes, error handling, 
 > ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
 * [ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/index?wt.mc_id=)
-  - [Appendix - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/appendix?wt.mc_id=)
-  - [Application Performance Management - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/application-performance-management?wt.mc_id=)
-  - [How gRPC approaches RPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/approach?wt.mc_id=)
-  - [Call credentials - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/call-credentials?wt.mc_id=)
-  - [Channel credentials - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/channel-credentials?wt.mc_id=)
-  - [Create gRPC client libraries - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/client-libraries?wt.mc_id=)
-  - [Create a new ASP.NET Core gRPC project - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/create-project?wt.mc_id=)
-  - [Docker - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/docker?wt.mc_id=)
-  - [Encryption and network security - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/encryption?wt.mc_id=)
-  - [Error handling - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/error-handling?wt.mc_id=)
-  - [gRPC in production - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/grpc-in-production?wt.mc_id=)
-  - [Overview of gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/grpc-overview?wt.mc_id=)
-  - [Interface Definition Language - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/interface-definition-language?wt.mc_id=)
-  - [Introduction - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/introduction?wt.mc_id=)
-  - [Kubernetes - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/kubernetes?wt.mc_id=)
-  - [Load balancing gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/load-balancing?wt.mc_id=)
-  - [Metadata - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/metadata?wt.mc_id=)
-  - [Migrate WCF duplex services to gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/migrate-duplex-services?wt.mc_id=)
-  - [Migrate a WCF request-reply service to gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/migrate-request-reply?wt.mc_id=)
-  - [Migrate a WCF solution to gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/migrate-wcf-to-grpc?wt.mc_id=)
-  - [Network protocols - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/network-protocols?wt.mc_id=)
-  - [Protobuf Any and Oneof fields for variant types - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-any-oneof?wt.mc_id=)
-  - [Protobuf scalar data types - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-data-types?wt.mc_id=)
-  - [Protobuf enumerations - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-enums?wt.mc_id=)
-  - [Protobuf maps for dictionaries - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-maps?wt.mc_id=)
-  - [Protobuf messages - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-messages?wt.mc_id=)
-  - [Protobuf nested types - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-nested-types?wt.mc_id=)
-  - [Repeated fields for lists and arrays - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-repeated?wt.mc_id=)
-  - [Protobuf reserved fields - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protobuf-reserved?wt.mc_id=)
-  - [Protocol buffers - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/protocol-buffers?wt.mc_id=)
-  - [Types of RPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/rpc-types?wt.mc_id=)
-  - [Security in gRPC applications - gRPC for WCF developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/security?wt.mc_id=)
-  - [Self-hosted gRPC applications - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/self-hosted?wt.mc_id=)
-  - [Service meshes - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/service-mesh?wt.mc_id=)
-  - [gRPC streaming services versus repeated fields - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/streaming-versus-repeated?wt.mc_id=)
-  - [WCF bindings and transports - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/wcf-bindings?wt.mc_id=)
-  - [WCF endpoints and gRPC methods - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/wcf-endpoints-grpc-methods?wt.mc_id=)
-  - [Comparing WCF to gRPC - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/wcf-services-to-grpc-comparison?wt.mc_id=)
-  - [Why gRPC is recommended for WCF developers - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/why-grpc?wt.mc_id=)
-  - [WS-* protocols - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/ws-protocols?wt.mc_id=)
 
 ### Compatibility 💥
 
@@ -163,13 +102,6 @@ New guide about WPF for .NET Core, what it is and its place within .NET Core 3.0
 This guide may save you some time in the future.
 
 * [What is Windows Presentation Foundation](https://docs.microsoft.com/dotnet/desktop-wpf/overview/index?wt.mc_id=)
-  - [Data binding in WPF - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/data/data-binding-overview?wt.mc_id=)
-  - [Create a style in WPF - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/styles-templates-create-apply-style?wt.mc_id=)
-  - ['Styles & Templates in WPF - .NET Desktop'](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/styles-templates-overview?wt.mc_id=)
-  - [Define XAML resources for WPF - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/xaml-resources-define?wt.mc_id=)
-  - [XAML overview (WPF) - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/xaml?wt.mc_id=)
-  - [Migrating WPF Apps to .NET Core 3.0 - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/migration/convert-project-from-net-framework?wt.mc_id=)
-  - [Differences between .NET Framework WPF - .NET Desktop](https://docs.microsoft.com/dotnet/desktop-wpf/migration/differences-from-net-framework?wt.mc_id=)
 
 ### .NET Framework
 
