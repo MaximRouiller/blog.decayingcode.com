@@ -30,12 +30,11 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 
 ## Themes this month
 
-### .NET Core 3
+### .NET Core 3.0
 
 * What's new for Preview 9 and GA release
 * JSON serialization
 * CLI updates
-* Migration docs for 2.2 and 3.0
 
 ### Managed Languages
 
@@ -47,46 +46,46 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * 💥 [Prerequisites for .NET Core on Windows](https://docs.microsoft.com/dotnet/core/windows-prerequisites?wt.mc_id=)
 * 💥 [Breaking changes, version 3.0 Preview 9 to 3.0 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.9-3.0?wt.mc_id=)
 
-### eBook - Blazor for Web Forms Developers ✨
+### E-book - Blazor for Web Forms Developers (Preview) ✨
 
-Are you a Web Form developer? This book is brand new and will help you bridge your knowledge between WebForms and Blazor.
+Are you a Web Forms developer? This book is brand new and will help you bridge your knowledge between Web Forms and Blazor.
 
-Everything is linked below (expect more updates in later months) but you may want to start at the beginning.
+More content should be coming in the next few months.
 
-> ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
+> ❗ Don't forget that you can download all e-books with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
 * [Blazor for ASP.NET Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/index?wt.mc_id=)
 
-### eBook Update - Architecting Cloud Native .NET Applications for Azure
+### E-book - Architecting Cloud Native .NET Applications for Azure (Preview)
 
-Are you a developer, a lead or even an architect? Want to know how to build application that are made for the cloud?
+Are you a developer, a lead or even an architect? Do you ant to know how to build application that are made for the cloud?
 
-This is the book for you. Lots of new articles and updated chapters after the 3.0 GA release.
+This is the book for you.
 
-> ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
+> ❗ Don't forget that you can download all e-books with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
 * [Architecting Cloud Native .NET Applications for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/?wt.mc_id=)
 
-### eBook - ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers 💥✨
+### E-book - ASP.NET Core gRPC for WCF Developers (Preview) 💥✨
 
-Lots of you have asked me last month about how to handle gRPC coming from a WCF point of view. Well, this month is your time to shine. There's a literal book being currently written about it. The whole thing is brand new is aimed at developers that were, surprise surprise, using WCF before.
+Lots of you have asked me last month about how to handle gRPC coming from a WCF point of view. Well, this month is your time to shine. There's a literal book being currently written about it. The whole thing is brand new and is aimed at developers that were, surprise surprise, using WCF before.
 
-This books take you from migration, load balancing, kubernetes, error handling, security, to why even use it. It is a must read.
+This book takes you from migration, load balancing, Kubernetes, error handling, security, and to why even use it. It's a must read.
 
-> ❗ Do not forget that you can download all eBooks with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
+> ❗ Don't forget that you can download all e-books with the **Download PDF** button in the bottom left of your screen (desktop) or through the `Content` menu if you are on mobile. ❗
 
-* [ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/index?wt.mc_id=)
+* [ASP.NET Core gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/index?wt.mc_id=)
 
 ### Compatibility 💥
 
-If something broke, it's listed here. They are all important, if it impacts you. Go through the list and read those that applies to your current environment.
+When you're upgrading your app from one version of .NET Core to another, you might be interested to know if there were any compatibility changes introduced that could impact your app. The list is not final yet so there will be more breaking changes added in the next few months. You have the option to look at them by version or feature area:
 
+* [.NET Core breaking changes](https://docs.microsoft.com/dotnet/core/compatibility/breaking-changes?wt.mc_id=)
 * [Breaking changes, version 2.2 to 3.0 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/2.2-3.0?wt.mc_id=)
 * [Breaking changes, version 3.0 Preview 6 to 3.0 Preview 7 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.6-3.0.7?wt.mc_id=)
 * [Breaking changes, version 3.0 Preview 7 to 3.0 Preview 8 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.7-3.0.8?wt.mc_id=)
 * [Breaking changes, version 3.0 Preview 8 to 3.0 Preview 9 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.8-3.0.9?wt.mc_id=)
 * [Breaking changes, version 3.0 Preview 9 to 3.0 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.9-3.0?wt.mc_id=)
-* [.NET Core breaking changes](https://docs.microsoft.com/dotnet/core/compatibility/breaking-changes?wt.mc_id=)
 * [CoreFx breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/corefx?wt.mc_id=)
 * [Cryptography breaking changes, version 2.2 to 3.0 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/crypto?wt.mc_id=)
 * [Cryptography breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/cryptography?wt.mc_id=)
@@ -95,27 +94,37 @@ If something broke, it's listed here. They are all important, if it impacts you.
 * [Visual Basic breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/visualbasic?wt.mc_id=)
 * [Windows Forms breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/winforms?wt.mc_id=)
 
-### .NET Desktop Guide - What is Windows Presentation Foundation 💥✨
+### Desktop Guide for Windows Presentation Foundation (WPF) 💥✨
 
-New guide about WPF for .NET Core, what it is and its place within .NET Core 3.0. Whether you like XAML or not, It's a good thing to remember as there are tons of WPF applications in the wild and your chances of encountering one is mostly guaranteed.
+We're revamping the WPF content and giving it a new home called "Desktop Guide". This guide will cover WPF for both .NET Core and .NET Framework, with an emphasis on .NET Core. This guide will continue to grow over time as the team modernizes and bring more relevant content into it.
+
+Whether you like XAML or not, it's a good thing to remember as there are tons of WPF applications in the wild and your chances of encountering one is mostly guaranteed.
 
 This guide may save you some time in the future.
 
 * [What is Windows Presentation Foundation](https://docs.microsoft.com/dotnet/desktop-wpf/overview/index?wt.mc_id=)
+* [Differences between .NET Framework and .NET Core WPF](https://docs.microsoft.com/dotnet/desktop-wpf/migration/differences-from-net-framework?wt.mc_id=)
+* [Migrating WPF Apps to .NET Core 3.0](https://docs.microsoft.com/dotnet/desktop-wpf/migration/convert-project-from-net-framework?wt.mc_id=)
+* [XAML Overview](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/xaml?wt.mc_id=)
+* [Define XAML resources for WPF](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/xaml-resources-define?wt.mc_id=)
+* [Styles and templates in WPF](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/styles-templates-overview?wt.mc_id=)
+* [Create a style for a control in WPF](https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/styles-templates-create-apply-style?wt.mc_id=)
+* [Data binding overview](https://docs.microsoft.com/dotnet/desktop-wpf/data/data-binding-overview?wt.mc_id=)
 
 ### .NET Framework
 
-Updates to the actual .NET Framework. Not-Core related.
+Updates to the actual .NET Framework content. Not Core related.
 
 * [How to: Build a multifile assembly](https://docs.microsoft.com/dotnet/framework/app-domains/build-multifile-assembly?wt.mc_id=)
 * [How to: Build a .NET Framework single-file assembly](https://docs.microsoft.com/dotnet/framework/app-domains/build-single-file-assembly?wt.mc_id=)
 * [How to: Share an assembly with other applications](https://docs.microsoft.com/dotnet/framework/app-domains/how-to-share-an-assembly-with-other-applications?wt.mc_id=)
 * [How to: Get type and member information by using reflection](https://docs.microsoft.com/dotnet/framework/reflection-and-codedom/get-type-member-information?wt.mc_id=)
-* [Storyboards Overview](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/storyboards-overview?wt.mc_id=)
 
 ### .NET Guide - Assemblies in .NET
 
 Everything you ever wanted or didn't want to know about assemblies in .NET. To sign or not to sign isn't the question. Did you know? That is the question.
+
+The assemblies content used to be in the .NET Framework guide and was now moved to where our .NET Fundamentals content live. It's now applicable to both .NET Framework and .NET Core.
 
 * [Assemblies in .NET](https://docs.microsoft.com/dotnet/standard/assembly/index?wt.mc_id=)
 * [Assembly contents](https://docs.microsoft.com/dotnet/standard/assembly/contents?wt.mc_id=)
@@ -131,11 +140,11 @@ Everything you ever wanted or didn't want to know about assemblies in .NET. To s
 * [How to: Reference a strong-named assembly](https://docs.microsoft.com/dotnet/standard/assembly/reference-strong-named?wt.mc_id=)
 * [How to: Sign an assembly with a strong name](https://docs.microsoft.com/dotnet/standard/assembly/sign-strong-name?wt.mc_id=)
 
-### Tooling, Tutorial, Serialization, Exceptions, and Others
+### Tooling, tutorial, serialization, exceptions, and others
 
 Machine learning tutorial? Yes. We haven't gotten enough of them that's for sure. Machine learning is becoming omnipresent and starting with a tutorial sure is a good way to learn.
 
-* ['Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model'](https://docs.microsoft.com/dotnet/machine-learning/tutorials/text-classification-tf?wt.mc_id=)
+* [Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model](https://docs.microsoft.com/dotnet/machine-learning/tutorials/text-classification-tf?wt.mc_id=)
 * [Load data from files and other sources](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/load-data-ml-net?wt.mc_id=)
 
 The JSON serializer is brand new. Have you tried it? Those articles are your perfect start to understanding how it works. Including the most fun data type to serialize, `DateTime` and `DateTimeOffset`.
