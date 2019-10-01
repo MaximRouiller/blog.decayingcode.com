@@ -40,6 +40,8 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 
 * C# 8.0 Updates
 * C# 8.0 Spec updates
+* ✨[101 LINQ samples in your browser](https://github.com/dotnet/try-samples/tree/master/101-linq-samples). Through the magic of try.net, Blazor, and roslyn, you can explore LINQ using a dotnet global tool. See the [try-samples home page](https://github.com/dotnet/try-samples) for installation instructions and and more samples. 
+
 
 ## .NET Core
 
