@@ -18,7 +18,11 @@ steps:
 
 - script: |
     npm install hexo-cli -g & hexo generate
-  displayName: 'Installing Hexo CLI'
+  displayName: 'Installing Hexo CLI...'
+
+- script: |
+    hexo generate
+  displayName: 'Generating blog...'
 
 - task: PublishPipelineArtifact@1
   inputs:
