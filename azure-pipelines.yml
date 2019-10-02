@@ -23,8 +23,12 @@ steps:
 - script: |
     hexo generate
   displayName: 'Generating blog...'
-
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    SourceFolder: 'public'
+    TargetFolder: '$(Pipeline.Workspace)'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)\\public'
+    targetPath: '$(Pipeline.Workspace)'
     artifact: 'deployment'
