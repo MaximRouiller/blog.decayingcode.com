@@ -1,7 +1,14 @@
 # Node.js
 
 trigger:
-- master
+  branches:
+    include:
+      - master
+  paths:
+    include:
+      - '*'
+    exclude:
+      - 'source/_draft'
 
 pool:
   vmImage: 'ubuntu-latest'
