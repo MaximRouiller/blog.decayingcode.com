@@ -83,22 +83,6 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * ✨ [NameOf operator - Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/language-reference/operators/nameof?wt.mc_id=)
 * ['AddressOf' operand must be the name of a method (without parentheses)](https://docs.microsoft.com/dotnet/visual-basic/language-reference/error-messages/bc30577?wt.mc_id=)
 
-### WPF API changes
-
-* ✨ [Attribute (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/attribute-xelement-dynamic-property?wt.mc_id=)
-* ✨ [Descendants (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/descendants-xelement-dynamic-property?wt.mc_id=)
-* ✨ [Element (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/element-xelement-dynamic-property?wt.mc_id=)
-* ✨ [Elements (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/elements-xelement-dynamic-property?wt.mc_id=)
-* ✨ [L2DBForm.xaml.cs source code](https://docs.microsoft.com/dotnet/framework/wpf/data/l2dbform-xaml-cs-source-code?wt.mc_id=)
-* ✨ [L2DBForm.xaml source code](https://docs.microsoft.com/dotnet/framework/wpf/data/l2dbform-xaml-source-code?wt.mc_id=)
-* ✨ [LINQ to XML data binding example](https://docs.microsoft.com/dotnet/framework/wpf/data/linq-to-xml-data-binding-sample?wt.mc_id=)
-* ✨ [LINQ to XML dynamic properties reference](https://docs.microsoft.com/dotnet/framework/wpf/data/linq-to-xml-dynamic-properties?wt.mc_id=)
-* ✨ [Value (XAttribute dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/value-xattribute-dynamic-property?wt.mc_id=)
-* ✨ [Value (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/value-xelement-dynamic-property?wt.mc_id=)
-* ✨ [WPF data binding with LINQ to XML](https://docs.microsoft.com/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview?wt.mc_id=)
-* ✨ [Xml (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/xml-xelement-dynamic-property?wt.mc_id=)
-* ✨ [Introduction to WPF](https://docs.microsoft.com/dotnet/framework/wpf/introduction-to-wpf?wt.mc_id=)
-
 ### .NET APIs
 
 * Updated API browser for [.NET Core 3.0](https://docs.microsoft.com/dotnet/api/?view=netcore-3.0&wt.mc_id=), [.NET Standard 2.1](https://docs.microsoft.com/dotnet/api/?view=netstandard-2.1&wt.mc_id=), and [ASP.NET Core 3.0](https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.0&wt.mc_id=) RTM version.
