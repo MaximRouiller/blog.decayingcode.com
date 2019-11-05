@@ -39,33 +39,32 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * C# 8.0 updates
 * C# 8.0 spec updates
 
-## .NET Core
-
-* [.NET Documentation](https://docs.microsoft.com/dotnet/index?wt.mc_id=)
-  - New section on the left called *Architecture*
-
-### .NET Standard
+## .NET Fundamentals
 
 * ✨ [Reference assemblies](https://docs.microsoft.com/dotnet/standard/assembly/reference-assemblies?wt.mc_id=)
-* ✨💥 [I/O pipelines - .NET](https://docs.microsoft.com/dotnet/standard/io/pipelines?wt.mc_id=)
+* ✨💥 [I/O pipelines](https://docs.microsoft.com/dotnet/standard/io/pipelines?wt.mc_id=)
+* [.NET Documentation homepage](https://docs.microsoft.com/dotnet/index?wt.mc_id=)
+  - New tab that lists all the *Architecture* e-books
 
-### Tools
+## .NET Core
+
+### Tools updates for 3.0
 
 * [dotnet run command](https://docs.microsoft.com/dotnet/core/tools/dotnet-run?wt.mc_id=)
 * [dotnet sln command](https://docs.microsoft.com/dotnet/core/tools/dotnet-sln?wt.mc_id=)
 
 ### Compatibility
 
-* ✨ [Breaking changes, version 3.0 Preview 9 to 3.0 RC1 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/3.0.9-3.0rc1?wt.mc_id=)
-* ✨ [ASP.NET Core breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/aspnetcore?wt.mc_id=)
-* ✨ [Networking breaking changes - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/networking?wt.mc_id=)
-* [Breaking changes, version 2.2 to 3.0 - .NET Core](https://docs.microsoft.com/dotnet/core/compatibility/2.2-3.0?wt.mc_id=)
+* ✨ [Breaking changes, version 3.0 Preview 9 to 3.0 RC1](https://docs.microsoft.com/dotnet/core/compatibility/3.0.9-3.0rc1?wt.mc_id=)
+* ✨ [ASP.NET Core breaking changes](https://docs.microsoft.com/dotnet/core/compatibility/aspnetcore?wt.mc_id=)
+* ✨ [Networking breaking changes](https://docs.microsoft.com/dotnet/core/compatibility/networking?wt.mc_id=)
+* [Breaking changes, version 2.2 to 3.0](https://docs.microsoft.com/dotnet/core/compatibility/2.2-3.0?wt.mc_id=)
 
-### Diagnostics
+### Diagnostics CLI tools
 
-* ✨ [dotnet-counters - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-counters?wt.mc_id=)
-* ✨ [dotnet-dump - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-dump?wt.mc_id=)
-* ✨ [dotnet-trace - .NET Core](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace?wt.mc_id=)
+* ✨ [dotnet-counters](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-counters?wt.mc_id=)
+* ✨ [dotnet-dump](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-dump?wt.mc_id=)
+* ✨ [dotnet-trace](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace?wt.mc_id=)
 
 ### C# articles
 
@@ -84,28 +83,6 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * ✨ [NameOf operator - Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/language-reference/operators/nameof?wt.mc_id=)
 * ['AddressOf' operand must be the name of a method (without parentheses)](https://docs.microsoft.com/dotnet/visual-basic/language-reference/error-messages/bc30577?wt.mc_id=)
 
-### .NET Framework
-
-* [How to: Install and uninstall Windows services](https://docs.microsoft.com/dotnet/framework/windows-services/how-to-install-and-uninstall-services?wt.mc_id=)
-
-
-### .NET Framework Addtional APIs
-
-* ✨ [Exception.PrepForRemoting Method (System)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.exception.prepforremoting?wt.mc_id=)
-* ✨ [ConnectStream.Connection Property (System.Net)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.net.connectstream.connection?wt.mc_id=)
-* ✨ [PooledStream.NetworkStream Property (System.Net)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.net.pooledstream.networkstream?wt.mc_id=)
-* ✨ [SslState.SslProtocol Property (System.Net.Security)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.net.security.sslstate.sslprotocol?wt.mc_id=)
-* ✨ [TlsStream.m_Worker Field (System.Net)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.net.tlsstream.m_worker?wt.mc_id=)
-* ✨ [XmlReader.CreateSqlReader Method (System.Xml)](https://docs.microsoft.com/dotnet/framework/additional-apis/system.xml.xmlreader.createsqlreader?wt.mc_id=)
-* ✨ [XpsDocumentWriter.raise__WritingCancelled Method (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter.raise__WritingCompleted Method (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter.raise__WritingPrintTicketRequired Method (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter.raise__WritingProgressChanged Method (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter._WritingCancelled Event (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-writingcancelled-event-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter._WritingCompleted Event (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-writingcompleted-event-system-windows-xps?wt.mc_id=)
-* ✨ [XpsDocumentWriter._WritingProgressChanged Event (System.Windows.Xps)](https://docs.microsoft.com/dotnet/framework/additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps?wt.mc_id=)
-* [IMetaDataTables::GetColumnInfo Method](https://docs.microsoft.com/dotnet/framework/unmanaged-api/metadata/imetadatatables-getcolumninfo-method?wt.mc_id=)
-
 ### WPF API changes
 
 * ✨ [Attribute (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/attribute-xelement-dynamic-property?wt.mc_id=)
@@ -122,14 +99,18 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * ✨ [Xml (XElement dynamic property)](https://docs.microsoft.com/dotnet/framework/wpf/data/xml-xelement-dynamic-property?wt.mc_id=)
 * ✨ [Introduction to WPF](https://docs.microsoft.com/dotnet/framework/wpf/introduction-to-wpf?wt.mc_id=)
 
-### Machine Learning
+### .NET APIs
+
+* Updated API browser for [.NET Core 3.0](https://docs.microsoft.com/dotnet/api/?view=netcore-3.0&wt.mc_id=), [.NET Standard 2.1](https://docs.microsoft.com/dotnet/api/?view=netstandard-2.1&wt.mc_id=), and [ASP.NET Core 3.0](https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.0&wt.mc_id=) RTM version.
+* Microsoft.Extensions APIs were moved from ASP.NET Core to .NET Platform Extensions.
+
+### ML.NET
 
 * ✨ [Load training data for Model Builder](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/load-data-model-builder?wt.mc_id=)
 * ✨ [ML.NET resources](https://docs.microsoft.com/dotnet/machine-learning/resources/index?wt.mc_id=)
 * ✨ ['Tutorial: Classify health violations with Model Builder'](https://docs.microsoft.com/dotnet/machine-learning/tutorials/health-violation-classification-model-builder?wt.mc_id=)
 * ✨ ['Tutorial: Automated visual inspection using transfer learning'](https://docs.microsoft.com/dotnet/machine-learning/tutorials/image-classification-api-transfer-learning?wt.mc_id=)
 * ✨ ['Tutorial: Forecast bike rental demand - time series'](https://docs.microsoft.com/dotnet/machine-learning/tutorials/time-series-demand-forecasting?wt.mc_id=)
-
 
 ### .NET for Apache Spark
 
@@ -138,7 +119,6 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 * [Deploy a .NET for Apache Spark application to Databricks](https://docs.microsoft.com/dotnet/spark/tutorials/databricks-deployment?wt.mc_id=)
 * [Get started with .NET for Apache Spark](https://docs.microsoft.com/dotnet/spark/tutorials/get-started?wt.mc_id=)
 * [Deploy a .NET for Apache Spark application to Azure HDInsight](https://docs.microsoft.com/dotnet/spark/tutorials/hdinsight-deployment?wt.mc_id=)
-
 
 ### Blazor for ASP.NET Web Forms developers e-book
 
