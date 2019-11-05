@@ -69,6 +69,7 @@ Note: It's not because a page doesn't have an icon that it is not important. Eve
 
 ### C# articles
 
+* ✨[Tutorial: Mix in functionality when creating classes using interfaces with default interface methods](https://docs.microsoft.com/dotnet/csharp/tutorials/mixins-with-default-interface-methods)
 * [Write safe and efficient C# code](https://docs.microsoft.com/dotnet/csharp/write-safe-efficient-code?wt.mc_id=)
 
 ### C# Language Reference
