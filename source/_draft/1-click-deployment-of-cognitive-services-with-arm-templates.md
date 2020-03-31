@@ -1,8 +1,10 @@
 ---
 title : "1-Click Deployment of Cognitive Services with ARM Templates"
-date: 
-tags: [azure, deployment,]
+date: 2020-04-04 12:00:00
+tags: [azure, deployment, aiml]
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rKpMC9c7oEs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I've been using Cognitive Services for a while now. I'm creating AI services for hackathons, personal projects, or actual work.
 
