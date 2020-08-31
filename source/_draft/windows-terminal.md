@@ -6,11 +6,11 @@ tags: []
 
 Do you remember the Command Prompt? Are you still using it?
 
-![Command Prompt](/posts/files/windows-terminal/cmd.png)
+![Command Prompt](../posts/files/windows-terminal/cmd.png)
 
 There were so many customization options in there like font size, font type, and colors (all eight of them)!
 
-![Command Prompt Options](/posts/files/windows-terminal/cmd-options.png)
+![Command Prompt Options](../posts/files/windows-terminal/cmd-options.png)
 
 If like me, you need a bit more customization, I do have something for you.
 
@@ -18,13 +18,13 @@ Windows Terminal is the re-imagination of what a first-class command prompt expe
 
 ## Windows Terminal First Look around
 
-![Introducing the Amazing Windows Terminal](/posts/files/windows-terminal/wt-cmd.png)
+![Introducing the Amazing Windows Terminal](../posts/files/windows-terminal/wt-cmd.png)
 
 So the first thing I noticed? Transparency. I know it may sound superficial, but it's catchy. The second thing? The tab with two buttons beside it. `+` will allow me to have more Command Prompt in here without changing windows(yay!).
 
 The down arrow had me wondering for a second, so I clicked it.
 
-![So many options...](/posts/files/windows-terminal/wt-dropdown.png)
+![So many options...](../posts/files/windows-terminal/wt-dropdown.png)
 
 Your options may vary, but I have Windows Linux Subsystem installed on my machine and a few other options, so Ubuntu shows up. I'm amazed that I can use any of those prompts from a single option. Mind blown!
 
@@ -36,7 +36,7 @@ See that image above with the `Setting` option in there? Let's click on that, an
 
 ## Making the old feel new again
 
-![Settings.json of Windows Terminal](/posts/files/windows-terminal/wt-settings.png)
+![Settings.json of Windows Terminal](../posts/files/windows-terminal/wt-settings.png)
 
 That's a ton of JSON, but it will become quite easy quite fast.
 
@@ -70,7 +70,7 @@ Let me give you a new `cmd.exe` profile that you can overwrite and have somethin
 
 ## End Result
 
-![Refreshed Command Prompt](/posts/files/windows-terminal/wt-cmd-refreshed.png)
+![Refreshed Command Prompt](../posts/files/windows-terminal/wt-cmd-refreshed.png)
 
 That doesn't even closely look like our classic Command Prompt.
 
